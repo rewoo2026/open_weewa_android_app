@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/downloadingLayout"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <ProgressBar
+            android:id="@+id/pbDownloading"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:max="100"
+            tools:progress="50"
+            android:progressDrawable="@drawable/setting_ota_upgrade_progressbar_style"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDownloadingProgress" />
+        <TextView
+            android:id="@+id/tvDownloadingProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            tools:text="10%"
+            android:text="10%"
+            android:textColor="#ffffffff"
+            android:textFontWeight="700"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@id/pbDownloading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDownloadingContent" />
+
+    </FrameLayout>
+
+
+</merge>

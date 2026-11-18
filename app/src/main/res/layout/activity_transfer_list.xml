@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/common_include_header" />
+
+
+    <View
+        android:id="@+id/title_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_line"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="#ffF6F6F6"
+            tl:tl_bar_color="@color/white"
+            tl:tl_divider_color="#E6E6E6"
+            tl:tl_divider_width="2dp"
+            tl:tl_divider_padding="20dp"
+            tl:tl_indicator_color="@color/tab_select_orange"
+            tl:tl_indicator_width="44dp"
+            tl:tl_indicator_height="6dp"
+            tl:tl_textsize="16sp"
+            tl:tl_textSelsize="16sp"
+            tl:tl_tab_padding="20dp"
+            tl:tl_textSelectColor="@color/tab_select_orange"
+            tl:tl_textUnselectColor="@color/color_3D3D3D"
+
+            />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

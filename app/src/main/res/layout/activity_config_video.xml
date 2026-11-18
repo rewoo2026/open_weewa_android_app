@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_gray_light"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/common_include_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/group_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/group_round15"
+            android:clipToOutline="false"
+            android:elevation="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="15dp">
+
+            <LinearLayout
+                android:id="@+id/btn_auto_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="18dp"
+                android:paddingBottom="17dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="19dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/auto_upload"
+                    android:textColor="@color/text_black_3D"
+                    android:drawableStart="@mipmap/ic_auto_upload"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp" />
+
+                <com.xh.hotme.widget.SwitchButtonO
+                    android:id="@+id/sb_auto_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D8D8D8"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="19dp"/>
+
+            <LinearLayout
+                android:id="@+id/btn_enable_avs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="18dp"
+                android:paddingBottom="17dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="19dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/enable_avs"
+                    android:textColor="@color/text_black_3D"
+                    android:drawableStart="@mipmap/ic_enable_avs"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp" />
+
+                <com.xh.hotme.widget.SwitchButtonO
+                    android:id="@+id/sb_enable_avs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D8D8D8"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="19dp"/>
+
+            <LinearLayout
+                android:id="@+id/btn_auto_upload_avs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="18dp"
+                android:paddingBottom="17dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="19dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/auto_upload_avs"
+                    android:textColor="@color/text_black_3D"
+                    android:drawableStart="@mipmap/ic_auto_upload_avs"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp" />
+
+                <com.xh.hotme.widget.SwitchButtonO
+                    android:id="@+id/sb_auto_upload_avs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D8D8D8"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="19dp"/>
+
+            <LinearLayout
+                android:id="@+id/btn_video_analysis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="18dp"
+                android:paddingBottom="17dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="19dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/video_analysis"
+                    android:textColor="@color/text_black_3D"
+                    android:drawableStart="@mipmap/ic_video_analysis"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp" />
+
+                <com.xh.hotme.widget.SwitchButtonO
+                    android:id="@+id/sb_video_analysis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/group_avs_mbr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-7dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="17dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="19dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@null"
+                    android:textColor="@color/text_black_3D"
+                    android:drawableStart="@mipmap/ic_video_analysis"
+                    android:drawablePadding="10dp"
+                    android:visibility="invisible"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/avs_video_mbr"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_gray_76"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/et_avs_mbr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_gray_76"
+                    tools:text="33333"
+                    android:inputType="numberDecimal"
+                    android:paddingEnd="7dp"
+                    android:paddingStart="7dp"
+                    android:background="@drawable/round20_gray_input_box"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D8D8D8"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="19dp"/>
+
+            <LinearLayout
+                android:id="@+id/group_avs_resolution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="18dp"
+                android:paddingBottom="17dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="19dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@null"
+                    android:textColor="@color/text_black_3D"
+                    android:drawableStart="@mipmap/ic_avs_resolution"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/avs_video_resolution"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_black_3D"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <Spinner
+                    android:id="@+id/sp_avs_resolution"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:overlapAnchor="false"
+                    android:spinnerMode="dropdown"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

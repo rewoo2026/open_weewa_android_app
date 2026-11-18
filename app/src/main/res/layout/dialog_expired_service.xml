@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="false"
+    android:padding="24dp" android:clipToPadding="false" android:overScrollMode="never">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_raduis20" android:padding="24dp" android:orientation="vertical">
+        <ImageView android:id="@+id/iv_top" android:layout_width="88dp" android:layout_height="80dp"
+            android:layout_gravity="center_horizontal" android:scaleType="fitCenter" android:src="@mipmap/icon_dialog_expired_topbg" android:importantForAccessibility="no" />
+        <TextView android:id="@+id/tv_service" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:layout_marginBottom="20dp" android:gravity="center" android:textColor="#242424" android:textSize="20sp" android:textStyle="bold" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="8dp" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:id="@+id/tv_content1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/record_remain_number_label" android:textSize="14sp" android:textColor="#777777" />
+            <TextView android:id="@+id/tv_content1_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="#F16C2F" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="8dp" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:id="@+id/tv_content2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/cloud_storage_remain_number_label" android:textSize="14sp" android:textColor="#777777" />
+            <TextView android:id="@+id/tv_content2_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="#F16C2F" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="8dp" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:id="@+id/tv_content3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/live_remain_number_label" android:textSize="14sp" android:textColor="#777777" />
+            <TextView android:id="@+id/tv_content3_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="#F16C2F" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/remaining_extra" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="8dp" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:id="@+id/tv_content4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="热我大数据剩余次数：" android:textSize="14sp" android:textColor="#777777" />
+            <TextView android:id="@+id/tv_content4_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="#F16C2F" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:orientation="horizontal" android:baselineAligned="false">
+            <TextView android:id="@+id/tv_back" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:minHeight="48dp" android:padding="10dp" android:layout_marginEnd="6dp" android:background="@drawable/bg_eeeeee_raduis10" android:gravity="center" android:text="稍后再说" android:textColor="#555555" android:textSize="15sp" />
+            <TextView android:id="@+id/tv_buy" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:minHeight="48dp" android:padding="10dp" android:layout_marginStart="6dp" android:background="@drawable/bg_f16c2f_raduis10" android:gravity="center" android:text="@string/right_now_purchase" android:textColor="#FFFFFF" android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

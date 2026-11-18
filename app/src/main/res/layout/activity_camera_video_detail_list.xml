@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/common_include_header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+
+    <View
+        android:id="@+id/title_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_line"
+        app:layout_constraintTop_toBottomOf="@id/title_bar" />
+
+
+
+    <ImageView
+        android:id="@+id/ivAllSelect"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_unselect"
+        app:layout_constraintBottom_toBottomOf="@+id/title_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title_bar" />
+    <include
+        android:id="@+id/topDel"
+        layout="@layout/video_del_title"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/title_bar"
+        app:layout_constraintEnd_toEndOf="@+id/title_bar"
+        app:layout_constraintStart_toStartOf="@+id/title_bar"
+        app:layout_constraintTop_toTopOf="@+id/title_bar" />
+
+    <RadioGroup
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_alignParentLeft="true"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/categoryAll"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:checked="true"
+            android:text="@string/video_category_all"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="@drawable/video_category_selector"
+            android:textColor="@drawable/video_category_text_selector"
+            android:button="@null"
+            />
+
+        <RadioButton
+            android:id="@+id/categoryTop"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/video_category_top"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="@drawable/video_category_selector"
+            android:textColor="@drawable/video_category_text_selector"
+            android:button="@null"
+            />
+
+        <RadioButton
+            android:id="@+id/categoryPlayback"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/video_category_playback"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="@drawable/video_category_selector"
+            android:textColor="@drawable/video_category_text_selector"
+            android:button="@null"
+
+            />
+    </RadioGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/category" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/toptitle"
+        layout="@layout/video_list_item_head"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingTop="20dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="1dp">
+
+        <com.xh.hotme.widget.OvalImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="100dp"
+            android:layout_height="64dp"
+            android:src="@mipmap/video_default_cover"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:oval_radius="10dp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:background="@color/color_EEEEEE"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/video_item_title"
+            tools:text="我的人生场我们生成的阿迪舒服安定"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivLogo"
+            app:layout_constraintTop_toTopOf="@id/ivLogo" />
+
+        <TextView
+            android:id="@+id/tvVideoNum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_EEEEEE"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#767676"
+            android:textSize="@dimen/video_item_content"
+            app:layout_constraintEnd_toStartOf="@+id/tvGoodNum"
+            app:layout_constraintStart_toStartOf="@+id/tvTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <TextView
+            android:id="@+id/tvGoodNum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/color_EEEEEE"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#767676"
+            android:textSize="@dimen/video_item_content"
+            app:layout_constraintEnd_toStartOf="@+id/tvGoalNum"
+            app:layout_constraintStart_toEndOf="@+id/tvVideoNum"
+            app:layout_constraintTop_toTopOf="@id/tvVideoNum" />
+
+        <TextView
+            android:id="@+id/tvGoalNum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#767676"
+            android:textSize="@dimen/video_item_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvGoodNum"
+            app:layout_constraintTop_toTopOf="@id/tvVideoNum" />
+        <TextView
+            android:id="@+id/tvAnalyseStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text=""
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:background="@drawable/sp_f16c2f_6_32"
+            tools:text="@string/ai_analyse_status_un_start"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/text_orange"
+            android:textSize="8sp"
+            app:layout_constraintTop_toBottomOf="@+id/tvVideoNum"
+            app:layout_constraintStart_toStartOf="@+id/tvVideoNum"
+         />
+
+        <TextView
+            android:id="@+id/tvAnalyse"
+            android:layout_width="100dp"
+            android:layout_height="34dp"
+            android:background="@drawable/bg_f16c2f_raduis30"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/ai_analyse"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/tvAnalyseStatus"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

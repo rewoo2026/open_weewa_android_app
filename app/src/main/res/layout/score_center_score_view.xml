@@ -1,0 +1,248 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/device_list_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layout_edit_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/layout_dot_area"
+        app:layout_constraintRight_toRightOf="parent"
+
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/iv_sc_edit" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/iv_sc_dot" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_dot_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <TableLayout
+            android:id="@+id/hostTable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:divider="@drawable/tablelayout_divider">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/cell_host_goal"
+                    style="@style/ScoreCenterHostTabButton"
+                    android:text="进球" />
+
+                <TextView
+                    android:id="@+id/cell_host_custom1"
+                    style="@style/ScoreCenterHostTabButton"
+                    android:text=""
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/cell_host_custom2"
+                    style="@style/ScoreCenterHostTabButton"
+                    android:text=""
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/cell_host_custom3"
+                    style="@style/ScoreCenterHostTabButton"
+                    android:text=""
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/cell_host_shoot"
+                    style="@style/ScoreCenterHostTabButton"
+                    android:text="射门" />
+
+                <TextView
+                    android:id="@+id/cell_host_foul"
+                    style="@style/ScoreCenterHostTabButton"
+                    android:text="犯规" />
+
+                <TextView
+                    android:id="@+id/cell_host_corner"
+                    style="@style/ScoreCenterHostTabButton"
+                    android:text="角球" />
+
+                <TextView
+                    android:id="@+id/cell_host_change"
+                    style="@style/ScoreCenterHostTabButton"
+                    android:text="换人" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/cell_host_ball_control"
+                    style="@style/ScoreCenterHostTabButton"
+                    android:text="控球" />
+
+                <TextView
+                    android:id="@+id/cell_host_pass"
+                    style="@style/ScoreCenterHostTabButton"
+                    android:text="传球" />
+
+                <TextView
+                    android:id="@+id/cell_host_attack"
+                    style="@style/ScoreCenterHostTabButton"
+                    android:text="进攻" />
+
+                <TextView
+                    android:id="@+id/cell_host_defense"
+                    style="@style/ScoreCenterHostTabButton"
+                    android:text="防守" />
+            </TableRow>
+
+        </TableLayout>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+
+        <TableLayout
+            android:id="@+id/guestTable"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/cell_guest_custom3"
+                    style="@style/ScoreCenterGuestTabButton"
+                    android:text=""
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/cell_guest_custom2"
+                    style="@style/ScoreCenterGuestTabButton"
+                    android:text=""
+                    android:visibility="invisible"
+
+                    />
+
+                <TextView
+                    android:id="@+id/cell_guest_custom1"
+                    style="@style/ScoreCenterGuestTabButton"
+                    android:text=""
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/cell_guest_goal"
+                    style="@style/ScoreCenterGuestTabButton"
+                    android:text="进球" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/cell_guest_change"
+                    style="@style/ScoreCenterGuestTabButton"
+                    android:text="换人" />
+
+                <TextView
+                    android:id="@+id/cell_guest_corner"
+                    style="@style/ScoreCenterGuestTabButton"
+                    android:text="角球" />
+
+                <TextView
+                    android:id="@+id/cell_guest_foul"
+                    style="@style/ScoreCenterGuestTabButton"
+                    android:text="犯规" />
+
+                <TextView
+                    android:id="@+id/cell_guest_shoot"
+                    style="@style/ScoreCenterGuestTabButton"
+                    android:text="射门" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/cell_guest_defense"
+                    style="@style/ScoreCenterGuestTabButton"
+                    android:text="防守" />
+
+                <TextView
+                    android:id="@+id/cell_guest_attack"
+                    style="@style/ScoreCenterGuestTabButton"
+                    android:text="进攻" />
+
+                <TextView
+                    android:id="@+id/cell_guest_pass"
+                    style="@style/ScoreCenterGuestTabButton"
+                    android:text="传球" />
+
+                <TextView
+                    android:id="@+id/cell_guest_ball_control"
+                    style="@style/ScoreCenterGuestTabButton"
+                    android:text="控球" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/score_center_layout_second"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

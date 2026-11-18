@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/dialog_ota_upgrade_version"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lowEnergyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tvLowEnergyTitle"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="#ff1A1A1A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/ota_upgrade_low_energy_title"
+            app:layout_constraintBottom_toTopOf="@id/tvLowEnergyContent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+
+        <TextView
+            android:id="@+id/tvLowEnergyContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:text="@string/ota_upgrade_hint"
+            android:textColor="#909090"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/tvLowEnergyConfirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLowEnergyTitle" />
+
+        <TextView
+            android:id="@+id/tvLowEnergyConfirm"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sh_r10_f16c2f"
+            android:gravity="center"
+            android:text="@string/ota_upgrade_low_energy_btn"
+            android:textColor="#ffFFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLowEnergyContent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

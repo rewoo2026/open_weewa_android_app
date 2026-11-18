@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/dialog_ota_upgrade_version">
+
+    <LinearLayout
+        android:id="@+id/upgradeVersionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvUpgradeTitle"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="#ff1A1A1A"
+            android:textSize="20sp"
+            android:textFontWeight="700"
+            app:layout_constraintBottom_toTopOf="@id/tvUpgradeContent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="是否退出登录" />
+
+        <TextView
+            android:id="@+id/tvUpgradeContent"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:textColor="#4c4c4c"
+            android:textSize="16sp"
+            android:textFontWeight="400"
+            app:layout_constraintBottom_toTopOf="@id/tvUpgradeHint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUpgradeTitle"
+            tools:text="升级" />
+
+
+        <TextView
+            android:id="@+id/tvUpgradeHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:text="@string/ota_upgrade_hint"
+            android:textColor="#909090"
+            android:textFontWeight="400"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/tvUpgradeConfirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUpgradeContent" />
+
+        <TextView
+            android:id="@+id/tvUpgradeConfirm"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sh_r10_f16c2f"
+            android:gravity="center"
+            android:text="@string/ota_download_img"
+            android:textColor="#ffFFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/tvUpgradeNext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUpgradeHint" />
+
+
+        <TextView
+            android:id="@+id/tvUpgradeNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:text="@string/ota_upgrade_next"
+            android:textColor="#ff909090"
+            android:textFontWeight="400"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUpgradeConfirm" />
+
+    </LinearLayout>
+</merge>

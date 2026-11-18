@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/common_include_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_record"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_line">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=== 视频配置(start) ==="
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/ground_distance"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_ground_distance"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="4.8"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="米"
+                    android:textColor="#3D3D3D"
+                    android:textSize="18sp" />
+
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/stitch_distance"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_stitch_distance"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="50"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="米"
+                    android:textColor="#3D3D3D"
+                    android:textSize="18sp" />
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="zoom width"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_zoom_width"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="zoom height"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_zoom_height"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="zoom width 5p"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_zoom_width_5p"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="zoom height_5p"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_zoom_height_5p"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="fec存储大小(宽)"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_fec_file_width"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="fec存储大小(高)"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_fec_file_height"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="fec推流大小(宽)"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_fec_live_width"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="fec推流大小(高)"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_fec_live_height"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:id="@+id/btn_avs_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="写入以上视频配置到RKIPC配置文件"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=== 视频配置(end) ==="
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

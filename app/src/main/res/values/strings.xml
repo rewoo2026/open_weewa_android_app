@@ -1,0 +1,1402 @@
+<resources>
+    <string name="app_name">热我</string>
+    <string name="weewa_camera">热我相机</string>
+    <string name="weewa_competition">热我比赛</string>
+    <string name="tab_home">设备&amp;录制</string>
+    <string name="tab_icloud">云存储</string>
+    <string name="tab_live">直播</string>
+    <string name="tab_me">我的</string>
+
+    <string name="welcome_to_use">欢迎使用</string>
+    <string name="warm_tip">温馨提示</string>
+    <string name="permission_dialog_title">热我相机需要您授权以下权限</string>
+    <string name="privacy_agreement_dialog_title">您需要同意《 用户协议与隐私政策 》才能继续使用我们的产品及服务</string>
+    <string name="privacy_agreement_dialog_btn_exit_app">退出应用</string>
+    <string name="privacy_agreement_dialog_btn_back">返回</string>
+    <string name="privacy_agreement_dialog_btn_agree">同意</string>
+
+    <string name="home_title">我的热我相机</string>
+    <string name="home_camera_tip">如何使用热我></string>
+    <string name="home_camera_no_found">没有找到相机</string>
+
+    <string name="bluetooth_no_open">蓝牙未打开</string>
+    <string name="bluetooth_tips">要找到热我相机，点击进入手机设置并启用蓝牙</string>
+    <string name="bluetooth_setting">设置</string>
+    <string name="setting">设置</string>
+
+    <string name="bluetooth_device_list_title">选择相机</string>
+    <string name="bluetooth_device_list_refresh">刷新</string>
+    <string name="bluetooth_device_list_connect">连接相机</string>
+    <string name="bluetooth_device_list_connected">已连接</string>
+    <string name="bluetooth_device_list_connected_live">直播</string>
+    <string name="bluetooth_device_list_connected_record">录制</string>
+
+    <string name="home_top_video">精彩视频</string>
+    <string name="home_top_video_enter">进入></string>
+
+    <string name="device_online">设备在线</string>
+    <string name="device_offline">设备离线</string>
+    <string name="device_connect">连接</string>
+    <string name="device_add">+添加相机</string>
+
+    <string name="device_online_local">本地设备在线</string>
+    <string name="device_offline_local">本地设备离线</string>
+    <string name="device_online_remote">远程设备在线</string>
+    <string name="device_offline_remote">远程设备离线</string>
+
+    <string name="me_title">我的</string>
+    <string name="purchase_history">购买记录</string>
+    <string name="loading">正在加载中</string>
+    <string name="loading_fail">加载失败</string>
+    <string name="loading_ing">正在加载中...</string>
+
+    <string name="login_error_connect_device">连接异常，请退出重连！</string>
+    <string name="login_error_phone_format">手机号码格式不正确！</string>
+    <string name="login_error_verify_code_null">验证码不能为空！</string>
+    <string name="info_active_send_sms_code">正在发送激活码</string>
+    <string name="info_active_send_sms_code_fail">激活码发送失败</string>
+    <string name="info_agree_user_proxy_and_privacy_agreement">请勾选同意用户协议&amp;隐私政策</string>
+
+    <string name="me_setting_userinfo">个人资料</string>
+    <string name="me_setting_contact">联系我们</string>
+    <string name="me_setting_account">账号设置</string>
+    <string name="setting_clear_cache">清除缓存</string>
+    <string name="setting_version_update">版本更新</string>
+    <string name="setting_logout">注销账户</string>
+
+    <string name="nickname">昵称</string>
+    <string name="save">保存</string>
+
+    <string name="me_setting_exit">退出登录</string>
+    <string name="me_setting_power">开关机</string>
+    <string name="me_setting_devices">我的设备</string>
+    <string name="me_setting_kuaichuan">相机快传</string>
+
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="retry">重试</string>
+    <string name="play">播放</string>
+    <string name="reboot">重启</string>
+    <string name="refresh">刷新</string>
+    <string name="tip">提示</string>
+    <string name="second">秒</string>
+    <string name="use">使用</string>
+    <string name="month">月</string>
+
+
+
+    <string name="login">登录</string>
+
+    <string name="login_title">登录热我相机</string>
+
+    <string name="mobile">手机号</string>
+
+    <string name="login_hint_input_phone">请输入手机号</string>
+    <string name="login_hint_input_sms">请输入验证码</string>
+    <string name="login_btn_send_sms">获取验证码</string>
+    <string name="login_btn_login">登录&amp;注册</string>
+    <string name="login_tip">*未注册过的手机号将自动创建新账号</string>
+    <string name="login_i_read_agree">我已阅读并同意</string>
+    <string name="login_user_proxy">《用户协议》</string>
+    <string name="login_and">及</string>
+    <string name="login_privacy_agreement">《隐私政策》</string>
+    <string name="click_login">点击登录</string>
+    <string name="info_send_sms_fail">验证码发送失败</string>
+
+    <string name="login_btn_register">注册</string>
+    <string name="input_device_id">请输入设备ID</string>
+    <string name="login_confirm_password">请确认密码</string>
+    <string name="login_input_password">请输入密码</string>
+    <string name="input_phone_or_email">请输入手机号/邮箱</string>
+    <string name="login_register_account">注册账户</string>
+    <string name="forgot_password">忘记密码</string>
+    <string name="password_not_match">两次输入的密码不一致</string>
+    <string name="sms_login">验证码登录</string>
+    <string name="password_login">密码登录</string>
+    <string name="register_success">注册成功</string>
+    <string name="reset_password_success">重置密码成功</string>
+    <string name="operation_failed">操作失败</string>
+    <string name="password_too_short">密码长度不能小于6位</string>
+
+
+    <string name="account_info">账号：%1$s</string>
+
+    <string name="mobile_btn_update">修改手机号</string>
+
+
+    <string name="remove_device_dialog_title">确定删除当前相机</string>
+    <string name="remove_device_dialog_confirm">删除</string>
+    <string name="remove_device_dialog_cancel">取消</string>
+
+    <string name="search">查找</string>
+    <string name="loading_dialog_search_device">正在查找相机</string>
+
+    <string name="device_connected">蓝牙连接成功</string>
+    <string name="loading_dialog_connect_device">正在蓝牙连接相机</string>
+    <string name="loading_dialog_connect_camera_image">正在连接相机画面</string>
+    <string name="loading_dialog_load_device_info">正在获取相机设备信息</string>
+    <string name="loading_dialog_load_device_network">正在获取相机网络信息</string>
+    <string name="loading_connect">正在连接</string>
+    <string name="connected_network">当前已连接</string>
+    <string name="connected">已连接</string>
+    <string name="unconnect">未连接</string>
+    <string name="info_bluetooth_disconnected">蓝牙连接已断开</string>
+    <string name="disconnect_title">确定断开连接</string>
+    <string name="wifi_disconnect">网络连接已断开</string>
+
+    <string name="loading_dialog_load_camera_image">正在获取相机画面</string>
+    <string name="loading_dialog_load_error">加载画面失败</string>
+    <string name="loading_dialog_load_live_image">正在获取直播画面</string>
+
+    <string name="loading_dialog_device_not_found">设备未找到</string>
+    <string name="loading_dialog_device_message">请打开或重启相机</string>
+    <string name="loading_dialog_cancel">取消</string>
+    <string name="loading_dialog_refresh">刷新</string>
+
+    <string name="bluetooth_permission_title">热我APP需要蓝牙权限搜索相机</string>
+    <string name="info_please_try_it_later_get_weewa_info_fail">获取热我相机信息失败，请稍后重试</string>
+    <string name="info_get_user_info_fail_label">获取用户信息失败: </string>
+    <string name="info_disconnect_device_retry_for_device_info_exception">相机信息异常，请退出重试</string>
+    <string name="info_active_fail_for_device_id_null">相机设备ID异常，无法激活</string>
+    <string name="info_get_video_detail_info_fail">获取失败</string>
+    <string name="info_get_video_fail">获取比赛视频失败</string>
+
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_hint">请写下您的意见...</string>
+    <string name="info_feedback_content_empty">请输入反馈内容</string>
+    <string name="info_feedback_content_max_limit">字数已达上限</string>
+
+    <string name="toast_clear_up">缓存清除完毕</string>
+    <string name="toast_begin_to_clear_up">开始清除</string>
+    <string name="from_album">从相册选择</string>
+    <string name="from_camera">拍照</string>
+    <string name="set_portrait_failed">设置头像失败, 是否重试?</string>
+
+    <string name="next_step">下一步</string>
+
+    <string name="type_football">足球</string>
+    <string name="type_basketball">篮球</string>
+    <string name="type_training">训练</string>
+
+    <string name="right_now">立刻开始</string>
+
+    <string name="title_place_select">选择场地类型</string>
+
+    <string name="hint_record_info_team_name">请输入比赛名称</string>
+    <string name="info_place_input">请输入场地名称</string>
+
+
+    <string name="camera_info_usage_left">还可使用</string>
+
+    <string name="camera_info_energy">电量</string>
+    <string name="camera_info_storage">内存</string>
+    <string name="camera_info_temp">温度</string>
+
+    <string name="info_network_error_not_open">网络未打开</string>
+
+
+    <string name="other_network">其他网络</string>
+    <string name="eth_network">有线网络</string>
+    <string name="four_th_network">4G网络</string>
+    <string name="network_wifi">无线局域网</string>
+    <string name="network_add">添加网络</string>
+    <string name="info_network_error_open_network">请打开蜂窝网络或无线局域网</string>
+    <string name="info_no_sim_card">当前未插入4G卡或者不可用</string>
+    <string name="info_network_error_open_4g">4G网络打开失败</string>
+    <string name="info_network_error_close_4g">4G网络关闭失败</string>
+
+    <string name="loading_open_4g_network">正在打开4G网络</string>
+    <string name="loading_close_4g_network">正在关闭4G网络</string>
+    <string name="loading_open_wifi">正在加载无线网络</string>
+    <string name="loading_close_wifi">正在关闭无线网络</string>
+
+    <string name="info_wifi_turn_off">无线网络已关闭</string>
+
+    <string name="info_ble_connect_timeout">连接超时</string>
+    <string name="info_ble_connect_fail">连接失败</string>
+    <string name="info_ble_disconnect">连接断开</string>
+    <string name="today">今天</string>
+    <string name="yesterday">昨天</string>
+    <string name="video_gallery">精彩集锦</string>
+    <string name="normal_video">正常回放</string>
+
+
+    <string name="player_title">热我AI相机</string>
+    <string name="player_local_video">相机视频下载</string>
+    <string name="player_setting">相机设置</string>
+    <string name="player_energy">电量</string>
+    <string name="player_storage">存储</string>
+    <string name="player_exit">后台录制</string>
+    <string name="stop_record_title">确定停止录制</string>
+    <string name="stop_record">停止录制</string>
+    <string name="stop">停止</string>
+    <string name="stop_record_fail">停止录制程序失败</string>
+    <string name="start_record">开始录制</string>
+    <string name="record_task">录制任务</string>
+    <string name="add_record_task">添加任务</string>
+
+    <string name="player_score_center">比分控制</string>
+
+    <string name="restart_camera_on_live_stream_exception">相机视频推流异常, 重新启动相机</string>
+
+
+    <string name="active_device_list_title">热我相机列表</string>
+    <string name="active_device_setup_wifi">请为相机配置一个网络</string>
+    <string name="setup_wifi">相机网络配置</string>
+    <string name="device_connect_success">设备连接成功</string>
+    <string name="device_network_setup_success">网络配置成功</string>
+    <string name="device_active_nextstep">下一步激活相机</string>
+    <string name="device_active">激活相机</string>
+    <string name="device_bind">绑定相机</string>
+    <string name="device_bind_success">相机绑定成功</string>
+    <string name="device_bind_fail">相机绑定失败</string>
+    <string name="right_now_to_home">即将进入主页面</string>
+    <string name="device_active_success">相机激活成功</string>
+    <string name="loading_wifi_list">正在获取wifi列表</string>
+
+    <string name="wifi_setup_success">Wi-Fi网络配置成功</string>
+    <string name="right_now_to_living">即将进入直播界面……</string>
+
+    <string name="right_now_to_login">即将进入登录页面……</string>
+    <string name="right_now_to_register">即将进入手机注册页面</string>
+
+
+    <string name="device_active_ing">相机正在激活</string>
+    <string name="device_actived">相机已被激活</string>
+    <string name="device_bound">相机已被绑定</string>
+    <string name="device_try_another_device">请更换其他设备尝试</string>
+    <string name="know">好的</string>
+    <string name="login_another_account">是否登录其他账号</string>
+
+    <string name="active">激活</string>
+    <string name="password">密码</string>
+    <string name="wifi_join">加入</string>
+    <string name="wifi_open">开启</string>
+    <string name="info_wifi_ssid_or_password_is_null">请输入ssid和密码</string>
+
+    <string name="disconnect">断开连接</string>
+    <string name="confirm_device_disconnect">断开蓝牙连接</string>
+    <string name="my_devices">我的设备</string>
+    <string name="reconnect_on_connect_fail">连接失败，请重试</string>
+    <string name="info_device_exit">退出相机</string>
+    <string name="info_device_power_off">相机断电，正在关机</string>
+    <string name="info_device_had_been_power_on">当前设备已开机</string>
+    <string name="info_device_had_been_power_off">当前设备已关机</string>
+    <string name="loading_request_power_on">正在开机...</string>
+    <string name="loading_request_power_off">正在关机...</string>
+    <string name="loading_request_reboot">正在重启...</string>
+    <string name="loading_sync_user_status">正在同步状态...</string>
+    <string name="info_sync_user_token_fail">同步失败...</string>
+
+    <string name="device_on">开机</string>
+
+    <string name="device_off">关机</string>
+    <string name="exit">退出</string>
+    <string name="go_to_login">去登录</string>
+    <string name="go_to_setup">去设置</string>
+
+    <string name="login_success">登录成功</string>
+    <string name="login_fail">登录失败</string>
+
+    <string name="active_camera_info_title">相机设置</string>
+    <string name="camera_running_info_title">相机运行详情</string>
+    <string name="camera_soft_ap_setting">相机热点设置</string>
+    <string name="camera_about">关于本机</string>
+
+    <string name="device_launch_success">相机已启动</string>
+    <string name="device_power_off_success">相机已关机</string>
+    <string name="record_restart">重新启动</string>
+
+    <string name="record_status">相机正在同步录像状态</string>
+    <string name="record_launching">相机正在开启录像</string>
+    <string name="record_ending">相机正在停止录像</string>
+    <string name="record_saving">录像保存中...</string>
+    <string name="record_video_save_to_camera">已保存至相机视频</string>
+
+    <string name="info_firstly_lunch_live">请先开启直播</string>
+    <string name="loading_live_pause">直播暂停中......</string>
+    <string name="loading_live_ready">直播就绪中......</string>
+    <string name="info_firstly_lunch_record">请先开启录制</string>
+    <string name="info_firstly_write_record_info">请先填写录制信息</string>
+    <string name="info_running_timeout_on_lunch_rkipc">启动录像程序超时</string>
+    <string name="info_running_timeout_on_lunch_live">启动直播程序超时</string>
+    <string name="info_running_timeout_on_lunch_soft_ap">打开热点超时</string>
+    <string name="info_lunch_rkipc_fail">相机程序启动失败</string>
+    <string name="info_live_stop">直播已关闭</string>
+    <string name="info_add_fec_url_fail">启动推流失败</string>
+    <string name="info_live_fail">直播失败</string>
+    <string name="info_live_fail_message">请检查相机或手机网络是否正常</string>
+    <string name="info_camera_network_exception">相机网络异常</string>
+    <string name="info_camera_network_exception_message">请重启相机让相机恢复网络功能</string>
+    <string name="info_phone_network_exception">手机网络不稳定</string>
+    <string name="info_phone_network_exception_message">请刷新重试获取直播画面</string>
+    <string name="info_connect_live_server_exception">连接推流服务器失败</string>
+    <string name="info_connect_live_server_exception_message">请停止直播并重新开始, 如果问题反复出现, 请联系直播服务提供商</string>
+    <string name="info_stop_live_title">确定停止直播</string>
+    <string name="info_stop_live_message">停止后相机录制将同步停止录制视频</string>
+    <string name="info_pause_live_title">暂停直播</string>
+    <string name="info_pause_live_message">暂停后相机录制将继续录制视频</string>
+    <string name="info_pause_live_message_btn">确定暂停</string>
+    <string name="dialog_network_outside_title">切换Wi-Fi连接</string>
+    <string name="dialog_network_outside_message">使用直播功能需要切换为外部网络连接</string>
+    <string name="dialog_live_offline">直播中断</string>
+    <string name="live_continue">继续直播</string>
+    <string name="info_operation_fail">操作失败</string>
+    <string name="info_network_outside_message">网络不通，请切换到外部网络再试</string>
+
+
+
+    <string name="wifi_soft_ap_join_title">是否加入热我相机的无线网络</string>
+
+    <string name="record_background_exit_title">后台录制相机将继续录制中</string>
+
+    <string name="info_nickname_is_null">请输入昵称</string>
+    <string name="info_nickname_update_suc">更改成功</string>
+    <string name="info_update_success">更新成功</string>
+    <string name="info_update_fail">更新失败</string>
+    <string name="info_notneed_update">无需更新</string>
+
+    <string name="update_dev_name_title">更改相机名称</string>
+    <string name="info_input_device_name">请输入设备名称</string>
+    <string name="info_update_dev_name_suc">修改成功，断开连接，重启生效</string>
+
+    <string name="info_device_name_the_same_as_device">设备名称相同，无须重复提交</string>
+
+    <string name="update_dev_sn_title">更改相机设备ID</string>
+    <string name="info_input_device_sn">请输入设备ID</string>
+
+    <string name="device_unbind_title">解绑设备</string>
+    <string name="device_unbind">解绑设备</string>
+    <string name="device_no_bind">暂无绑定设备</string>
+    <string name="device_unbind_ok">解绑成功</string>
+    <string name="device_unbind_fail">解绑失败</string>
+    <string name="unbind">解绑</string>
+    <string name="unbind_camera">解绑相机</string>
+    <string name="unbind_current_device">解绑当前设备</string>
+    <string name="unbind_devices_of_phone">手机号解绑</string>
+    <string name="device_id">设备id</string>
+    <string name="info_need_outside_network_on_unbind_device">解绑设备需要外部网络</string>
+    <string name="loading_unbinding">正在解绑</string>
+
+    <string name="device_name_hint">设备名称（10个字符以内）</string>
+    <string name="device_name_label">设备名称：</string>
+
+    <string name="request_timeout"> 请求超时</string>
+    <string name="request_timeout_get_weewa_info">请求超时，请检查相机是否处于开机状态</string>
+
+    <string name="live">直播</string>
+    <string name="live_ing">直播中</string>
+    <string name="live_start">开始直播</string>
+    <string name="live_end">停止直播</string>
+    <string name="live_pause">暂停直播</string>
+    <string name="live_task">直播任务</string>
+    <string name="live_copy_pull_stream_url">复制拉流地址</string>
+    <string name="run_background">后台运行</string>
+
+    <string name="live_copy_commentary_pull_stream_url">复制解说台拉流地址</string>
+    <string name="live_copy_commentary_push_stream_url">复制解说台推流地址</string>
+
+    <string name="live_task_delete">删除直播任务</string>
+    <string name="live_copied_pull_stream_url">已复制拉流地址</string>
+    <string name="live_copied_push_stream_url">已复制推流地址</string>
+
+    <string name="info_push_url_update_success">直播任务推流地址更新成功</string>
+
+    <string name="info_camere_setting_recovery_default">正在恢复缺省数值</string>
+    <string name="info_camere_setting_acutance">正在设置锐度</string>
+    <string name="info_camere_setting_aberration">正在设置色差</string>
+    <string name="info_camere_setting_contrast">正在设置对比度</string>
+    <string name="info_camere_setting_saturation">正在设置饱和度</string>
+    <string name="info_camere_setting_brightness">正在设置亮度</string>
+    <string name="info_camere_setting_exposure_time">正在设置曝光时长</string>
+    <string name="info_setting_value_large_zero">分子分母必须大于0</string>
+    <string name="info_value_verify_illegal">请输入合法的数字</string>
+    <string name="info_camere_setting_frq">正在设置帧率</string>
+
+    <string name="switch_mode_to">已切换至%1$s模式  </string>
+    <string name="camera_mode_type_normal">正常</string>
+    <string name="camera_mode_type_training">训练</string>
+    <string name="camera_mode_switch">: 模式切换</string>
+
+
+    <string name="score_center">比分控制中心</string>
+    <string name="timer_control">计时控制</string>
+    <string name="pause_timer">暂停计时</string>
+    <string name="resume_timer">恢复计时</string>
+    <string name="reset_timer">重置计时</string>
+    <string name="timer_reset_success">计时已重置</string>
+    <string name="timer_reset_fail">计时重置失败</string>
+    <string name="confirm_reset">确认重置</string>
+    <string name="confirm_reset_timer_msg">确定要重置计时吗？</string>
+    <string name="add_live_task_title">添加直播任务</string>
+    <string name="edit_live_task_title">编辑直播任务</string>
+    <string name="competition_name">比赛名称</string>
+    <string name="add_live">添加直播</string>
+
+    <string name="video_list_empty">暂无视频</string>
+
+    <string name="video_tab_download">下载</string>
+    <string name="video_tab_share">分享</string>
+    <string name="video_tab_upload">上传服务器</string>
+    <string name="video_tab_download_to_phone">下载到手机</string>
+    <string name="video_tab_rename">重命名</string>
+    <string name="video_tab_delete">删除</string>
+
+    <string name="network_name">网络名称</string>
+    <string name="network_password">密&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;码</string>
+
+
+    <string name="address">北京: 北京市朝阳区望京SOHO塔1C座1005\n深圳: 广东省深圳市龙华区腾龙路龙光玖钻2B座3203\n武汉: 武汉市洪山区野芷湖西路16号创意天地7号工坊103</string>
+
+    <string name="camera_video_transfer">相机快传设置</string>
+    <string name="camera_wifi_soft_ap_setting">相机热点设置</string>
+    <string name="soft_ap_hint_input_ssid">请输入热点名称</string>
+    <string name="soft_ap_hint_input_password">请输入热点密码(8-16位)</string>
+    <string name="soft_ap_setup_success">创建热点成功</string>
+    <string name="info_soft_ap_opening">正在创建热点</string>
+    <string name="info_soft_ap_closing">正在关闭热点</string>
+
+    <string name="camera_fast_transfer_qcode">快传二维码</string>
+
+    <string name="camera_network_type_error">手机已连接到移动数据，请关闭移动数据重试</string>
+
+    <string name="camera_soft_ap">相机热点</string>
+    <string name="soft_ap_set_up">开启相机热点</string>
+    <string name="soft_ap_close">关闭相机热点</string>
+    <string name="soft_ap_disconnect">相机热点已断开</string>
+    <string name="info_reconnect_for_soft_ap_disconnect">相机热点连接已断开, 是否重新连接</string>
+    <string name="close">关闭</string>
+
+    <string name="cannot_record_because_no_storage">相机存储空间已满, 请前往相机存储管理视频空间</string>
+    <string name="cannot_record_because_low_storage">相机存储空间即将用完, 继续录制可能导致存储视频失败</string>
+    <string name="storage_management">存储管理</string>
+    <string name="cannot_record_because_camera_not_ready">正在初始化中, 请稍后...</string>
+    <string name="delete_this_match_title">删除本场比赛</string>
+    <string name="match_video_will_be_deleted">比赛内视频将同步删除</string>
+
+    <string name="info_soft_ap_ssid_is_empty">wifi热点名称不能为空</string>
+    <string name="info_soft_ap_password_is_empty">wifi密码不能为空</string>
+    <string name="info_soft_ap_password_length_invalid">wifi密码为8-16位</string>
+    <string name="info_soft_ap_setup_fail">创建热点失败</string>
+    <string name="info_soft_ap_close">正在关闭热点</string>
+    <string name="info_soft_ap_close_success">已关闭热点</string>
+    <string name="info_soft_ap_close_fail">关闭热点失败</string>
+    <string name="connect_soft_ap_for_download_file">请连接WiFi热点%1$s</string>
+
+    <string name="join_softap_title">加入\"%1$s\"的热点网络，预览比赛视频</string>
+    <string name="record_preview_connect_softap">连接相机热点获取相机画面</string>
+    <string name="record_preview_connect_remote">开始录制获取相机画面</string>
+    <string name="join_softap">加入\"%1$s\"的热点网络</string>
+    <string name="join_softap_to_view_video">加入\"%1$s\"的热点网络，浏览比赛视频</string>
+    <string name="preview">预览</string>
+    <string name="rewoo_meal">热我套餐</string>
+    <string name="usage_detail">使用详情</string>
+
+
+    <string name="info_current_mobile_can_login">当前手机号（可用于登录）</string>
+
+    <string name="info_delete_account">注销后，将无法使用当前账号</string>
+    <string name="info_delete_account_result">请了解以下注销影响:</string>
+    <string name="info_clear_account_info">清空账号信息</string>
+    <string name="info_clear_icloud_video">云存储视频清空</string>
+    <string name="info_select_video_for_upload">请选择需要上传的文件</string>
+    <string name="info_select_video_for_delete">请选择需要删除的文件</string>
+    <string name="info_null_video_url_to_share">视频无效链接, 无法分享</string>
+    <string name="info_select_video_for_download">请选择需要下载的文件</string>
+    <string name="info_selected_video_downloading">选择的视频正在下载</string>
+    <string name="info_change_name_for_the_same_name">已存在同名视频, 请更换一个名称</string>
+    <string name="info_rename_ing">正在重命名</string>
+    <string name="info_rename_success">重命名成功</string>
+    <string name="info_deleting">正在删除</string>
+    <string name="info_try_it_later_for_video_uploading">视频正在上传，请稍后再试</string>
+    <string name="info_searching_and_dont_repeat_do_it">正在查询，请勿重复请求</string>
+
+    <string name="info_file_isnt_exist_or_deleted">文件已不存在或已被删除</string>
+    <string name="info_file_downloading">该文件尚未下载完成暂时不能播放</string>
+    <string name="info_share_file_size_limit_200M">分享文件不能大于200M</string>
+    <string name="info_length_limit">已超出最大长度限制</string>
+
+
+
+
+    <string name="select_all">全选</string>
+    <string name="select_all_cancel">取消全选</string>
+
+    <string name="info_download_server_not_lunched">服务未启动</string>
+
+    <string name="delete_account">注销账户</string>
+    <string name="apply_delete_account">申请注销</string>
+    <string name="delete_account_success">账户已注销</string>
+    <string name="select_network">请选择网络</string>
+
+    <string name="label_current_version">当前版本</string>
+    <string name="label_latest_version">最新版本</string>
+    <string name="about_me">关于我们</string>
+
+    <string name="current_version">当前版本： %1$s</string>
+    <string name="current_version_is_latest">当前已是最新版本！</string>
+
+    <string name="qrcode_hint">使用热我快传app扫描二维码\n自动连接</string>
+
+    <string name="info_bluetooth_offline">蓝牙已断开，请退出重试</string>
+    <string name="info_watermark_decode_error">水印图片加载失败, 请重新选择</string>
+    <string name="start_softap_before_set_watermark">设置水印图片需要先启动相机热点</string>
+    <string name="connect_softap_before_set_watermark">设置水印图片需要先连接相机热点</string>
+    <string name="watermark_set_successful">水印设置成功</string>
+    <string name="watermark_delete_successful">水印已删除</string>
+    <string name="info_normal_float_value">请输入合法的浮点数</string>
+
+    <string name="loading_code_verify">正在校验</string>
+    <string name="please_choice_one_device">请先选择绑定设备</string>
+    <string name="please_choice_one_test_device">请先选择测试设备</string>
+
+
+    <string name="open_location_service">位置服务</string>
+
+    <string name="setup_successful">设置成功</string>
+    <string name="setup_fail">设置失败</string>
+    <string name="info_logout_success">退出登录成功</string>
+    <string name="info_delete_account_success">账号注销成功</string>
+
+    <string name="cache_delete_title">确认删除所有缓存？</string>
+    <string name="cache_delete">删除</string>
+    <string name="cache_delete_cancel">我再想想</string>
+
+    <string name="sex_secrecy">保密</string>
+    <string name="sex_man">男</string>
+    <string name="sex_woman">女</string>
+    <string name="avatar">头像</string>
+    <string name="phone_number">手机号</string>
+    <string name="email">邮箱</string>
+    <string name="reset_pwd">重置密码</string>
+
+    <string-array name="storage_type">
+        <item>手机存储</item>
+        <item>云存储</item>
+        <item>相机存储</item>
+    </string-array>
+
+    <string-array name="record_preview_type">
+        <item>全景视频</item>
+        <item>直播视频</item>
+    </string-array>
+
+    <string-array name="avs_resolution">
+        <item>7600x2160</item>
+        <item>3800x1080</item>
+    </string-array>
+
+    <!-- 新增 -->
+    <string name="ly_me_info">个人资料</string>
+    <string name="ly_me_photo_set">相机功能管理</string>
+    <string name="ly_me_photo_net">相机网络配置</string>
+    <string name="ly_me_live">直播管理</string>
+    <string name="ly_me_setting">设置</string>
+    <string name="ly_me_manual_dotting_clip">打点视频剪辑</string>
+    <string name="ly_me_ai_video_clip">AI视频剪辑</string>
+    <string name="ly_me_kuaichuan">快传二维码</string>
+
+    <string name="ly_push_jieshuo">是否打开麦克风配合解说</string>
+    <string name="ly_push_curname">当前相机</string>
+    <string name="ly_push_address">请输入推流地址</string>
+    <string name="ly_push_tips">如何获取？</string>
+    <string name="ly_push_mishi">推流密匙（非必填）</string>
+    <string name="btn_confirm">确定</string>
+    <string name="out_sys_mg">是否退出登录</string>
+    <string name="update_txt">立即更新</string>
+    <string name="user_proxy">用户协议</string>
+    <string name="user_agreement">隐私政策</string>
+    <string name="sys_error">系统繁忙请稍后再试</string>
+    <string name="retry_later">请稍后再试</string>
+
+    <string name="network_config">网络配置</string>
+    <string name="remote_device_on_off_title">远程开关相机</string>
+    <string name="remote_device_on_off">远程开关机</string>
+    <string name="remote_device_on">远程开机</string>
+    <string name="remote_device_off">远程关机</string>
+    <string name="remote_device_reboot">相机重启</string>
+
+    <string name="video_clip_title">视频剪辑</string>
+    <string name="btn_start_video_clip">开始视频剪辑</string>
+    <string name="btn_start_video_clip_manual_dotting">开始打点视频剪辑</string>
+    <string name="btn_start_video_clip_ai">开始AI视频剪辑</string>
+    <string name="btn_start_video_clip_again">重新开始剪辑</string>
+    <string name="video_clip_duration_title"><font color="#ff6600">*</font>视频时长（单位：秒）</string>
+    <string name="video_clip_threshold_title"><font color="#ff6600">*</font>置信度（数值越高，进球视频越精准）</string>
+    <string name="threshold_hint">数值范围1-100</string>
+    <string name="video_duration_hint">数值范围15-180</string>
+    <string name="video_clip_no_file">相机内无比赛视频</string>
+    <string name="video_clip_finish">比赛视频已剪辑完成</string>
+    <string name="video_cliping">视频剪辑中</string>
+    <string name="info_threshold_empty">请输入置信度</string>
+    <string name="info_threshold_format_error">置信度范围【0-100】，请重新输入</string>
+
+    <string name="info_video_clip_finish">剪辑完成</string>
+    <string name="info_video_duration_empty">请输入视频长度</string>
+    <string name="info_video_duration_error">视频时长范围15～30秒，请重新输入</string>
+    <string name="loading_video_clip_status">正在加载比赛视频剪辑状态</string>
+
+    <string name="search_camera">蓝牙查找相机</string>
+    <string name="search_camera_by_bluetooth">蓝牙查找相机</string>
+    <string name="search_camera_by_remote">远程查找相机</string>
+    <string name="device_disconnect_current">当前未连接相机</string>
+
+    <string name="game_info_title">填写比赛信息</string>
+    <string name="game_info_new_game"><font color="#ff6600">*</font>是否是新的比赛</string>
+    <string name="game_info_game_name"><font color="#ff6600">*</font>比赛名称</string>
+    <string name="game_info_game_stage"><font color="#ff6600">*</font>比赛阶段</string>
+    <string name="game_info_motion_type"><font color="#ff6600">*</font>运动场地类型</string>
+    <string name="live_platform_type_setting"><font color="#ff6600">*</font>推流平台设置</string>
+
+    <string name="game_info_select_stage_type">选择比赛阶段</string>
+    <string name="game_info_select_motion_type">选择运动类型</string>
+    <string name="game_info_home_team_hint">输入主队名称（可不填）</string>
+    <string name="game_info_guest_team_hint">输入客队名称（可不填）</string>
+    <string name="game_info_game_name_hint">输入比赛名称（20字内）</string>
+    <string name="game_info_city_hint">请选择城市</string>
+    <string name="game_info_play_site">输入场馆名称（20字内）</string>
+    <string name="ground_distance">相机离地高度</string>
+    <string name="ground_distance_hint">输入相机离地高度（米）</string>
+    <string name="stitch_distance">拼接最佳距离</string>
+    <string name="stitch_distance_hint">输入拼接最佳距离（米）</string>
+    <string name="home_team_name">主队名称</string>
+    <string name="guest_team_name">客队名称</string>
+    <string name="city">城市</string>
+    <string name="site_type">场地类型</string>
+    <string name="venue">场馆名称</string>
+    <string name="order_phone">下单人员手机</string>
+    <string name="need_commentary">是否需要解说</string>
+    <string name="order_phone_hint">输入下单手机号（可不填）</string>
+    <string name="select_city">选择城市</string>
+
+    <string name="china_hot_city">国内热门城市</string>
+
+    <string name="live_time">直播时间</string>
+    <string name="live_time_select">选择日期时间</string>
+    <string name="live_platform_rewoo_miniprogram">热我小程序</string>
+    <string name="live_platform_mgc">梦工厂赛事平台</string>
+    <string name="live_platform_wx_dy">抖音、微信视频号</string>
+    <string name="live_platform_xqm">小球迷平台</string>
+    <string name="live_copy_pull_url">复制拉流链接</string>
+
+    <string name="live_platform">推流平台</string>
+    <string name="douyin">抖音</string>
+    <string name="wx_video">微信视频号</string>
+    <string name="kuaishou">快手</string>
+    <string name="other">其它</string>
+
+
+    <string name="live_get_login_token_of_wechat_video">获取视频号助手登录码</string>
+    <string name="live_scan_qcode_of_wechat">使用微信扫描生成的登录码</string>
+    <string name="live_first_step_get_login_token">完成第一步获取登录码</string>
+    <string name="first_step">第一步</string>
+    <string name="second_step">第二步</string>
+    <string name="third_step">第三步</string>
+    <string name="fourth_step">第四步</string>
+    <string name="finish_scan_get_pull_url_and_push_url">确认扫码登录完成后, 点击下面按钮获取推流地址, 拉流地址和推流密钥</string>
+    <string name="get_pull_url_and_push_url">获取推流和拉流地址</string>
+    <string name="push_url">推流地址</string>
+    <string name="pull_url">拉流地址</string>
+    <string name="push_key">推流密钥</string>
+    <string name="cover_image_instruction">默认封面\n推荐尺寸: 1080*1260</string>
+    <string name="add_cover_image">+&#160;相册</string>
+    <string name="write_push_url">填写推流地址</string>
+    <string name="write_pull_url">填写拉流地址</string>
+    <string name="write_push_key">填写推流密钥</string>
+
+    <string name="live_get_login_token_of_dy">获取直播伴侣登录码</string>
+    <string name="live_scan_qcode_of_dy">使用抖音扫描生成的登录码</string>
+    <string name="info_get_login_token_of_wechat_video">请先获取视频助手登录码</string>
+    <string name="info_input_login_token_and_verify">获取验证码成功, 请填入验证码并校验</string>
+    <string name="info_take_login_token_and_scan">请先获取登录码并扫码</string>
+    <string name="info_take_login_token_fail">获取登录码失败</string>
+    <string name="info_login_token_empty">验证码不能为空</string>
+    <string name="info_cover_upload_fail">封面上传失败</string>
+
+    <string name="info_file_not_exist">文件不存在或已被删除</string>
+    <string name="info_share_success">分享成功</string>
+    <string name="info_share_fail">分享失败</string>
+    <string name="info_share_cancel">分享取消</string>
+    <string name="info_save_to_local_success">本地保存成功</string>
+
+    <string name="info_install_wechat">请先安装微信</string>
+    <string name="info_no_wechat">没有可以处理该视频文件的应用</string>
+
+    <string name="meter">米</string>
+    <string name="centimeter">厘米</string>
+
+    <string name="score_control_center">比分控制中心</string>
+    <string name="home_team">主队</string>
+    <string name="guest_team">客队</string>
+
+    <string-array name="third_platform">
+        <item>小球迷平台</item>
+        <item>微信视频号</item>
+        <item>抖音直播伴侣</item>
+    </string-array>
+
+
+    <string-array name="motion_type_list">
+        <item>其它</item>
+        <item>足球</item>
+        <item>篮球</item>
+    </string-array>
+
+    <string-array name="stitch_distance_list">
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>50</item>
+    </string-array>
+
+    <!-- play_number_list 与place_type_list 一一对应 -->
+    <string-array name="play_number_list">
+        <item>0</item>
+        <item>5</item>
+        <item>8</item>
+        <item>11</item>
+    </string-array>
+
+    <string-array name="place_type_list">
+        <item>训练</item>
+        <item>5人场</item>
+        <item>8人场</item>
+        <item>11人场</item>
+    </string-array>
+
+    <string-array name="place_type_list_bb">
+        <item>半场</item>
+        <item>全场</item>
+    </string-array>
+
+    <string-array name="place_type_list_tran">
+        <item>其它</item>
+    </string-array>
+
+    <string-array name="stage_type_list">
+        <item>第一节</item>
+        <item>第二节</item>
+        <item>第三节</item>
+        <item>第四节</item>
+        <item>第五节</item>
+    </string-array>
+
+    <string name="expired">已过期</string>
+    <string name="vip_renew">续费</string>
+    <string name="update_service">升级服务</string>
+    <string name="update_to_pro_service">升级到PRO服务</string>
+    <string name="vip_expired_time">到期:</string>
+    <string name="goal_time">进球时间</string>
+    <string name="top_video">精彩视频</string>
+    <string name="edit">编辑</string>
+
+    <string name="dialog_camera_add_title">当前没有相机</string>
+    <string name="dialog_camera_add_hint">请添加相机</string>
+    <string name="dialog_camera_add_bt">添加相机</string>
+
+    <string name="dialog_camera_not_found">相机未找到</string>
+    <string name="dialog_camera_reboot">打开或重启运动相机</string>
+    <string name="dialog_camera_found_ok">好的</string>
+    <string name="ok">确定</string>
+
+    <string name="file_service_is_disconnect">文件传输服务已断开</string>
+    <string name="please_retry_on_device_info_fail">获取设备信息失败，请稍后重试</string>
+    <string name="please_retry_on_weewa_info_fail">获取相机信息失败，请稍后重试</string>
+    <string name="please_retry_on_weewa_info_null_fail">获取相机信息未空，请稍后重试</string>
+    <string name="please_check_device_power_on_for_timeout">获取相机信息失败，请确认相机是否开机</string>
+
+
+    <string name="permission_deny_title">热我APP权限提示</string>
+    <string name="permission_deny_content">热我APP需要位置和蓝牙权限,否则无法搜索到周边设备</string>
+    <string name="permission_deny_take_photo">热我APP需要照相机权限,否则无法拍照</string>
+    <string name="permission_deny_storage">热我APP需要存储权限，否则无法访问本地文件和媒体</string>
+    <string name="permission_user_deny">用户授权失败</string>
+
+
+    <string name="permission_camera_title">授予照相机权限？</string>
+    <string name="permission_camera_message">拍照需要获取照相机权限</string>
+
+    <string name="permission_storage_title">授予存储权限？</string>
+    <string name="permission_storage_message">访问本地文件和媒体需要存储权限</string>
+
+    <string name="permission_mandatory_camera_title">需要照相机权限</string>
+    <string name="permission_mandatory_camera_message">如果没有相机权限, 该部分功能将无法使用</string>
+    <string name="permission_mandatory_storage_title">需要存储权限</string>
+    <string name="permission_mandatory_storage_message">如果没有存储权限, 该部分功能将无法使用</string>
+
+    <string name="search_title_location_and_device">搜索周边设备</string>
+    <string name="permission_title_location_and_device">热我APP需要定位和设备搜索权限</string>
+
+    <string name="connect_fail_title">连接失败</string>
+    <string name="connect_fail_message">尝试重新启动热我AI相机并确保其靠近您 如果您一直遇到此问题，请联系热我客服</string>
+
+    <string name="scanning_nearby_device">正在扫描附近设备</string>
+    <string name="opening_soft_ap">正在开启热点</string>
+    <string name="lunching_recorder">正在启动录像程序</string>
+    <string name="is_exit_camera">是否退出相机</string>
+    <string name="is_exit_live_stream_page">是否退出直播界面</string>
+    <string name="is_exit_live_stream_page_background_run">是否退出直播界面，开启后台直播模式?</string>
+
+    <string name="loading_stop_record_and_save_record_video">正在停止录制\n录制视频将保存至相机视频</string>
+    <string name="loading_stop_record_and_save_live_video">正在停止录制\n直播视频将保存至相机视频</string>
+    <string name="loading_stop_live_and_save_live_video">正在停止直播\n直播视频将保存至相机视频</string>
+
+    <string name="weewa_reboot_success">相机已重启</string>
+    <string name="weewa_reboot_fail">相机重启失败</string>
+
+    <string name="game_tag">比赛标记</string>
+    <string name="game_name_mark_tag">标记比赛名称</string>
+    <string name="game_tag_is_null">标记不能为空</string>
+    <string name="game_tag_fail">标记失败</string>
+    <string name="advance_score">高级打点</string>
+    <string name="game_tag_unmark">未标记</string>
+    <string name="game_name_is_null">比赛名称不能为空</string>
+    <string name="game_name_fail">设置比赛名称失败</string>
+    <string name="custom_dot_type">自定义打点</string>
+    <string name="custom_dot_type_full_title">自定义数量已满</string>
+    <string name="custom_dot_type_full_message">请选择删除后再次添加自定义打点</string>
+    <string name="state_detail">打点详情</string>
+    <string name="view_goal">只看进球</string>
+    <string name="all_state">全部</string>
+    <string name="host_team_state">主队</string>
+    <string name="guest_team_state">客队</string>
+    <string name="state_empty">当前是空的～</string>
+    <string name="empty_goal_record">暂无进球记录</string>
+    <string name="empty_date">暂无数据</string>
+    <string name="clear_data">清空数据</string>
+    <string name="clear_data_confirm_message">确定要清空所有操作数据？</string>
+    <string name="clear_data_fail">清空数据失败</string>
+    <string name="info_no_complete_info">无比赛id，请退出重试</string>
+
+    <string-array name="stat_type_list">
+        <item>进球</item>
+        <item>射门</item>
+        <item>扑救</item>
+        <item>点球</item>
+        <item>任意球</item>
+        <item>角球</item>
+        <item>过人</item>
+        <item>犯规</item>
+    </string-array>
+
+    <string-array name="game_tag_list">
+        <item>未开始比赛</item>
+        <item>上半场（第一节）</item>
+        <item>中场</item>
+        <item>下半场（第二节）</item>
+        <item>第三节</item>
+        <item>加时赛</item>
+        <item>完场</item>
+    </string-array>
+
+    <string name="setting_select_camera_label">当前相机：</string>
+    <string name="camera_name">相机名称</string>
+
+    <string name="upgrade">升级</string>
+    <string name="setting_ota_title">相机升级</string>
+    <string name="setting_ota_upgrade_content">更新内容</string>
+    <string name="setting_ota_upgrade_hint">请保持相机电源连接，或保证70%以上相机电量</string>
+    <string name="setting_ota_upgrade_install_hint_title">注意事项</string>
+
+    <string name="setting_ota_camera_network_exception">切换到wifi或者有线网络,再进行OTA升级</string>
+    <string name="setting_ota_camera_network_exception_special">切换到可用网络,再进行OTA升级</string>
+    <string name="setting_ota_camera_network_sim_tip">相机处于移动网络，升级会消耗流量</string>
+
+    <string name="setting_ota_title_found_new_ota_version">发现新版本</string>
+    <string name="setting_ota_title_download">发现新版本</string>
+    <string name="setting_ota_title_download_fail">下载失败</string>
+    <string name="setting_ota_title_upgrade">升级新版本</string>
+    <string name="setting_ota_title_upgrading">正在升级</string>
+    <string name="setting_ota_title_upgrade_complete">相机重启</string>
+    <string name="setting_ota_title_upgrade_fail">升级失败</string>
+    <string name="setting_ota_title_energy_low">电量过低</string>
+    <string name="setting_ota_btn_upgrade_start">开始升级</string>
+    <string name="setting_ota_btn_camera_reboot">相机重启</string>
+    <string name="setting_ota_btn_download_ota">下载固件</string>
+
+    <string name="ota_version_upgrade">相机版本升级</string>
+    <string name="ota_download_img">下载固件</string>
+    <string name="ota_title_download_img">下载固件</string>
+    <string name="ota_upgrade_hint">请保持相机电源连接或者70%以上相机电量</string>
+    <string name="ota_upgrade_next">下次升级 >></string>
+    <string name="ota_upgrade_exit">退出升级 >></string>
+    <string name="ota_system_upgrade">系统升级</string>
+
+    <string name="ota_download_progress">已下载 %1$d%%</string>
+    <string name="ota_upgrade_progress">已升级 %1$d%%</string>
+    <string name="ota_upgrade_to_version">固件已成功升级到v%1$s</string>
+
+    <string name="loading_ota_upgrade_reboot">相机正在升级重启</string>
+
+    <string name="ota_upgrade_low_energy_title">电量过低</string>
+    <string name="ota_upgrade_low_energy_content">请保持相机电源连接或者70%以上相机电量</string>
+    <string name="ota_upgrade_low_energy_btn">确定</string>
+
+    <string name="ota_download_fail_title">下载失败</string>
+    <string name="ota_download_fail_content">保持相机外部网络连接</string>
+    <string name="ota_download_fail_btn">下载固件</string>
+
+    <string name="ota_downloading_title">升级固件下载中</string>
+    <string name="ota_downloading_content">保持相机外部网络连接</string>
+
+    <string name="ota_upgrade_install_right_now">即将为您开始升级相机固件</string>
+    <string name="ota_upgrade_install_begin">开始升级</string>
+    <string name="ota_upgrade_installing_title">相机固件升级中</string>
+    <string name="ota_upgrade_installing_content">升级完成后将自动为您重启相机\n请稍后重新连接使用相机</string>
+    <string name="ota_upgrade_install_suc_title">升级完成</string>
+    <string name="ota_upgrade_install_suc_content">相机固件已经升级到%1$s版本</string>
+    <string name="ota_upgrade_install_suc_btn">确定</string>
+
+    <string name="ota_upgrade_install_fail_title">升级失败</string>
+    <string name="ota_upgrade_install_fail_btn">确定</string>
+    <string name="ota_upgrade_install_fail">安装失败</string>
+
+    <string name="ota_upgrade_install_hint_title">升级注意事项</string>
+    <string name="ota_upgrade_install_hint_btn">确定</string>
+    <string name="ota_upgrade_install_hint_content">1.升级前请保持相机网络连接\n2.升级前请确保相机剩余电量大于70%\n3.升级过程中为确保您及时获得相机固件升级的进度，请尽量不要退出app\n4.升级开始后不可中止，升级过程中相机无法使用，请您合理安排升级时间</string>
+
+    <string name="error_network_error">手机网络不通，请检查网络再试</string>
+    <string name="error_camera_softap_network_error">相机预览失败，请检查相机和网络是否正常</string>
+    <string name="error_camera_network_error">相机热点网络异常</string>
+
+    <string name="info_switch_avalible_network_for_camera_softap">当前处于相机热点，请切换到可用的网络</string>
+    <string name="info_switch_avalible_network">当前网络不通，请切换到可用的网络</string>
+
+    <string name="without_network">无网络</string>
+    <string name="info_camera_without_network">相机暂无网络</string>
+    <string name="info_camera_version_is_latest">相机版本已是最新</string>
+    <string name="ota_checking_camera">正在检查相机升级信息</string>
+    <string name="ota_check_timeout">检查相机升级信息超时，请稍后重试</string>
+    <string name="ota_camera_offer_mismatch">相机升级信息与服务器不一致，请重启相机后重试</string>
+
+    <string name="loading_open_auto_load">正在设置自动上传</string>
+    <string name="loading_close_auto_load">正在关闭自动上传</string>
+
+    <string name="loading_open_record_audio">正在开启录制音频</string>
+    <string name="loading_close_record_audio">正在关闭录制音频</string>
+
+    <string name="loading_open_live_audio">正在开启推流音频</string>
+    <string name="loading_close_live_audio">正在关闭推流音频</string>
+
+    <string name="loading_restart_rkipc">正在重启相机程序</string>
+    <string name="loading_start_rkipc">正在启动相机程序</string>
+    <string name="loading_reboot">正在重启...</string>
+    <string name="loading_install_suc">升级完成</string>
+
+    <string name="title_download_file">下载到手机</string>
+    <string name="label_download_file_size">下载文件大小：</string>
+    <string name="label_download_speed_rate">下载速率： </string>
+    <string name="label_download_time">预估还需时间:  </string>
+    <string name="label_download_connecting">正在连接:  </string>
+    <string name="select_video_files_number">选择%1$d个视频</string>
+    <string name="title_delete_select_video">删除选中视频</string>
+    <string name="loading_deleting">正在删除...</string>
+    <string name="delete_competition_info_title">是否清除比赛信息</string>
+    <string name="loading_deleting_video_folder">正在删除比赛数据...</string>
+    <string name="no_transfer_data">没有传输任务</string>
+    <string name="download_complete">下载完成</string>
+    <string name="download_cancel">取消下载</string>
+    <string name="no_info">暂无信息</string>
+
+    <string name="video_clip_title_help">提示</string>
+    <string name="video_clip_content">相机内有未剪辑的视频，剪辑后可查看视频</string>
+    <string name="video_clip_btn_clip">开始剪辑</string>
+    <string name="check_live_status">正在检查直播状态</string>
+    <string name="watermark_config">水印设置</string>
+    <string name="reset_watermark_config">清空水印设置</string>
+    <string name="reset_watermark">清空水印</string>
+    <string name="info_confirm_reset_watermark">清空后将恢复默认无水印状态</string>
+    <string name="edit_match_name">编辑赛事名称</string>
+    <string name="input_match_name">输入赛事名称</string>
+    <string name="add_sponsor">添加冠名商</string>
+    <string name="watermark_size_suggestion">建议上传图片尺寸110*39px</string>
+    <string name="hide_obs_score">隐藏比分栏</string>
+    <string name="upload_picture">上传图片</string>
+    <string name="info_record_stopped_on_low_storage">内存不足, 已为您停止录制</string>
+    <string name="campaign_name">赛事名称</string>
+    <string name="game_name">比赛名称</string>
+    <string name="show_score">显示比分</string>
+    <string name="show_team_name">显示队伍名称</string>
+    <string name="training_mode">训练模式</string>
+    <string name="stop_auto_upload_during_recording">录制过程中暂停相机视频上传</string>
+    <string name="stop_auto_upload_during_live">直播过程中暂停相机视频上传</string>
+    <string name="manage_later">下次管理</string>
+
+    <string name="network_error_socket_timeout">网络连接异常</string>
+    <string name="audio_settings">声音设置</string>
+    <string name="record_audio_off">录制时静音</string>
+    <string name="record_audio_on">录制时打开声音</string>
+    <string name="live_audio_off">直播时静音</string>
+    <string name="live_audio_on">直播时打开声音</string>
+    <string name="setting_audio_volume">正在设置音量</string>
+    <string name="hint_bigger_number_higher_volume">提示: 数值越大, 声音越大</string>
+    <string name="live_password">直播密码</string>
+    <string name="set_live_password">设置直播密码</string>
+    <string name="input_live_password">输入直播密码</string>
+    <string name="info_live_password_is_empty">直播密码不能为空</string>
+    <string name="hint_live_password">*设置成功后所有直播都需要密码观看</string>
+    <string name="thumbnail">缩略图</string>
+    <string name="upload">上传</string>
+    <string name="download">下载</string>
+    <string name="wait">等待</string>
+    <string name="pause">暂停</string>
+    <string name="stop_upload">停止上传</string>
+    <string name="stop_download">停止下载</string>
+    <string name="video_settings">视频设置</string>
+    <string name="auto_upload">录制视频自动上传</string>
+    <string name="check_upload_file_status">正在同步相机的上传文件状态</string>
+    <string name="enable_avs">全景视频录制</string>
+    <string name="auto_upload_avs">全景视频自动上传</string>
+    <string name="video_analysis">视频数据分析模式</string>
+    <string name="avs_video_mbr">全景视频码率</string>
+    <string name="avs_video_resolution">全景视频分辨率</string>
+    <string name="stop_auto_upload_during_access_camera_video">访问相机视频过程中暂停视频上传</string>
+    <string name="xqm_hint">请前往“小球迷助手”创建比赛\n创建成功后在比赛右下方点击“···”\n复制推流地址到上方</string>
+    <string name="third_platform">第三方平台</string>
+    <string name="will_disselect_3rd_platform">选择内置平台将会取消\"第三方平台\", 是否继续?</string>
+    <string name="update">更新</string>
+    <string name="wx_live_url_expired_need_update">微信视频号推流地址已过期, 需要更新推流地址, 是否继续?</string>
+    <string name="dy_live_url_expired_need_update">抖音直播伴侣推流地址已过期, 需要更新推流地址, 是否继续?</string>
+    <string name="cover_description_default">默认封面\n推荐尺寸: 1080*1260</string>
+    <string name="cover_description_custom">视频号封面比例为6:7\n推荐尺寸为1080px*1260px\n请合理设置您的封面</string>
+
+
+    <string name="scan_title">扫描主板二维码</string>
+    <string name="scan_tip">扫描热我相机二维码建立连接</string>
+    <string name="scan_error_camera_open_error">打开相机失败</string>
+    <string name="scan_error_camera_no_permission">无相机权限</string>
+    <string name="brightness">亮度</string>
+    <string name="isp_settings">画面设置</string>
+    <string name="config_scale">画面自动缩放</string>
+
+    <string name="video_upload">视频上传</string>
+    <string name="video_upload_avs">全景视频</string>
+    <string name="video_upload_record">录制视频</string>
+    <string name="video_upload_ai">打点视频剪辑</string>
+    <string name="video_upload_ing">视频正在上传</string>
+    <string name="connect_network">连接网络</string>
+    <string name="video_upload_connect_workd_tip">进行视频上传需连接外部网络</string>
+    <string name="video_upload_finish">上传完成</string>
+    <string name="video_upload_no_data">相机内无比赛视频</string>
+    <string name="video_upload_stop_recording">录制过程中无法上传视频</string>
+    <string name="video_upload_stop_living">直播过程中无法上传视频</string>
+    <string name="video_upload_sync_status">正在同步相机状态，请稍后再试</string>
+    <string name="video_upload_without_clip_content">相机内无未剪辑的视频</string>
+    <string name="video_upload_error_title">部分视频剪辑失败，是否重新剪辑</string>
+    <string name="video_upload_error_message">部分视频剪辑失败，是否重新剪辑</string>
+    <string name="video_uploading">视频上传中</string>
+
+    <string name="dot">打点</string>
+    <string name="view_dot">查看点位</string>
+    <string name="add_dot_fail">添加打点失败</string>
+    <string name="add_dot_success">添加打点成功</string>
+    <string name="remove_dot_fail">删除失败</string>
+    <string name="please_setup_game_stage">请选择当前比赛阶段</string>
+    <string name="info_add_completement_mark_fail">添加比赛标记失败</string>
+    <string name="info_sync_mark_info_success">同步标记信息成功</string>
+    <string name="info_sync_dot_info_success">同步打点信息成功</string>
+
+    <string name="update_fail">更新失败</string>
+
+    <string name="apn_setting">APN设置</string>
+
+    <string name="apn_setting_imei_label">IMEI号</string>
+    <string name="apn_setting_apn_label">APN名称</string>
+    <string name="apn_setting_info_apn_name_empty">请输入apn名称</string>
+    <string name="apn_setting_apn_hint_input_sms">请咨询移动网络服务提供商获取</string>
+    <string name="apn_setting_btn_setting">设置APN</string>
+
+    <string name="copy">复制</string>
+    <string name="copied">复制成功</string>
+
+    <string name="phone_storage">手机存储</string>
+    <string name="cloud_storage">云存储</string>
+    <string name="camera_storage">相机存储</string>
+
+    <string name="video_category_all">全部</string>
+    <string name="video_category_top">精彩视频</string>
+    <string name="video_category_playback">全场回放</string>
+    <string name="video_empty">当前没有视频</string>
+    <string name="video_empty_on_category">没有该类型的视频</string>
+
+    <string name="no_file_transfer">当前没有视频传输</string>
+
+    <string name="camera_test">相机测试</string>
+
+    <string name="camera_scale_function">镜头自动缩放功能</string>
+    <string name="camera_scale_parameter">缩放矩阵参数设置</string>
+    <string name="camera_scale_recovery_default">恢复缺省值</string>
+
+    <string name="pay_in_app">应用内支付</string>
+    <string name="product_name">商品名称</string>
+    <string name="pay_amount">支付金额</string>
+    <string name="select_pay_method">选择支付方式</string>
+    <string name="alipay">支付宝</string>
+    <string name="wechat_pay">微信支付</string>
+    <string name="pay_ok">确认开通</string>
+    <string name="pay_server">套餐相关问题请联系热我客服：18601042108</string>
+    <string name="no_meal">未购买套餐</string>
+
+    <string name="submit">提交</string>
+    <string name="scan_open_torch">打开手电</string>
+    <string name="scan_close_torch">关闭手电</string>
+    <string name="wechat_account">微信号</string>
+    <string name="contact_phone_number">联系电话</string>
+    <string name="office_address">办公地址</string>
+
+    <string name="competition_time_label">比赛时间：</string>
+    <string name="competition_name_label">比赛名称：</string>
+    <string name="motion_type_label">运动类型：</string>
+    <string name="venue_label">场馆名称：</string>
+    <string name="site_type_label">场地类型：</string>
+    <string name="host_name_label">主队名称：</string>
+    <string name="guest_name_label">客队名称：</string>
+    <string name="session">场</string>
+    <string name="times">次</string>
+    <string name="add">添加</string>
+    <string name="delete">删除</string>
+    <string name="purchase">购买</string>
+
+    <string name="find_new_version">发现新版本</string>
+    <string name="right_now_update">立即更新</string>
+
+    <string name="competition_record">比赛录制</string>
+    <string name="competition_live">赛事直播</string>
+    <string name="big_data">大数据</string>
+    <string name="rewoo_big_data">热我大数据</string>
+    <string name="service_unlimit_yimdc">不限次比赛录制+YiMdc视频工具热我版</string>
+    <string name="service_unlimit_yimdc_btn">不限次,YiMdc</string>
+    <string name="force_live">狠心离开</string>
+    <string name="right_now_purchase">立即购买</string>
+    <string name="purchase_time_label">购买时间：</string>
+    <string name="purchase_type_label">支付方式：</string>
+    <string name="expired_time_label">会员到期时间：</string>
+    <string name="date">日期</string>
+
+    <string name="record_remain_number_label">比赛录制剩余：</string>
+    <string name="cloud_storage_remain_number_label">云存储剩余：</string>
+    <string name="live_remain_number_label">赛事直播剩余：</string>
+    <string name="expired_annual_vip">年费套餐已过期</string>
+    <string name="info_purchase_meal">请购买套餐</string>
+    <string name="info_uses_exhausted_package">套餐内使用次数已耗尽</string>
+    <string name="unlimited_time">不限场次</string>
+    <string name="unlimited_duration">不限期</string>
+
+    <string name="motion_site_type_select">选择运动场地类型</string>
+
+    <string name="disable">功能不可用</string>
+    <string name="server_disable_content">你当前服务已消耗完，暂不能使用。请您前往升级或购买次卡包使用。</string>
+
+    <string name="share">分享</string>
+    <string name="share_to_wechat">分享给微信</string>
+    <string name="wechat">微信</string>
+    <string name="wechat_moment">朋友圈</string>
+    <string name="copy_url">复制链接</string>
+    <string name="share_qcode">生成二维码</string>
+
+    <string name="info_select_wechat_file">请选择要分享的文件</string>
+    <string name="info_only_support_single_file">不支持同时分享多个文件</string>
+
+    <string name="no_record">暂无使用记录</string>
+    <string name="rewoo_gift">热我大礼包</string>
+    <string name="pro_service">PRO服务</string>
+    <string name="base_service">基础服务</string>
+    <string name="counts_gift_package">次卡包</string>
+    <string name="record_package">录制大礼包</string>
+    <string name="info_start_pay">正在启动支付……</string>
+    <string name="pro_version">PRO版</string>
+    <string name="base_version">移动基础版</string>
+    <string name="fix_version">固定商用版</string>
+    <string name="upgrade_pro_version">升级PRO套餐</string>
+    <string name="live_counts_gift_package">直播次卡包</string>
+    <string name="rewoo_camera_package">热我相机套餐</string>
+    <string name="live_duration_hours">小时直播时长</string>
+    <string name="video_storage_free_30days">直播回放免费存储30天</string>
+    <string name="coming_soon">敬请期待</string>
+    <string name="price_per_year">元/年</string>
+    <string name="hour">小时</string>
+    <string name="device_invalid">当前设备无效</string>
+    <string name="upload_Choose_device_cloud_storage_insufficient">上传选择的设备云存储空间不足</string>
+    <string name="cloud_storage_insufficient">云存储空间不足</string>
+    <string name="cloud_storage_insufficient_desc">无法上传您的视频到云存储。升级云存储空间，以继续备份您的视频。</string>
+    <string name="close_auto_upload">关闭自动上传</string>
+    <string name="cloud_storage_insufficient_autoupload">检索到您已开启视频自动上传，云存储空间不足，无法上传您的视频到云存储。\n升级云存储空间，以继续备份您的视频。</string>
+
+    <string name="live_count_exhausted">套餐内直播次数已耗尽</string>
+    <string name="live_count_exhausted_desc">请购买直播时长</string>
+    <string name="live_count_exhausted_desc_price">赛事直播30元/小时</string>
+
+
+    <string name="device_name">设备名称</string>
+    <string name="search_device_hint">请输入设备名称搜索</string>
+    <string name="info_input_content_is_empty">输入内容不能为空</string>
+    <string name="info_local_update_success">本地更新成功</string>
+    <string name="info_server_config_null">相机配置数据错误</string>
+    <string name="info_use_default_value_because_of_server_config_null">未同步到码率配置，将使用缺省配置</string>
+    <string name="avs_mbr">avs码率</string>
+    <string name="fec_mbr">fec码率</string>
+    <string name="live_mbr">推流码率</string>
+
+    <string name="info_please_connect_device">请选择相机</string>
+    <string name="info_please_bind_device">请添加相机</string>
+    <string name="info_rkipc_not_lunched">RKIPC未启动</string>
+    <string name="info_live_url_empty">请输入rtmp地址</string>
+
+    <string name="info_download_path_null">下载路径为空</string>
+    <string name="info_audio_record_starting">录音开始</string>
+    <string name="info_audio_record_end">录音已结束</string>
+    <string name="info_excute_exception">相机请求执行失败</string>
+    <string name="info_record_audio_file">请先录制音频文件</string>
+
+    <string name="info_insert_cable_line_retry_it">请插入网线, 然后重试</string>
+    <string name="info_insert_card_reboot_device">请插入4G上网卡，插卡后重启相机或关机插卡再开机</string>
+    <string name="info_input_loop_times">请输入循环次数</string>
+    <string name="info_input_run_duration">请输入单次运行时长，单位秒，如1800，即30分钟</string>
+
+    <string name="dialog_camera_network_title">相机未配置网络</string>
+    <string name="dialog_camera_network_message">请重新配置网络</string>
+    <string name="dialog_turn_off_video_analysis_message">关掉此功能将同步关闭\n视频数据分析模式</string>
+
+    <string name="dialog_pause_download_message">已下载的视频可在本地查看，未完成的视频将停止下载</string>
+    <string name="dialog_device_connect_interrupt">设备连接中断</string>
+    <string name="dialog_device_connect_interrupt_message">请重新连接设备继续传输视频</string>
+    <string name="reconnect">重新连接</string>
+    <string name="mbr_setting">码率设置</string>
+
+
+    <string name="dialog_connect_network_to_sync_dot_info">连接外部网络，同步打点数据</string>
+    <string name="dialog_sync_point_info_to_server">同步打点数据到服务器</string>
+
+    <string name="dialog_cancel_upload_title">取消上传</string>
+    <string name="dialog_cancel_upload_message">取消后，再次上传将重新开始上传</string>
+
+    <string name="dialog_cancel_download_title">取消下载</string>
+    <string name="dialog_cancel_download_message">取消后，再次下载将重新开始下载</string>
+
+    <string name="framework_is_latest">固件已是最新版本！</string>
+    <string name="get_obs_server_info_fail">获取上传服务器信息失败</string>
+
+
+    <string name="info_dot_stopped_on_low_storage">内存不足, 已为您停止录制, 退出当前打点页面</string>
+
+    <string name="upload_file_to_server">上传到服务器</string>
+    <string name="uploaded_file_to_server">已上传到服务器</string>
+    <string name="reupload_to_server">继续上传</string>
+    <string name="video_already_upload_please_select_other_videos">您选择的视频已上传,\n请选择其他视频进行上传</string>
+    <string name="video_already_upload_continue_upload_other_videos">检索到您上传的部分视频服务器已存在，将继续为您上传其他视频</string>
+    <string name="video_download_unfinished_please_download_again">比赛未下载完成，请重新下载</string>
+
+    <string name="ai_analyse">AI分析</string>
+    <string name="ai_analyse_again">重新AI分析</string>
+    <string name="ai_analyse_status_un_start">未进行AI分析</string>
+    <string name="ai_analyse_status_queue">等待分析</string>
+    <string name="ai_analyse_status_processing">AI分析中</string>
+    <string name="ai_analyse_status_processe_ok">AI分析成功</string>
+    <string name="ai_analyse_status_processe_fail">AI分析失败</string>
+    <string name="ai_analyse_status_processe_fail_reason">由于条件不满足，无法进行AI分析</string>
+
+
+    <string name="local_model">本地模式</string>
+    <string name="remote_model">远程模式</string>
+
+
+
+    <string name="phone_no_network_title">手机暂无网络</string>
+    <string name="phone_no_network_message">请连接外部网络后再试</string>
+    <string name="phone_no_network_message_connnect_weewa">手机还连着相机热点，请切换到外部网络再试</string>
+
+    <string name="remote_model_add_device_fail">请切换到本地模式添加设备</string>
+    <string name="remote_model_no_network_title">暂无网络</string>
+    <string name="remote_model_no_network_message">请连接外部网络后再试</string>
+    <string name="remote_model_forbid">远程模式下该功能被关闭</string>
+    <string name="remote_model_offline_title">相机未开机</string>
+    <string name="remote_model_offline_message">请联系工作人员开启相机</string>
+    <string name="remote_model_switch_model">模式切换</string>
+    <string name="remote_model_switch_model_message_local">点击切换到本地模式</string>
+    <string name="remote_model_switch_model_message_remote">点击切换到远程模式</string>
+    <string name="remote_model_switch">切换</string>
+    <string name="remote_model_switch_local">切换本地模式</string>
+    <string name="remote_model_switch_remote">切换远程模式</string>
+    <string name="info_network_disconnect">手机网络已断开，请连接后重试</string>
+    <string name="info_ready_to_record">录制就绪中......</string>
+
+    <string name="remote_model_switch_model_video_download_message">相机内视频仅支持本地模式下载，点击切换本地模式</string>
+
+    <string name="info_camera_send_sms_fail_without_network">请为相机配置网络后再试</string>
+
+    <string name="dialog_download_exception_title">下载异常提醒</string>
+    <string name="dialog_download_exception_msg_no_enough_space">手机存储空间不足，无法继续下载，请清理手机垃圾后再次尝试下载。</string>
+    <string name="dialog_download_exception_msg_without_soft_ap">请保持相机连接</string>
+    <string name="dialog_download_exception_msg_video_downloading">当前有视频正在下载中</string>
+
+    <string name="error_record_info_empty">录制信息为空，请退出重新进入比分控制中心</string>
+
+    <string name="purchase_history_list_empty">暂无购买记录</string>
+
+
+    <string name="server_error_http_response_null">服务器响应为空</string>
+    <string name="server_error_http_response_body_null">服务器响应body为空</string>
+    <string name="server_error_http_response_json_exception">数据解析异常</string>
+    <string name="server_error_http_response_other_error">内部错误</string>
+    <string name="server_error_http_connect_reset">网络连接重置，请检查网络</string>
+
+
+    <!-- 添加以下字符串资源 -->
+    <string name="ethernet_setting">有线网络设置</string>
+    <string name="ethernet_not_connected">未检测到有线网络连接</string>
+    <string name="network_mode">网络模式</string>
+    <string name="dhcp_mode">DHCP动态获取</string>
+    <string name="static_ip_mode">手动设置</string>
+    <string name="ip_address">IP地址</string>
+    <string name="subnet_mask">子网掩码</string>
+    <string name="gateway">网关</string>
+    <string name="dns">DNS服务器</string>
+    <string name="please_input_all_fields">请填写所有字段</string>
+    <string name="invalid_ip_format">IP地址格式不正确</string>
+    <string name="setting_dhcp_mode">正在设置DHCP模式...</string>
+    <string name="setting_static_ip_mode">正在设置静态IP...</string>
+    <string name="ethernet_setting_save">保存</string>
+    <string name="dhcp_mode_set_success">DHCP模式设置成功</string>
+    <string name="dhcp_mode_set_fail">DHCP模式设置失败</string>
+    <string name="static_ip_set_success">静态IP设置成功</string>
+    <string name="static_ip_set_fail">静态IP设置失败</string>
+
+    <string name="ota_update_description_unavailable">更新说明暂不可用</string>
+    <string name="batch_manage">管理</string>
+    <string name="batch_select_all">全选</string>
+    <string name="batch_unselect_all">取消全选</string>
+    <string name="batch_select_day">选择当天</string>
+    <string name="batch_unselect_day">取消当天</string>
+    <string name="batch_match_count">共 %1$d 场比赛</string>
+    <string name="batch_selected_count">已选 %1$d 场比赛</string>
+    <string name="batch_delete_count">删除（%1$d）</string>
+    <string name="batch_delete_confirm">删除 %1$d 场比赛？</string>
+    <string name="batch_delete_warning">将删除所选比赛在相机中的全部视频、缩略图和比赛资料。\n\n删除后无法恢复。\n手机和云端已有副本保留。</string>
+    <string name="batch_delete_action">删除 %1$d 场</string>
+    <string name="batch_delete_progress">正在删除比赛</string>
+    <string name="batch_delete_keep_connected">请保持与相机连接</string>
+    <string name="batch_delete_stop">停止后续删除</string>
+    <string name="batch_delete_stopping">正在完成当前比赛…</string>
+    <string name="batch_delete_result">删除结果</string>
+    <string name="batch_delete_retry">重试失败项</string>
+    <string name="batch_delete_verify">核对相机列表</string>
+    <string name="batch_delete_upgrade">请升级相机固件后使用批量删除；当前仍可进入比赛详情单独删除。</string>
+    <string name="batch_delete_switch_blocked">正在删除比赛，请先停止后续删除。</string>
+    <string name="batch_delete_finished">完成</string>
+    <string name="batch_video_counts">视频 %1$d 段 · 全场 %2$d · 集锦 %3$d</string>
+    <string name="unattended_title">无人值守</string>
+    <string name="unattended_record_hint">开启后，APP在开始时间到达后启动录制，每30秒检查状态并在失败或中断后重试，到结束时间停止。请保持APP运行及相机连接。</string>
+    <string name="local_record_start_time">开始时间</string>
+    <string name="local_record_end_time">结束时间</string>
+    <string name="local_record_start_default">可选，默认点击时的当前时间</string>
+    <string name="local_record_end_default">可选，默认开始时间后2小时</string>
+    <string name="local_record_clear_time">清除</string>
+    <string name="local_record_invalid_window">结束时间必须晚于开始时间</string>
+    <string name="local_record_window_expired">结束时间已过，请重新选择时间</string>
+    <string name="local_record_scheduled">无人值守任务已保存，将在设定时间内自动录制</string>
+    <string name="unattended_waiting_countdown">等待开始录制 · %1$s</string>
+    <string name="unattended_waiting_button">等待录制</string>
+    <string name="unattended_remote_record_hint">开启后由平台按比赛时间维护录制，中断且相机恢复在线后自动重试。请保持相机联网。</string>
+    <string name="unattended_live_hint">开启后由平台按比赛时间自动开始直播，中断且相机恢复在线后自动重试，并在比赛结束前30秒发起停止请求。请保持相机联网。</string>
+    <string name="unattended_saved">无人值守任务已保存，由平台自动开始和结束直播</string>
+</resources>

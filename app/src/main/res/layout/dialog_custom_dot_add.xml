@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sh_r10_ff"
+    android:minHeight="164dp"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/custom_dot_type"
+        android:textColor="@color/text_black_3D"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/etGameTag"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/sh_r10_eeeeee"
+        android:gravity="center"
+        android:hint="自定义，最大长度是4"
+        android:textColorHint="@color/text_lowgray"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textSize="18sp"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        tools:text="08:36" />
+
+
+    <TextView
+        android:id="@+id/tvConfirm"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/sh_r10_f16c2f"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:textColor="#ffFFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/tvCancel"
+        app:layout_constraintTop_toBottomOf="@id/etGameTag" />
+
+    <TextView
+        android:id="@+id/tvCancel"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/sh_r10_f4f4f4"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="#ff767676"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/tvConfirm"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etGameTag" />
+</androidx.constraintlayout.widget.ConstraintLayout>

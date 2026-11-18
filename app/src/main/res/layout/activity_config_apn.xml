@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/common_include_header" />
+
+    <View
+        android:id="@+id/title_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="33dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/apn_setting_imei_label"
+            android:textColor="@color/text_black_3D"
+            android:textFontWeight="500"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_imei_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/apn_setting_imei_label"
+                android:textColor="@color/text_lowgray"
+                android:textFontWeight="500"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_imei_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical|end"
+                android:background="@drawable/bg_f16c2f_raduis30"
+                android:gravity="center"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:text="@string/copy"
+                android:textColor="@color/white"
+                android:textFontWeight="500"
+                android:textSize="12sp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:text="@string/apn_setting_apn_label"
+            android:textColor="@color/text_black_3D"
+            android:textFontWeight="500"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_apn_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_f1f1f1_raduis15"
+            android:hint="@string/apn_setting_apn_hint_input_sms"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/login_dialog_edit_hint"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/btn_apn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/login_btn_background"
+            android:gravity="center"
+            android:text="@string/apn_setting_btn_setting"
+            android:textColor="@color/white"
+            android:textFontWeight="400"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

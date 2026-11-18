@@ -1,0 +1,250 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_score_conter_super">
+
+    <LinearLayout
+        android:id="@+id/layout_second"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e61D1D1D"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <View
+            android:id="@+id/view_second_bg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:id="@+id/secondHostTable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:divider="@drawable/tablelayout_divider">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/second_cell_host_0"
+                        style="@style/ScoreCenterHostTabButton"
+                        tools:text="进球" />
+
+                    <TextView
+                        android:id="@+id/second_cell_host_1"
+                        style="@style/ScoreCenterHostTabButton"
+                        android:text=""
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/second_cell_host_2"
+                        style="@style/ScoreCenterHostTabButton"
+                        android:text=""
+                        android:visibility="invisible"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/second_cell_host_3"
+                        style="@style/ScoreCenterHostTabButton"
+                        android:text=""
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/second_cell_host_4"
+                        style="@style/ScoreCenterHostTabButton"
+                        tools:text="射门" />
+
+                    <TextView
+                        android:id="@+id/second_cell_host_5"
+                        style="@style/ScoreCenterHostTabButton"
+                        tools:text="犯规" />
+
+                    <TextView
+                        android:id="@+id/second_cell_host_6"
+                        style="@style/ScoreCenterHostTabButton"
+                        tools:text="角球" />
+
+                    <TextView
+                        android:id="@+id/second_cell_host_7"
+                        style="@style/ScoreCenterHostTabButton"
+                        tools:text="换人" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/second_cell_host_8"
+                        style="@style/ScoreCenterHostTabButton"
+                        tools:text="控球" />
+
+                    <TextView
+                        android:id="@+id/second_cell_host_9"
+                        style="@style/ScoreCenterHostTabButton"
+                        tools:text="传球" />
+
+                    <TextView
+                        android:id="@+id/second_cell_host_10"
+                        style="@style/ScoreCenterHostTabButton"
+                        tools:text="进攻" />
+
+                    <TextView
+                        android:id="@+id/second_cell_host_11"
+                        style="@style/ScoreCenterHostTabButton"
+                        tools:text="防守" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/second_cell_host_12"
+                        style="@style/ScoreCenterHostTabButton"
+                        tools:text="控球" />
+
+                    <TextView
+                        android:id="@+id/second_cell_host_13"
+                        style="@style/ScoreCenterHostTabButton"
+                        tools:text="传球" />
+
+                    <TextView
+                        android:id="@+id/second_cell_host_14"
+                        style="@style/ScoreCenterHostTabButton"
+                        tools:text="进攻" />
+
+                    <TextView
+                        android:id="@+id/second_cell_host_15"
+                        style="@style/ScoreCenterHostTabButton"
+                        tools:text="防守" />
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <TableLayout
+                android:id="@+id/second_guestTable"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/second_cell_guest_0"
+                        style="@style/ScoreCenterGuestTabButton"
+                        android:visibility="invisible"
+                        tools:text=""
+                        tools:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/second_cell_guest_1"
+                        style="@style/ScoreCenterGuestTabButton"
+                        android:visibility="invisible"
+                        tools:text="" />
+
+                    <TextView
+                        android:id="@+id/second_cell_guest_2"
+                        style="@style/ScoreCenterGuestTabButton"
+                        android:text=""
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+
+                    <TextView
+                        android:id="@+id/second_cell_guest_3"
+                        style="@style/ScoreCenterGuestTabButton"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/second_cell_guest_4"
+                        style="@style/ScoreCenterGuestTabButton"
+                        tools:text="进球" />
+
+                    <TextView
+                        android:id="@+id/second_cell_guest_5"
+                        style="@style/ScoreCenterGuestTabButton"
+                        tools:text="换人" />
+
+                    <TextView
+                        android:id="@+id/second_cell_guest_6"
+                        style="@style/ScoreCenterGuestTabButton"
+                        tools:text="角球" />
+
+                    <TextView
+                        android:id="@+id/second_cell_guest_7"
+                        style="@style/ScoreCenterGuestTabButton"
+                        tools:text="犯规" />
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/second_cell_guest_8"
+                        style="@style/ScoreCenterGuestTabButton"
+                        tools:text="射门" />
+
+                    <TextView
+                        android:id="@+id/second_cell_guest_9"
+                        style="@style/ScoreCenterGuestTabButton"
+                        tools:text="防守" />
+
+                    <TextView
+                        android:id="@+id/second_cell_guest_10"
+                        style="@style/ScoreCenterGuestTabButton"
+                        tools:text="进攻" />
+
+                    <TextView
+                        android:id="@+id/second_cell_guest_11"
+                        style="@style/ScoreCenterGuestTabButton"
+                        tools:text="传球" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/second_cell_guest_12"
+                        style="@style/ScoreCenterGuestTabButton"
+                        tools:text="射门" />
+
+                    <TextView
+                        android:id="@+id/second_cell_guest_13"
+                        style="@style/ScoreCenterGuestTabButton"
+                        tools:text="防守" />
+
+                    <TextView
+                        android:id="@+id/second_cell_guest_14"
+                        style="@style/ScoreCenterGuestTabButton"
+                        tools:text="进攻" />
+
+                    <TextView
+                        android:id="@+id/second_cell_guest_15"
+                        style="@style/ScoreCenterGuestTabButton"
+                        tools:text="传球" />
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

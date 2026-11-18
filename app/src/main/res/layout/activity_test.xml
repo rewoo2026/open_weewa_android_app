@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".test.TestActivity">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/common_include_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/software_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/firmware_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/device_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/model_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_imei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_usage_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_network"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="APN"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_apn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:minWidth="200dp"
+                    android:text="gdcyhl03s.gzm2mapn"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_set_apn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="设置APN"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/btn_bluetooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="蓝牙接口测试"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/btn_factory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="出厂测试"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_device_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="设备信息相关测试"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_rtmp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="推流相关测试"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_auto_rkipc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="视频录制测试"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_device_unbind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="设备解绑"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+<!--                btn4GSpeedTest-->
+                <Button
+                    android:id="@+id/btn_4G_speed_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="4G模块测速"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/btn_ethernet_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ethernet_setting" />
+
+                <Button
+                    android:id="@+id/btn_mbr_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="@string/mbr_setting"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+
+                <Button
+                    android:id="@+id/btn_set_device_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="设置设备id"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_ota_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="固件升级"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_upload_log"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="上传log"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+                <Button
+                    android:id="@+id/btn_setting_avs_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="设置标定模式"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <Button
+                    android:id="@+id/btn_video_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="视频参数配置"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+
+                <Button
+                    android:id="@+id/btn_audio_noise_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="音频降噪配置"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_isp_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="ISP参数配置"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:id="@+id/btn_start_usb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="允许usb连接"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_stop_usb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="禁止usb连接"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:id="@+id/btn_log_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="日志设置"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+
+                <Button
+                    android:id="@+id/btn_other_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="其他设置"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="抓多少帧"/>
+
+                <EditText
+                    android:id="@+id/et_raw_count"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp"
+                    android:maxLines="1"
+                    android:minWidth="200dp"
+                    android:text="1"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_take_raw"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="抓Raw图"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:padding="10dp"
+        android:src="@mipmap/common_title_back"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/common_action_bar_height"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/pay_in_app"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@+id/iv_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_name_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/product_name"
+        android:textColor="#767676"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:textColor="#3D3D3D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_name_left"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_name_left"
+        tools:text="（升级）PRO服务" />
+
+
+    <TextView
+        android:id="@+id/tv_money_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/pay_amount"
+        android:textColor="#767676"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_left" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:textColor="#F16C2F"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_money_left"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_money_left"
+        tools:text="¥7000" />
+
+    <TextView
+        android:id="@+id/tv_pay_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/select_pay_method"
+        android:textColor="#767676"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_money_left" />
+
+
+    <View
+        android:id="@+id/view_bg"
+        android:layout_width="0dp"
+        android:layout_height="143dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="13dp"
+        android:background="@mipmap/icon_pay_details_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pay_type" />
+
+
+    <ImageView
+        android:id="@+id/iv_zbf"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/icon_pay_details_zfb"
+        app:layout_constraintLeft_toLeftOf="@+id/view_bg"
+        app:layout_constraintTop_toTopOf="@+id/view_bg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="@string/alipay"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_zbf"
+        app:layout_constraintLeft_toRightOf="@+id/iv_zbf"
+        app:layout_constraintTop_toTopOf="@+id/iv_zbf" />
+
+    <ImageView
+        android:id="@+id/iv_select_zfb"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="34dp"
+        android:padding="5dp"
+        android:src="@mipmap/icon_pay_details_secelt"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_zbf"
+        app:layout_constraintRight_toRightOf="@+id/view_bg"
+        app:layout_constraintTop_toTopOf="@+id/iv_zbf" />
+
+
+
+    <ImageView
+        android:id="@+id/iv_wx"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/icon_pay_details_wx"
+        app:layout_constraintLeft_toLeftOf="@+id/view_bg"
+        app:layout_constraintTop_toBottomOf="@+id/iv_zbf" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="@string/wechat_pay"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_wx"
+        app:layout_constraintLeft_toRightOf="@+id/iv_wx"
+        app:layout_constraintTop_toTopOf="@+id/iv_wx" />
+
+    <ImageView
+        android:id="@+id/iv_select_wx"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="34dp"
+        android:padding="5dp"
+        android:src="@mipmap/icon_pay_details_unsecelt"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_wx"
+        app:layout_constraintRight_toRightOf="@+id/view_bg"
+        app:layout_constraintTop_toTopOf="@+id/iv_wx" />
+
+
+
+    <TextView
+        android:id="@+id/tv_pay"
+        android:layout_width="0dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginEnd="35dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:text="@string/pay_ok"
+        android:background="@drawable/bg_f16c2f_raduis10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="113dp"
+        android:layout_height="60dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

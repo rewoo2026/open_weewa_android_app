@@ -1,0 +1,99 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        // AndroidX core 1.19.1 requires compileSdk 37; runtime support is minSdk.
+        compileSdkVersion = 37
+        buildToolsVersion = "37.0.0"
+        // Android 8.0+. Newer platform APIs must be guarded or backported.
+        minSdkVersion = 26
+        targetSdkVersion = 37
+        kotlin_version = '2.4.20'
+        mpaas_artifact = "mpaas-baseline"
+        mpaas_baseline = "10.2.3-54"
+    }
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri('https://maven.aliyun.com/repository/public/') }
+        maven { url = uri('https://maven.aliyun.com/repository/central') }
+        maven { url = uri('https://maven.aliyun.com/repository/google/') }
+        maven { url = uri('https://repo1.maven.org/maven2/') }
+        maven { url = uri('https://www.jitpack.io') }
+        maven {
+            url = uri('https://mirrors.huaweicloud.com/repository/maven/')
+        }
+        maven {
+            url = uri('https://maven.aliyun.com/nexus/content/groups/public')
+        }
+        maven {
+            url = uri('https://jitpack.io')
+        }
+        mavenCentral()
+        google()
+
+        maven { url = uri('https://repo1.maven.org/maven2/') }
+        maven { url = uri('https://mvnrepository.com/repos/central/') }
+        maven { url = uri('https://plugins.gradle.org/m2/') }
+        maven { url = uri('https://oss.sonatype.org/content/repositories/releases/') }
+        maven { url = uri('https://maven.repository.redhat.com/ga/') }
+        maven { url = uri('https://repository.apache.org/content/repositories/releases/') }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:9.4.1'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath "org.jetbrains.kotlin:kotlin-serialization:$kotlin_version"
+    }
+
+}
+
+def mpaasRepositoryUrl = providers.environmentVariable("WEEWA_MPAAS_REPOSITORY_URL").orNull
+def mpaasRepositoryUser = providers.environmentVariable("WEEWA_MPAAS_REPOSITORY_USER").orNull
+def mpaasRepositoryPassword = providers.environmentVariable("WEEWA_MPAAS_REPOSITORY_PASSWORD").orNull
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        if (mpaasRepositoryUrl && mpaasRepositoryUser && mpaasRepositoryPassword) {
+            maven {
+                url = uri(mpaasRepositoryUrl)
+                content { includeGroup("com.mpaas.android") }
+                credentials {
+                    username = mpaasRepositoryUser
+                    password = mpaasRepositoryPassword
+                }
+            }
+        }
+        maven { url = uri('https://maven.aliyun.com/repository/public/') }
+        maven { url = uri('https://maven.aliyun.com/repository/central') }
+        maven { url = uri('https://maven.aliyun.com/repository/google/') }
+        //umeng
+        maven { url = uri('https://repo1.maven.org/maven2/') }
+        maven { url = uri('https://www.jitpack.io') }
+
+        maven {
+            url = uri('https://mirrors.huaweicloud.com/repository/maven/')
+        }
+        maven {
+            url = uri('https://maven.aliyun.com/nexus/content/groups/public')
+        }
+        maven {
+            url = uri('https://jitpack.io')
+        }
+        mavenCentral()
+        google()
+
+        maven { url = uri('https://repo1.maven.org/maven2/') }
+        maven { url = uri('https://mvnrepository.com/repos/central/') }
+        maven { url = uri('https://plugins.gradle.org/m2/') }
+        maven { url = uri('https://oss.sonatype.org/content/repositories/releases/') }
+        maven { url = uri('https://maven.repository.redhat.com/ga/') }
+        maven { url = uri('https://repository.apache.org/content/repositories/releases/') }
+    }
+}
+
+
+tasks.register('clean', Delete) {
+    delete rootProject.layout.buildDirectory
+}

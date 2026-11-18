@@ -1,0 +1,230 @@
+plugins {
+    id 'com.android.application'
+}
+
+def signingProperties = ["STORE_FILE", "STORE_PASSWORD", "KEY_ALIAS", "KEY_PASSWORD"].collectEntries { name ->
+    [(name): providers.environmentVariable("WEEWA_SIGNING_${name}").orNull]
+}
+def hasReleaseSigning = signingProperties.values().every { it }
+
+android {
+    namespace = "com.xh.hotme"
+    buildToolsVersion = rootProject.ext.buildToolsVersion
+
+    lint {
+        // Fail releases on APIs unavailable on our minimum supported Android.
+        checkReleaseBuilds = true
+        abortOnError = true
+        checkDependencies = true
+        checkOnly += ['NewApi', 'InlinedApi']
+        fatal += ['NewApi', 'InlinedApi']
+    }
+
+    compileSdk rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.xh.hotme"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion  rootProject.ext.targetSdkVersion
+        versionCode 129
+        versionName "1.2.9"
+        testInstrumentationRunner providers.gradleProperty("weewaTestRunner")
+                .getOrElse("com.xh.hotme.account.MobileLoginSmsInstrumentation")
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+    }
+    testOptions {
+        unitTests.includeAndroidResources = true
+    }
+
+    buildFeatures {
+        buildConfig = true
+    }
+    signingConfigs {
+        if (hasReleaseSigning) {
+            weewaRelease {
+                storeFile file(signingProperties.STORE_FILE)
+                storePassword signingProperties.STORE_PASSWORD
+                keyAlias signingProperties.KEY_ALIAS
+                keyPassword signingProperties.KEY_PASSWORD
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            if (hasReleaseSigning) {
+                signingConfig = signingConfigs.weewaRelease
+            }
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    packaging {
+        resources {
+            // JAR indexes are unused by Android's class loader.
+            excludes += ['META-INF/INDEX.LIST']
+            merges += ['META-INF/io.netty.versions.properties']
+        }
+    }
+
+    viewBinding {
+        enabled = true
+    }
+
+    flavorDimensions = ["brand", "role", "server"]
+    productFlavors {
+        rewoo {
+            dimension "brand"
+            applicationId "com.xh.hotme"
+        }
+        user {
+            dimension "role"
+            manifestPlaceholders.ROLE = "user"
+        }
+        crew {
+            dimension "role"
+            manifestPlaceholders.ROLE = "tester"
+        }
+        gztCrew {
+            dimension "role"
+            manifestPlaceholders.ROLE = "gztTestr"
+        }
+        service {
+            dimension "role"
+            manifestPlaceholders.ROLE = "service"
+        }
+        collector {
+            dimension "role"
+            manifestPlaceholders.ROLE = "collector"
+        }
+        greenKeeper {
+            dimension "role"
+            manifestPlaceholders.ROLE = "greenKeeper"
+        }
+        prod {
+            dimension "server"
+            manifestPlaceholders.TEST_SERVER = "false"
+        }
+        dev {
+            dimension "server"
+            manifestPlaceholders.TEST_SERVER = "true"
+        }
+    }
+
+}
+
+androidComponents {
+    onVariants(selector().all()) { variant ->
+        variant.outputs.each { output ->
+            output.outputFileName.set(variant.name == "rewooGztCrewDevRelease"
+                    ? "rewooAppV${output.versionName.get()}.apk"
+                    : "hotme_${variant.name}_${output.versionName.get()}.apk")
+        }
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar', '*.aar'], exclude: ['gson-*.jar', 'fastjson-*.jar', 'eventbus-*.jar', 'umeng-*.jar', 'umeng-*.aar', 'com.scwang.smartrefresh.*.aar'], dir: 'libs')
+    implementation 'com.google.code.gson:gson:2.14.0'
+    implementation 'com.alibaba:fastjson:2.0.65'
+    implementation 'org.greenrobot:eventbus:3.3.1'
+    implementation 'com.umeng.umsdk:common:9.9.10'
+    implementation 'com.umeng.umsdk:asms:1.8.7.2'
+    implementation 'com.umeng.umsdk:apm:2.1.0'
+    implementation 'com.umeng.umsdk:share-core:7.3.7'
+    implementation 'com.umeng.umsdk:share-wx:7.3.7'
+    implementation 'com.umeng.umsdk:share-board:7.3.7'
+    implementation 'io.github.scwang90:refresh-layout-kernel:2.1.1'
+    implementation 'io.github.scwang90:refresh-header-classics:2.1.1'
+    implementation 'io.github.scwang90:refresh-footer-classics:2.1.1'
+    implementation 'com.google.android.material:material:1.14.0'
+    implementation('androidx.appcompat:appcompat:1.8.0', {
+        exclude group: 'com.android.support', module: 'design'
+    })
+    implementation('androidx.recyclerview:recyclerview:1.4.0', {
+        exclude group: 'com.android.support', module: 'design'
+    })
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'org.apache.commons:commons-lang3:3.21.0'
+      implementation 'commons-io:commons-io:2.22.0'
+
+    implementation platform("com.mpaas.android:${rootProject.ext.mpaas_artifact}:${rootProject.ext.mpaas_baseline}")
+    implementation 'com.mpaas.android:scan'
+
+    // WeChat SDK (the legacy with-mta artifact is no longer maintained).
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android:6.8.40'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.2'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.2.0'
+    implementation "androidx.lifecycle:lifecycle-process:2.11.0"
+    implementation "androidx.lifecycle:lifecycle-common:2.11.0"
+
+    implementation 'com.github.bumptech.glide:glide:5.0.9'
+    implementation ("com.github.bumptech.glide:recyclerview-integration:5.0.9") {
+        // Excludes the support library because it's already included by Glide.
+        transitive = false
+    }
+
+    // BaseRecyclerViewAdapterHelper 4; legacy bindings are adapted in base.
+    implementation ('io.github.cymchad:BaseRecyclerViewAdapterHelper4:4.4.1', {
+        exclude group: 'com.android.support', module: 'support-v4'
+    })
+
+    implementation 'com.dou361.ijkplayer:jjdxm-ijkplayer:1.0.5'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-armv5:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-x86:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-arm64:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-exo:0.8.8'
+
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.robolectric:robolectric:4.17'
+
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+
+    api 'com.orhanobut:logger:2.2.0'
+    api "com.squareup.okhttp3:logging-interceptor:5.5.0"
+
+    implementation("com.squareup.okhttp3:okhttp:5.5.0")
+    implementation("com.squareup.okio:okio:3.18.2")
+    implementation("com.fasterxml.jackson.core:jackson-annotations:2.22")
+    implementation("com.fasterxml.jackson.core:jackson-core:2.22.3")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.22.3")
+
+    implementation 'cn.yipianfengye.android:zxing-library:2.2'
+
+    implementation 'com.kyleduo.switchbutton:library:2.1.0'
+
+    implementation project(':FlycoTabLayout_lib')
+    implementation project(':weewa_lib')
+    implementation project(':filedownloader')
+    implementation project(':WheelPicker')
+    implementation project(':calendarview')
+    implementation project(':pickerview')
+
+    //========================================================
+    //浏览网页
+    implementation 'com.github.Justson.AgentWeb:agentweb-core:5.1.7-androidx' // (必选)
+    implementation 'com.github.Justson.AgentWeb:agentweb-filechooser:5.1.7-androidx'// (可选)
+
+    // 摇杆
+    implementation 'io.github.controlwear:virtualjoystick:1.10.1'
+
+    // toast
+    implementation 'io.github.muddz:styleabletoast:2.4.0'
+
+    // rabbitmq
+    implementation 'com.rabbitmq:amqp-client:5.37.0'
+}

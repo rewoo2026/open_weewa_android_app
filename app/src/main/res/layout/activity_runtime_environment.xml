@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/white">
+    <include android:id="@+id/title_bar" layout="@layout/common_include_header" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+            <TextView android:id="@+id/environment_hint" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="14sp" android:textColor="#737373" android:lineSpacingExtra="4dp" />
+            <RadioGroup android:id="@+id/environment_options" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginVertical="16dp">
+                <RadioButton android:id="@+id/environment_production" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="正式环境" android:buttonTint="#F16C2F" />
+                <RadioButton android:id="@+id/environment_test" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="测试环境" android:buttonTint="#F16C2F" />
+                <RadioButton android:id="@+id/environment_custom" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="自定义环境" android:buttonTint="#F16C2F" />
+            </RadioGroup>
+            <LinearLayout android:id="@+id/custom_fields" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:visibility="gone">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="RabbitMQ 地址" android:textColor="#333333" android:textSize="15sp" />
+                <EditText android:id="@+id/rabbitmq_address" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp"
+                    android:inputType="textUri" android:singleLine="true" android:hint="amqp://223.109.239.30:61003/rewoo" android:textSize="14sp" android:autofillHints="" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="支持主机名或 IP 和端口；沿用现有 MQ 账号，可在地址末尾指定虚拟主机。" android:textSize="12sp" android:textColor="#888888" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="hotme-api 地址" android:textColor="#333333" android:textSize="15sp" />
+                <EditText android:id="@+id/api_address" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp"
+                    android:inputType="textUri" android:singleLine="true" android:hint="http://223.109.239.30:61004/hotme-api" android:textSize="14sp" android:autofillHints="" />
+            </LinearLayout>
+            <TextView android:id="@+id/environment_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:textSize="14sp" android:textColor="#F16C2F" android:accessibilityLiveRegion="polite" />
+            <Button android:id="@+id/save_environment" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp"
+                android:layout_marginTop="24dp" android:text="保存" android:textColor="#FFFFFF" android:backgroundTint="#F16C2F" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

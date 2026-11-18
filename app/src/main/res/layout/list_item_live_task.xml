@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.xh.hotme.live.view.SlipView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/slipView"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+
+        <View
+            android:id="@+id/view_top"
+            android:layout_width="0dp"
+            android:layout_height="147dp"
+            android:background="@drawable/bg_white_raduis12"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#3D3D3D"
+            android:textFontWeight="700"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintRight_toLeftOf="@id/tv_style"
+            app:layout_constraintLeft_toLeftOf="@+id/view_top"
+            app:layout_constraintTop_toTopOf="@+id/view_top"
+            tools:text="蚂蚁VS虾米足球比赛" />
+
+        <TextView
+            android:id="@+id/tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:textColor="#F16C2F"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="@+id/view_top"
+            app:layout_constraintTop_toTopOf="@id/tv_title"
+            app:layout_constraintBottom_toBottomOf="@id/tv_title"
+            tools:text="足球" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="#EDEDED"
+            app:layout_constraintLeft_toLeftOf="@+id/view_top"
+            app:layout_constraintRight_toRightOf="@+id/view_top"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+
+        <TextView
+            android:id="@+id/tv_vs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="25dp"
+            android:textColor="#767676"
+            android:textSize="14sp"
+            android:lines="1"
+            app:layout_constraintLeft_toLeftOf="@+id/view_top"
+            app:layout_constraintTop_toBottomOf="@+id/view_line"
+            tools:text="蚂蚁 VS 虾米" />
+
+
+        <ImageView
+            android:id="@+id/iv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/icon_live_task_time"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_vs"
+            app:layout_constraintTop_toBottomOf="@+id/tv_vs" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="#767676"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_time"
+            app:layout_constraintLeft_toRightOf="@+id/iv_time"
+            app:layout_constraintTop_toTopOf="@+id/iv_time"
+            app:layout_constraintRight_toLeftOf="@id/tv_start"
+            tools:text="2023-11-10 周五 08:30 | 9人场" />
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="83dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/live_task_start_btn_bg"
+            android:gravity="center"
+            android:text="@string/live_start"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_time"
+            app:layout_constraintRight_toRightOf="@+id/view_top"
+            app:layout_constraintTop_toTopOf="@+id/iv_time" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+
+        <TextView
+            android:id="@+id/menu_edit"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/bg_4758aa_raduis12"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/menu_delete"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/bg_f16c2f_raduis12"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@+id/menu_edit"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.xh.hotme.live.view.SlipView>

@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/device_list_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:id="@+id/foot_device_add"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/device_fragment_no_device_item_btn_add"
+        android:gravity="center"
+        android:text="@string/device_add"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textFontWeight="700"/>
+
+</FrameLayout>

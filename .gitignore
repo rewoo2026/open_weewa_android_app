@@ -1,0 +1,33 @@
+*.iml
+.gradle
+.kotlin/
+.idea
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Local verification artifacts
+/outputs/
+
+# Local signing, credentials, dependencies, and packages
+.env
+.env.*
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.apk
+*.aab
+/app/libs/
+/app/src/main/jniLibs/
+/library/src/main/jniLibs/

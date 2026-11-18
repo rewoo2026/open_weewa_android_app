@@ -1,0 +1,9 @@
+rootProject.name = "热我相机"
+include ':app', ':FlycoTabLayout_lib', ':weewa_lib'
+project(':FlycoTabLayout_lib').projectDir = file('FlycoTabLayout_Lib')
+include ':WheelPicker'
+include ':calendarview'
+include ':pickerview'
+include ':wheelview'
+include ':filedownloader'
+include ':filedownloader_demo'

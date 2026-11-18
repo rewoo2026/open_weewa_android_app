@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/installHintLayout"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tvInstallHintTitle"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/ota_upgrade_install_hint_title"
+            android:textColor="#ff1A1A1A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tvInstallHintContent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvInstallHintContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="8.8sp"
+            android:text="@string/ota_upgrade_install_hint_content"
+            android:textColor="#909090"
+            android:textFontWeight="400"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/tvInstallHintConfirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvInstallHintTitle" />
+
+        <TextView
+            android:id="@+id/tvInstallHintConfirm"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/sh_r10_f16c2f"
+            android:gravity="center"
+            android:text="@string/ota_upgrade_install_hint_btn"
+            android:textColor="#ffFFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvInstallHintContent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</merge>

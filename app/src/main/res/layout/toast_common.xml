@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_toast"
+    android:minHeight="80dp"
+    android:orientation="vertical"
+    android:paddingStart="33dp"
+    android:paddingTop="28dp"
+    android:paddingEnd="33dp"
+    android:paddingBottom="29dp">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        tools:text="辣椒水来得及发啦" />
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@mipmap/icon_sermeal_list_bg1"
+android:orientation="vertical"
+android:paddingStart="20dp"
+android:paddingTop="20dp"
+android:paddingEnd="20dp"
+android:paddingBottom="20dp">
+
+<TextView
+    android:id="@+id/tv_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:text="5次卡"
+    android:textColor="#343332"
+    android:textFontWeight="400"
+    android:textSize="36sp"
+    android:fontFamily="@font/youshebiaotihei"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+
+<TextView
+    android:id="@+id/tv_money1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dp"
+    android:text="¥ "
+    android:textColor="#F16C2F"
+    android:textFontWeight="600"
+    android:textSize="18sp"
+    app:layout_constraintBottom_toBottomOf="@+id/tv_money2"
+    app:layout_constraintRight_toLeftOf="@+id/tv_money2" />
+
+<TextView
+    android:id="@+id/tv_money2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="8dp"
+    android:text="150"
+    android:textColor="#F16C2F"
+    android:textFontWeight="500"
+    android:textSize="36sp"
+    android:textStyle="bold"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+<ImageView
+    android:layout_width="109dp"
+    android:layout_height="70dp"
+    android:layout_marginEnd="30dp"
+    android:scaleType="fitXY"
+    android:src="@mipmap/icon_sermeal_list_bg4"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintRight_toRightOf="parent" />
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="14dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_title">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/iv_left2"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="7dp"
+            android:src="@mipmap/icon_dialog_expired_live"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="10"
+            android:textColor="#f16c2f"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_left2"
+            app:layout_constraintLeft_toRightOf="@+id/iv_left2"
+            app:layout_constraintTop_toTopOf="@+id/iv_left2" />
+
+        <TextView
+            android:id="@+id/tv_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:paddingRight="10dp"
+            android:text="@string/live_duration_hours"
+            android:textColor="#767676"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_live"
+            app:layout_constraintLeft_toRightOf="@+id/tv_live"
+            app:layout_constraintTop_toTopOf="@+id/tv_live" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutLive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:visibility="visible"
+        android:layout_marginTop="4dp"
+        tools:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayoutRecord">
+
+
+        <ImageView
+            android:id="@+id/iv_left3"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="7dp"
+            android:src="@mipmap/icon_dialog_expired_live_save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible"/>
+
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:paddingRight="10dp"
+            android:text="@string/video_storage_free_30days"
+            android:textColor="#767676"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_left3"
+            app:layout_constraintLeft_toRightOf="@+id/iv_left3"
+            app:layout_constraintTop_toTopOf="@+id/iv_left3"
+            tools:visibility="visible"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<TextView
+    android:id="@+id/tv_buy"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_f16c2f_raduis10"
+    android:paddingLeft="20dp"
+    android:paddingTop="4dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="4dp"
+    android:text="@string/purchase"
+    android:textColor="#FFF5DE"
+    android:textSize="14sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintRight_toRightOf="parent" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="10dp"
+    app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

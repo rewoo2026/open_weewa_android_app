@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace = "com.liulishuo.filedownloader.demo"
+    buildToolsVersion = rootProject.ext.buildToolsVersion
+
+    compileSdk rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion  rootProject.ext.targetSdkVersion
+        versionCode 81
+        versionName "1.0.81"
+
+        File file = project.rootProject.file('local.properties')
+        def needLog = null
+        if (file.exists()) {
+            Properties p = new Properties()
+            p.load(file.newDataInputStream())
+            needLog = p.getProperty("needLog")
+        }
+        buildConfigField "boolean", "DOWNLOAD_NEED_LOG", needLog == "true" ? "true" : "false"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+        }
+    }
+    buildFeatures {
+        buildConfig = true
+        viewBinding = true
+    }
+    lint {
+        // This seems to be firing due to okio referencing java.nio.File
+        // which is harmless for us.
+        warning 'InvalidPackage'
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'com.google.android.material:material:1.14.0'
+    implementation('androidx.appcompat:appcompat:1.8.0', {
+        exclude group: 'com.android.support', module: 'design'
+    })
+    implementation('androidx.recyclerview:recyclerview:1.4.0', {
+        exclude group: 'com.android.support', module: 'design'
+    })
+    debugImplementation 'cn.dreamtobe.threaddebugger:threaddebugger:1.6.3'
+    releaseImplementation 'cn.dreamtobe.threaddebugger:threaddebugger-no-op:1.6.3'
+    implementation project(':filedownloader')
+    // for testing
+    implementation 'com.squareup.okio:okio:3.18.2'
+}

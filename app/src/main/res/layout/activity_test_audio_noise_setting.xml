@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/common_include_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_record"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_line">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=== 音频降噪配置(start) ==="
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="这些配置具体啥意思,能起到什么效果,请问rk"
+                android:textSize="12sp"
+                android:textColor="@color/red"
+                android:gravity="center"/>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/btn_toggle_sound_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="关闭音量调整功能(使用硬件声卡)"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_toggle_anr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="关闭音频降噪(anr)"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_toggle_agc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="关闭音频增益(agc)"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_toggle_hpf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="关闭音频过滤(hpf)"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="提示: anr如果关闭, agc和hpf不会起作用"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="------- 以下为anr参数 --------"
+                android:layout_marginTop="20dp"
+                android:textSize="12sp"
+                android:textColor="@color/red"
+                android:gravity="center"/>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="noiseFactor"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_noiseFactor"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="swU"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_swU"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="PsiMin"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_PsiMin"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="PsiMax"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_PsiMax"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="fGmin"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_fGmin"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="------- 以下为agc参数 --------"
+                android:textSize="12sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/red"
+                android:gravity="center"/>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="AGC增益下降所需要的时间(attack_time)"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_attack_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="AGC增益上升所需要的时间(release_time)"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_release_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="最大增益,也是线性段增益(max_gain)"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_max_gain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="输出语音的最大能量(max_peak)"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_max_peak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="扩张段斜率(f_Rk0)"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_fRk0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="扩张段结束,线性段开始能量dB阈值(f_Rth0)"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_fRth0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="线性段结束,压缩段起始能量dB阈值(f_Rth1)"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_fRth1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="压缩段结束能量dB阈值(f_Rth2)"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_fRth2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="------- 以下为hpf参数 --------"
+                android:textSize="12sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/red"
+                android:gravity="center"/>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="过滤算法(Filter_type)"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_filter_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="过滤算法取值选择: APF = 0, LPF = 1, HPF = 2, BSF = 3, BPF = 4, BPFP = 5"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="过滤模式(Filter_mode)"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_filter_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="过滤模式取值选择: BW = 0, Q = 1, S = 2"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="fc"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_fc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="bw"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_bw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:id="@+id/btn_anr_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="写入以上音频降噪配置到RKIPC配置文件"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=== 音频降噪配置(end) ==="
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:src="@mipmap/common_title_back"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/common_action_bar_height"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/usage_detail"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:background="#F4F4F4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <ImageView
+        android:id="@+id/iv_viewbg"
+        android:layout_width="0dp"
+        android:layout_height="174dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="35dp"
+        android:src="@mipmap/icon_record_detail_bg1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+
+    <ImageView
+        android:id="@+id/iv_viewbg2"
+        android:layout_width="115dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/icon_record_icon_bg1"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_viewbg"
+        app:layout_constraintRight_toRightOf="@id/iv_viewbg" />
+
+    <TextView
+        android:id="@+id/tv_top_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="32dp"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_viewbg"
+        app:layout_constraintTop_toTopOf="@+id/iv_viewbg"
+        tools:text="比赛录制" />
+
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="32dp"
+        android:includeFontPadding="false"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_viewbg"
+        app:layout_constraintTop_toBottomOf="@+id/tv_top_name"
+        android:text="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:includeFontPadding="false"
+        android:paddingBottom="5dp"
+        android:text="@string/session"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_number"
+        app:layout_constraintLeft_toRightOf="@+id/tv_number" />
+
+
+    <TextView
+        android:id="@+id/tv_time_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/competition_time_label"
+        android:textColor="#999999"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_viewbg"
+        app:layout_constraintTop_toBottomOf="@+id/iv_viewbg" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="2023-12-08 18:00"
+        android:textColor="#3D3D3D"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_time_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_time_left" />
+
+
+    <TextView
+        android:id="@+id/tv_name_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/competition_name_label"
+        android:textColor="#999999"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_time_left"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time_left" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="蚂蚁VS虾米友谊赛"
+        android:textColor="#3D3D3D"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_name_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_name_left" />
+
+
+    <TextView
+        android:id="@+id/tv_type_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/motion_type_label"
+        android:textColor="#999999"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_name_left"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_left" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="足球"
+        android:textColor="#3D3D3D"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_type_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_type_left" />
+
+
+
+    <TextView
+        android:id="@+id/tv_address_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/venue_label"
+        android:textColor="#999999"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_type_left"
+        app:layout_constraintTop_toBottomOf="@+id/tv_type_left" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="望京体育公园"
+        android:textColor="#3D3D3D"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_address_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_address_left" />
+
+    <TextView
+        android:id="@+id/tv_address_type_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/site_type_label"
+        android:textColor="#999999"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_address_left"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address_left" />
+
+    <TextView
+        android:id="@+id/tv_address_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="8人场"
+        android:textColor="#3D3D3D"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_address_type_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_address_type_left" />
+
+
+
+    <TextView
+        android:id="@+id/tv_home_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/host_name_label"
+        android:textColor="#999999"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_address_type_left"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address_type_left" />
+
+    <TextView
+        android:id="@+id/tv_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="xxxx"
+        android:textColor="#3D3D3D"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_home_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_home_left" />
+
+
+    <TextView
+        android:id="@+id/tv_visiting_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/guest_name_label"
+        android:textColor="#999999"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_home_left"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_left" />
+
+    <TextView
+        android:id="@+id/tv_visiting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="xxxx"
+        android:textColor="#3D3D3D"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_visiting_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_visiting_left" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

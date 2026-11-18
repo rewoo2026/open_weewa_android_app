@@ -1,0 +1,1368 @@
+<resources>
+    <string name="app_name">Rewoo</string>
+    <string name="weewa_camera">rewoo camera</string>
+    <string name="weewa_competition">rewoo competition</string>
+    <string name="tab_home">Devices&amp;Record</string>
+    <string name="tab_icloud">Cloud Storage</string>
+    <string name="tab_live">Live broadcast</string>
+    <string name="tab_me">Mine</string>
+
+    <string name="welcome_to_use">Welcome to use</string>
+    <string name="warm_tip">Tips</string>
+    <string name="permission_dialog_title">Rewoo Camera requires you to authorise the following permissions</string>
+    <string name="privacy_agreement_dialog_title">You need to agree to the User Agreement and Privacy Policy to continue to use our products and services</string>
+    <string name="privacy_agreement_dialog_btn_exit_app">Quit</string>
+    <string name="privacy_agreement_dialog_btn_back">Return</string>
+    <string name="privacy_agreement_dialog_btn_agree">Accept</string>
+
+    <string name="home_title">My rewoo</string>
+    <string name="home_camera_tip">How to use rewoo</string>
+    <string name="home_camera_no_found">Not Found Camera</string>
+
+    <string name="bluetooth_no_open">Bluetooth not turned on</string>
+    <string name="bluetooth_tips">To find rewoo camera, tap into settings and enable Bluetooth</string>
+    <string name="bluetooth_setting">Setting</string>
+    <string name="setting">Setting</string>
+
+    <string name="bluetooth_device_list_title">Select Camera</string>
+    <string name="bluetooth_device_list_refresh">Refresh</string>
+    <string name="bluetooth_device_list_connect">Connect Camera</string>
+    <string name="bluetooth_device_list_connected">Connected</string>
+    <string name="bluetooth_device_list_connected_live">Live broadcast</string>
+    <string name="bluetooth_device_list_connected_record">Record</string>
+
+    <string name="home_top_video">Exciting videos</string>
+    <string name="home_top_video_enter">Enter ></string>
+
+    <string name="device_online">online</string>
+    <string name="device_offline">offline</string>
+    <string name="device_connect">connect</string>
+    <string name="device_add">+ Add</string>
+
+    <string name="device_online_local">Local devices online</string>
+    <string name="device_offline_local">Local devices offline</string>
+    <string name="device_online_remote">Remote devices online</string>
+    <string name="device_offline_remote">Remote devices offline</string>
+    <string name="me_title">Mine</string>
+    <string name="purchase_history">Purchase Record</string>
+    <string name="loading">Loading</string>
+    <string name="loading_fail">Load fail</string>
+    <string name="loading_ing">Loading...</string>
+
+    <string name="login_error_connect_device">Connection exception, please exit and reconnect!</string>
+    <string name="login_error_phone_format">The mobile phone number is not in the correct format!</string>
+    <string name="login_error_verify_code_null">The captcha cannot be empty!</string>
+    <string name="info_active_send_sms_code">Activation code is being sent</string>
+    <string name="info_active_send_sms_code_fail">Failed to send activation code</string>
+    <string name="info_agree_user_proxy_and_privacy_agreement">Please tick to agree to the User Agreement &amp; Privacy Policy</string>
+
+    <string name="me_setting_userinfo">Personal Profile</string>
+    <string name="me_setting_contact">Contact Us</string>
+    <string name="me_setting_account">Account Setting</string>
+    <string name="setting_clear_cache">Clear Cache</string>
+    <string name="setting_version_update">Version Update</string>
+    <string name="setting_logout">Cancellation of account</string>
+
+    <string name="nickname">Nickname</string>
+    <string name="save">Save</string>
+
+    <string name="me_setting_exit">Log out</string>
+    <string name="me_setting_power">On/Off</string>
+    <string name="me_setting_devices">My Devices</string>
+    <string name="me_setting_kuaichuan">Camera Express</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="retry">Retry</string>
+    <string name="play">Play</string>
+    <string name="reboot">Reboot</string>
+    <string name="refresh">Refresh</string>
+    <string name="tip">Tip</string>
+    <string name="second">Second</string>
+    <string name="use">Use</string>
+    <string name="month">Mon</string>
+
+
+
+    <string name="login">Login</string>
+
+    <string name="login_title">Login to Rewoo Camera</string>
+
+    <string name="mobile">Mobile</string>
+
+    <string name="login_hint_input_phone">Please enter your phone number</string>
+    <string name="login_hint_input_sms">Please enter the verification code</string>
+    <string name="login_btn_send_sms">Get CAPTCHA</string>
+    <string name="login_btn_login">Login&amp;Register</string>
+    <string name="login_tip">*New accounts will be created automatically for unregistered mobile phone numbers</string>
+    <string name="login_i_read_agree">I have read and agree to</string>
+    <string name="login_user_proxy">&#160;The User Agreement&#160;</string>
+    <string name="login_and">&amp;</string>
+    <string name="login_privacy_agreement">&#160;Privacy Policy&#160;</string>
+    <string name="click_login">Click to Login</string>
+    <string name="info_send_sms_fail">Captcha failed to send!</string>
+
+    <string name="login_btn_register">Register</string>
+    <string name="input_device_id">Please enter device ID</string>
+    <string name="login_confirm_password">Please confirm password</string>
+    <string name="login_input_password">Please enter password</string>
+    <string name="input_phone_or_email">Please enter phone number/email</string>
+    <string name="login_register_account">Register Account</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="password_not_match">Passwords do not match</string>
+    <string name="sms_login">SMS Login</string>
+    <string name="password_login">Password Login</string>
+    <string name="register_success">Registration successful</string>
+    <string name="reset_password_success">Password reset successful</string>
+    <string name="operation_failed">Operation failed</string>
+    <string name="password_too_short">Password must be at least 6 characters</string>
+
+
+
+    <string name="account_info">Account：%1$s</string>
+
+    <string name="mobile_btn_update">Modify</string>
+
+
+    <string name="remove_device_dialog_title">Remove Anyway?</string>
+    <string name="remove_device_dialog_confirm">Delete</string>
+    <string name="remove_device_dialog_cancel">Cancel</string>
+
+    <string name="search">search</string>
+    <string name="loading_dialog_search_device">Searching...</string>
+
+    <string name="device_connected">Bluetooth connection successful!</string>
+    <string name="loading_dialog_connect_device">Connecting to&#160;</string>
+    <string name="loading_dialog_connect_camera_image">Connecting Camera Screen</string>
+    <string name="loading_dialog_load_device_info">Getting camera device information</string>
+    <string name="loading_dialog_load_device_network">Getting camera network information</string>
+    <string name="loading_connect">Connect...</string>
+    <string name="connected_network">connected</string>
+    <string name="connected">connected</string>
+    <string name="unconnect">disconnect</string>
+    <string name="info_bluetooth_disconnected">The bluetooth connection has been disconnected</string>
+    <string name="disconnect_title">Disconnect Anyway？</string>
+    <string name="wifi_disconnect">The wifi has been disconnected</string>
+
+    <string name="loading_dialog_load_camera_image">Acquiring the camera screen</string>
+    <string name="loading_dialog_load_error">Failed to load screen</string>
+    <string name="loading_dialog_load_live_image">Getting live feed now</string>
+
+    <string name="loading_dialog_device_not_found">Device not found</string>
+    <string name="loading_dialog_device_message">Please turn on or reboot the camera</string>
+    <string name="loading_dialog_cancel">cancel</string>
+    <string name="loading_dialog_refresh">refresh</string>
+
+    <string name="bluetooth_permission_title">Requires Bluetooth permission to search for cameras</string>
+    <string name="info_please_try_it_later_get_weewa_info_fail">Failed to get the camera information, Please exit and try again！</string>
+    <string name="info_get_user_info_fail_label">Failed to get user information: </string>
+    <string name="info_disconnect_device_retry_for_device_info_exception">The camera information is abnormal, Please exit and try again！</string>
+    <string name="info_active_fail_for_device_id_null">Failed，The device id is empty</string>
+    <string name="info_get_video_detail_info_fail">Failed to get the competition videos</string>
+    <string name="info_get_video_fail">Failed to get match video</string>
+
+    <string name="feedback">Feedback</string>
+    <string name="feedback_hint">Please write your opinion.</string>
+    <string name="info_feedback_content_empty">Please enter feedback!</string>
+    <string name="info_feedback_content_max_limit">The word limit has been reached!</string>
+
+    <string name="toast_clear_up">Cache cleared</string>
+    <string name="toast_begin_to_clear_up">Start clear ...</string>
+    <string name="from_album">Choice Picture</string>
+    <string name="from_camera">Take A Picture</string>
+    <string name="set_portrait_failed">Failed to set avatar, retry it?</string>
+
+    <string name="next_step">The next Step</string>
+
+    <string name="type_football">Football</string>
+    <string name="type_basketball">Basketball</string>
+    <string name="type_training">Train</string>
+
+    <string name="right_now">Starting now</string>
+
+    <string name="title_place_select">Selecting the type of venue</string>
+
+    <string name="hint_record_info_team_name">Please enter the competition name</string>
+    <string name="info_place_input">Please enter the venue name</string>
+
+    <string name="camera_info_usage_left">Also available </string>
+
+    <string name="camera_info_energy">SOC</string>
+    <string name="camera_info_storage">RAM</string>
+    <string name="camera_info_temp">T</string>
+
+    <string name="info_network_error_not_open">No network available</string>
+
+    <string name="other_network">Other networks</string>
+    <string name="eth_network">Wireline</string>
+    <string name="four_th_network">4G</string>
+    <string name="network_wifi">WLAN</string>
+    <string name="network_add">Add Network</string>
+    <string name="info_network_error_open_network">Please turn on the cellular or wireless LAN</string>
+    <string name="info_no_sim_card">Please insert a available 4G card</string>
+    <string name="info_network_error_open_4g">The 4G network connection fail</string>
+    <string name="info_network_error_close_4g">Failed to turn on 4G network</string>
+
+    <string name="loading_open_4g_network">Turning on 4G network</string>
+    <string name="loading_close_4g_network">Closing 4G network</string>
+    <string name="loading_open_wifi">Loading wireless network</string>
+    <string name="loading_close_wifi">Wireless network is being turned off</string>
+
+    <string name="info_wifi_turn_off">Wi-Fi is off.</string>
+
+    <string name="info_ble_connect_timeout">Connection timeout</string>
+    <string name="info_ble_connect_fail">Connect failed</string>
+    <string name="info_ble_disconnect">Connection Disconnection</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="video_gallery">Highlights</string>
+    <string name="normal_video">Playback</string>
+
+
+    <string name="player_title">Rewoo AI Camera</string>
+    <string name="player_local_video">Videos</string>
+    <string name="player_setting">Camera Setting</string>
+    <string name="player_energy">SOC</string>
+    <string name="player_storage">RAM</string>
+    <string name="player_exit">Backstage Recording</string>
+    <string name="stop_record_title">Determine to stop recording？</string>
+    <string name="stop_record">Stop Recording</string>
+    <string name="stop">Stop</string>
+    <string name="stop_record_fail">Failed to stop recorder！</string>
+    <string name="start_record">Start recording</string>
+    <string name="record_task">Record task</string>
+    <string name="add_record_task">Add</string>
+
+    <string name="player_score_center">Score control</string>
+
+    <string name="restart_camera_on_live_stream_exception">The video stream is abnormal, reboot camera.</string>
+
+
+    <string name="active_device_list_title">Rewoo Camera List</string>
+    <string name="active_device_setup_wifi">Please configure a network for the camera</string>
+    <string name="setup_wifi">Camera Network Configuration</string>
+    <string name="device_connect_success">Device connected successfully</string>
+    <string name="device_network_setup_success">Network Configuration Successful</string>
+    <string name="device_active_nextstep">Next step to activate the camera</string>
+    <string name="device_active">Active the device</string>
+    <string name="device_bind">Bind Camera</string>
+    <string name="device_bind_success">Camera Binding Successful</string>
+    <string name="device_bind_fail">Camera Binding Failed</string>
+    <string name="right_now_to_home">Coming soon to the main page</string>
+    <string name="device_active_success">Camera activated successfully</string>
+    <string name="loading_wifi_list">Getting wifi list</string>-
+
+    <string name="wifi_setup_success">Wi-Fi network configured successfully</string>
+    <string name="right_now_to_living">Coming soon to the live interface ...</string>
+
+    <string name="right_now_to_login">Coming soon to the login page ...</string>
+    <string name="right_now_to_register">Coming soon to mobile registration page ...</string>
+
+
+    <string name="device_active_ing">Camera is activating.</string>
+    <string name="device_actived">The camera has been activated</string>
+    <string name="device_bound">The camera is bound</string>
+    <string name="device_try_another_device">Please try another device</string>
+    <string name="know">Know</string>
+    <string name="login_another_account">Whether to log in to other accounts?</string>
+
+    <string name="active">Active</string>
+    <string name="password">Password</string>
+    <string name="wifi_join">Join</string>
+    <string name="wifi_open">Opens</string>
+    <string name="info_wifi_ssid_or_password_is_null">Please enter ssid and password</string>
+
+    <string name="disconnect">Disconnection</string>
+    <string name="confirm_device_disconnect">Disconnect the bluetooth connection?</string>
+    <string name="my_devices">My devices</string>
+    <string name="reconnect_on_connect_fail">Connection failed. Please retry.</string>
+    <string name="info_device_exit">Exit the camera?</string>
+    <string name="info_device_power_off"> The camera is powered off and shutting down</string>
+    <string name="info_device_had_been_power_on">Current device is powered on</string>
+    <string name="info_device_had_been_power_off">Current device is turned off</string>
+    <string name="loading_request_power_on">Booting up...</string>
+    <string name="loading_request_power_off">Switching off ...</string>
+    <string name="loading_request_reboot">" Restarting..."</string>
+    <string name="loading_sync_user_status">Synchronisation in progress ...</string>
+    <string name="info_sync_user_token_fail">Synchronisation failed...</string>
+
+    <string name="device_on">boot up</string>
+
+    <string name="device_off">turn off</string>
+    <string name="exit">Exit</string>
+    <string name="go_to_login">Go to login</string>
+    <string name="go_to_setup">Go to the settings</string>
+
+    <string name="login_success">Login successful</string>
+    <string name="login_fail">Failed to login</string>
+
+    <string name="active_camera_info_title">Camera Settings</string>
+    <string name="camera_running_info_title">Camera Operation Details</string>
+    <string name="camera_soft_ap_setting">Camera hotspot Setting</string>
+    <string name="camera_about">About the machine</string>
+
+    <string name="device_launch_success">Camera is on.</string>
+    <string name="device_power_off_success">Camera is off.</string>
+    <string name="record_restart">Restart record</string>
+
+    <string name="record_status">Camera is synchronising recording status</string>
+    <string name="record_launching">Camera is turning on the video</string>
+    <string name="record_ending">Camera is stopping recording.</string>
+    <string name="record_saving">The video is being saved...</string>
+    <string name="record_video_save_to_camera">Saved to camera video</string>
+
+    <string name="info_firstly_lunch_live">Please turn on the live stream first</string>
+    <string name="loading_live_pause">Live stream on hold ......</string>
+    <string name="loading_live_ready">Live in readiness ......</string>
+    <string name="info_firstly_lunch_record">Please turn on recording first</string>
+    <string name="info_firstly_write_record_info">Please fill in the recording information first</string>
+    <string name="info_running_timeout_on_lunch_rkipc">Timeout for starting the recording programme</string>
+    <string name="info_running_timeout_on_lunch_live">Timeout for launching the live program</string>
+    <string name="info_running_timeout_on_lunch_soft_ap">Open hotspot timeout</string>
+    <string name="info_lunch_rkipc_fail">Camera programme failed to start</string>
+    <string name="info_live_stop">Live stream is closed</string>
+    <string name="info_add_fec_url_fail">Failure to initiate push flow</string>
+    <string name="info_live_fail">Live Streaming Failed</string>
+    <string name="info_live_fail_message">Please check if the camera or mobile phone network is normal</string>
+    <string name="info_camera_network_exception">Camera network anomaly</string>
+    <string name="info_camera_network_exception_message">Please refresh and retry to get the live feed</string>
+    <string name="info_phone_network_exception">Unstable mobile phone network</string>
+    <string name="info_phone_network_exception_message">Please refresh and retry to get the live feed</string>
+    <string name="info_connect_live_server_exception">Failed to connect to push streaming server</string>
+    <string name="info_connect_live_server_exception_message">Please stop the live stream and restart it, if the problem occurs repeatedly, please contact your live streaming service provider</string>
+    <string name="info_stop_live_title">Confirm to stop live streaming?</string>
+    <string name="info_stop_live_message">Camera recording will stop recording video synchronously when stopped</string>
+    <string name="info_pause_live_title">Suspension of live broadcast</string>
+    <string name="info_pause_live_message">Camera recording will continue to record video after pause</string>
+    <string name="info_pause_live_message_btn">Pause</string>
+    <string name="dialog_network_outside_title">Switching Wi-Fi connection</string>
+    <string name="dialog_network_outside_message">To use the live streaming function, you need to switch to an external network connection.</string>
+    <string name="dialog_live_offline">live broadcast interruption</string>
+    <string name="live_continue">Continue </string>
+    <string name="info_operation_fail">Failure of operation</string>
+    <string name="info_network_outside_message">Network is not working, please switch to an external network and try again.</string>
+    <string name="wifi_soft_ap_join_title">Whether or not to join the wireless network of Rewoo camera</string>
+
+    <string name="record_background_exit_title">The background recording camera will continue to record</string>
+
+    <string name="info_nickname_is_null">Please enter your nickname</string>
+    <string name="info_nickname_update_suc">Update successful</string>
+    <string name="info_update_success">Update successful</string>
+    <string name="info_update_fail">Failed update</string>
+    <string name="info_notneed_update">No update required</string>
+
+    <string name="update_dev_name_title">Changing Camera Name</string>
+    <string name="info_input_device_name">Please enter the device name</string>
+    <string name="info_update_dev_name_suc">Modified successfully, disconnect, reboot to take effect</string>
+
+    <string name="info_device_name_the_same_as_device">Equipment with the same name does not need to be submitted repeatedly</string>
+
+    <string name="update_dev_sn_title">Changing the Camera Device ID</string>
+    <string name="info_input_device_sn">Please enter the device ID</string>
+
+    <string name="device_unbind_title">Unbind device</string>
+    <string name="device_unbind">Unbind device</string>
+    <string name="device_no_bind">No bind device</string>
+    <string name="device_unbind_ok">Unbind Successful</string>
+    <string name="device_unbind_fail">Failed to unbinding</string>
+    <string name="unbind">Unbind</string>
+    <string name="unbind_camera">Unbind</string>
+    <string name="unbind_current_device">Unbind the current device</string>
+    <string name="unbind_devices_of_phone">Unbind the devices of phone</string>
+    <string name="device_id">Device id</string>
+    <string name="info_need_outside_network_on_unbind_device">Unbinding devices requires an external network</string>
+    <string name="loading_unbinding">Unbinding</string>
+
+    <string name="device_name_hint">Equipment name（10 characters or less）</string>
+    <string name="device_name_label">Device Name：</string>
+
+    <string name="request_timeout">Request timeout</string>
+    <string name="request_timeout_get_weewa_info">Request timed out, please check if the camera is switched on</string>
+
+    <string name="live">Live broadcast</string>
+    <string name="live_ing">Broadcasting live</string>
+    <string name="live_start">Start Live</string>
+    <string name="live_end">Stop Live</string>
+    <string name="live_pause">Pause Live</string>
+    <string name="live_task">Live Tasks</string>
+    <string name="live_copy_pull_stream_url">Copy the pull stream url</string>
+    <string name="run_background">Backstage Running</string>
+
+    <string name="live_copy_commentary_pull_stream_url">copy the pull stream url of commentary</string>
+    <string name="live_copy_commentary_push_stream_url">copy the push stream url of commentary</string>
+
+    <string name="live_task_delete">Delete Live Tasks</string>
+    <string name="live_copied_pull_stream_url">Copied the pull stream url</string>
+    <string name="live_copied_push_stream_url">Copied the push stream url</string>
+
+    <string name="info_push_url_update_success">Live Task Push Stream Address Updated Successfully</string>
+
+    <string name="info_camere_setting_recovery_default">Default values are being restored</string>
+    <string name="info_camere_setting_acutance">Sharpness being set</string>
+    <string name="info_camere_setting_aberration">Colour difference is being set</string>
+    <string name="info_camere_setting_contrast">Contrast is being set</string>
+    <string name="info_camere_setting_saturation">Saturation is being set</string>
+    <string name="info_camere_setting_brightness">Brightness is being set</string>
+    <string name="info_camere_setting_exposure_time">Exposure length being set</string>
+    <string name="info_setting_value_large_zero">The numerator and denominator must be greater than zero</string>
+    <string name="info_value_verify_illegal">Please enter a legal number</string>
+    <string name="info_camere_setting_frq">Frequency is being set</string>
+
+    <string name="switch_mode_to">Switched to %1$s mode</string>
+    <string name="camera_mode_type_normal">Normalcy</string>
+    <string name="camera_mode_type_training">Train</string>
+    <string name="camera_mode_switch">: Switch</string>
+
+
+    <string name="score_center">Score Control Center</string>
+    <string name="timer_control">Timer Control</string>
+    <string name="pause_timer">Pause Timer</string>
+    <string name="resume_timer">Resume Timer</string>
+    <string name="reset_timer">Reset Timer</string>
+    <string name="timer_reset_success">Timer Reset</string>
+    <string name="timer_reset_fail">Timer Reset Failed</string>
+    <string name="confirm_reset">Confirm Reset</string>
+    <string name="confirm_reset_timer_msg">Are you sure you want to reset the timer?</string>
+    <string name="add_live_task_title">Add Live Tasks</string>
+    <string name="edit_live_task_title">Edit Live Task</string>
+    <string name="competition_name">Name of Competition</string>
+    <string name="add_live">Add Live Stream</string>
+
+    <string name="video_list_empty">No video</string>
+
+    <string name="video_tab_download">Download</string>
+    <string name="video_tab_share">Share</string>
+    <string name="video_tab_upload">Upload server</string>
+    <string name="video_tab_download_to_phone">Download</string>
+    <string name="video_tab_rename">Rename</string>
+    <string name="video_tab_delete">Delete</string>
+
+    <string name="network_name">Name</string>
+    <string name="network_password">Password</string>
+
+
+    <string name="address">Beijing: Wangjing SOHO Tower 1C, Chaoyang District, Beijing, 1005\nShenzhen: Longguang Nine Diamonds, Block 2B, Tenglong Road, Longhua District, Shenzhen, Guangdong, China, 3203\n
+Wuhan: No.7 Workshop 103, Creative World, No.16 Ye Zhihu West Road, Hongshan District, Wuhan, China</string>
+
+    <string name="camera_video_transfer">Camera Express Settings</string>
+    <string name="camera_wifi_soft_ap_setting">Camera hotspot Settings</string>
+    <string name="soft_ap_hint_input_ssid">Please enter the hotspot name</string>
+    <string name="soft_ap_hint_input_password">Please enter the hotspot password(8-16 digits)</string>
+    <string name="soft_ap_setup_success">Hotspot created successfully</string>
+    <string name="info_soft_ap_opening">Hotspot being created</string>
+    <string name="info_soft_ap_closing">Shutting down the hotspot</string>
+
+    <string name="camera_fast_transfer_qcode">QR code for QuickTransfer</string>
+
+    <string name="camera_network_type_error">The phone is connected to mobile data, please turn off it and try again</string>
+
+    <string name="camera_soft_ap">Camera hotspots</string>
+    <string name="soft_ap_set_up">Turn on the camera hotspot</string>
+    <string name="soft_ap_close">Turn off camera hotspot</string>
+    <string name="soft_ap_disconnect">Camera hotspot disconnected</string>
+    <string name="info_reconnect_for_soft_ap_disconnect">The camera hotspot disconnected, reconnect？</string>
+    <string name="close">Close</string>
+
+    <string name="cannot_record_because_no_storage">The camera storage space is full, Please go to Camera Storage to clear video space</string>
+    <string name="cannot_record_because_low_storage">The camera is running out of storage space, continuing to record may result in a failure to store the video</string>
+    <string name="storage_management">Storage Management</string>
+    <string name="cannot_record_because_camera_not_ready">Initializing, please wait...</string>
+    <string name="delete_this_match_title">Remove the Match Anyway?</string>
+    <string name="match_video_will_be_deleted">These videos will be deleted simultaneously</string>
+
+    <string name="info_soft_ap_ssid_is_empty">Please enter ssid name</string>
+    <string name="info_soft_ap_password_is_empty">Please enter password</string>
+    <string name="info_soft_ap_password_length_invalid">Wifi passwords are 8-16 digits</string>
+    <string name="info_soft_ap_setup_fail">Failed to create a hotspot</string>
+    <string name="info_soft_ap_close">Closing hotspot</string>
+    <string name="info_soft_ap_close_success">Closed Hot Spots</string>
+    <string name="info_soft_ap_close_fail">Failed to close the hotspot</string>
+    <string name="connect_soft_ap_for_download_file">Please connect to WiFi hotspot: %1$s</string>
+
+    <string name="join_softap_title">Join the \"%1$s\" to preview the videos</string>
+    <string name="record_preview_connect_softap">Connect to the camera hotspot to get the camera screen</string>
+    <string name="record_preview_connect_remote">Start recording to get the camera screen</string>
+    <string name="join_softap">Join the hotspot network of \"%1$s\"  </string>
+    <string name="join_softap_to_view_video">Join the hotspot network of \"%1$s\"，preview the videos</string>
+    <string name="preview">Preview</string>
+    <string name="rewoo_meal">Rewoo Package</string>
+    <string name="usage_detail">Usage Detail</string>
+
+    <string name="info_current_mobile_can_login">Current phone number (available for login)</string>
+
+    <string name="info_delete_account">After cancellation, the current account will not be able to be used</string>
+    <string name="info_delete_account_result">Please understand the impact of the following cancellations.</string>
+    <string name="info_clear_account_info">Clear account information</string>
+    <string name="info_clear_icloud_video">Cloud storage video clearing</string>
+    <string name="info_select_video_for_upload">Please select the files to upload</string>
+    <string name="info_select_video_for_delete">Please select the files to delete</string>
+    <string name="info_null_video_url_to_share">Invalid link for video, cannot share</string>
+    <string name="info_select_video_for_download">Please select the files to download</string>
+    <string name="info_selected_video_downloading">The selected video is downloading</string>
+    <string name="info_change_name_for_the_same_name">A video with the same name already exists. Please change the name.</string>
+    <string name="info_rename_ing">Renaming</string>
+    <string name="info_rename_success">Renamed successful</string>
+    <string name="info_deleting">Delete...</string>
+    <string name="info_try_it_later_for_video_uploading">Video is uploading, please try again later</string>
+    <string name="info_searching_and_dont_repeat_do_it">Searching，please do not repeat request</string>
+
+    <string name="info_file_isnt_exist_or_deleted">File no longer exists or has been deleted</string>
+    <string name="info_file_downloading">This file has not been downloaded and cannot be played yet.</string>
+    <string name="info_share_file_size_limit_200M">Shared file cannot be larger than 200M</string>
+    <string name="info_length_limit">Maximum length limit has been exceeded</string>
+
+
+
+
+    <string name="select_all">Select All</string>
+    <string name="select_all_cancel">Deselect all</string>
+
+    <string name="info_download_server_not_lunched">Service not started</string>
+
+    <string name="delete_account">Cancellation Of Accounts</string>
+    <string name="apply_delete_account">Application for cancellation</string>
+    <string name="delete_account_success">Account cancelled</string>
+    <string name="select_network">Please select network</string>
+
+    <string name="label_current_version">Current Version</string>
+    <string name="label_latest_version">Latest Version</string>
+    <string name="about_me">About Us</string>
+
+    <string name="current_version">Current Version： %1$s</string>
+    <string name="current_version_is_latest">Currently the latest version!</string>
+
+    <string name="qrcode_hint">Automatically connect by scanning the QR code using the Rewoo-Transfer app</string>
+
+    <string name="info_bluetooth_offline">Bluetooth has been disconnected, please exit and try again.</string>
+    <string name="info_watermark_decode_error">Watermark image failed to load, please try again.</string>
+    <string name="start_softap_before_set_watermark">To set the watermark image you need to start the camera hotspot first</string>
+    <string name="connect_softap_before_set_watermark">To set the watermark image you need to connect to the camera hotspot first</string>
+    <string name="watermark_set_successful">Watermark set successfully</string>
+    <string name="watermark_delete_successful">The watermark has been removed</string>
+    <string name="info_normal_float_value">Please enter a legal floating point number</string>
+
+    <string name="loading_code_verify">checking</string>
+    <string name="please_choice_one_device">Please select the binding device first</string>
+    <string name="please_choice_one_test_device">Please select the test device first</string>
+
+
+    <string name="open_location_service">Location Service</string>
+
+    <string name="setup_successful">Set up successfully</string>
+    <string name="setup_fail">Set up fail</string>
+    <string name="info_logout_success">Logout Successful</string>
+    <string name="info_delete_account_success">Account cancelled successfully</string>
+
+    <string name="cache_delete_title">Confirmed to delete all caches？</string>
+    <string name="cache_delete">Delete</string>
+    <string name="cache_delete_cancel">Let me think</string>
+
+    <string name="sex_secrecy">Secrecy</string>
+    <string name="sex_man">Man</string>
+    <string name="sex_woman">Woman</string>
+    <string name="avatar">Avatar</string>
+    <string name="phone_number">Mobile</string>
+    <string name="email">Email</string>
+    <string name="reset_pwd">Reset Password</string>
+
+    <string-array name="storage_type">
+        <item>Phone Storage</item>
+        <item>Cloud Storage</item>
+        <item>Camera Storage</item>
+    </string-array>
+
+    <string-array name="record_preview_type">
+        <item>panoramic video</item>
+        <item>Live video</item>
+    </string-array>
+
+    <string-array name="avs_resolution">
+        <item>7600x2160</item>
+        <item>3800x1080</item>
+    </string-array>
+
+    <!-- 新增 -->
+    <string name="ly_me_info">Profile</string>
+    <string name="ly_me_photo_set">Camera Function Management</string>
+    <string name="ly_me_photo_net">Camera network configuration</string>
+    <string name="ly_me_live">Live Manager</string>
+    <string name="ly_me_setting">Setting</string>
+    <string name="ly_me_manual_dotting_clip">Pointing video clips</string>
+    <string name="ly_me_ai_video_clip">AI Video Clip</string>
+    <string name="ly_me_kuaichuan">Quick-Transfer Qrcode</string>
+
+    <string name="ly_push_jieshuo">Whether or not to turn on the microphone to match the narration</string>
+    <string name="ly_push_curname">current camera</string>
+    <string name="ly_push_address">Please enter the push stream address</string>
+    <string name="ly_push_tips">How to get it?</string>
+    <string name="ly_push_mishi">Push Stream key（Option）</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="out_sys_mg">Logout?</string>
+    <string name="update_txt">Immediate Updates</string>
+    <string name="user_proxy">User Agreement</string>
+    <string name="user_agreement">Privacy Policy</string>
+    <string name="sys_error">System busy, please try again later</string>
+    <string name="retry_later">Please try again later</string>
+
+    <string name="network_config">Network Configuration</string>
+    <string name="remote_device_on_off_title">Remote switch on/off</string>
+    <string name="remote_device_on_off">>Power On/Off</string>
+    <string name="remote_device_on">Remote boot</string>
+    <string name="remote_device_off">Remote shutdown</string>
+    <string name="remote_device_reboot">Camera reboot</string>
+
+    <string name="video_clip_title">Video Clips</string>
+    <string name="btn_start_video_clip">Start Video Clip</string>
+    <string name="btn_start_video_clip_manual_dotting">Start punting video clips</string>
+    <string name="btn_start_video_clip_ai">Start AI video clips</string>
+    <string name="btn_start_video_clip_again">Restart the clip</string>
+    <string name="video_clip_duration_title"><font color="#ff6600">*</font>Video length(in seconds)</string>
+    <string name="video_clip_threshold_title"><font color="#ff6600">*</font>Confidence (the higher the value, the more accurate the goal video)</string>
+    <string name="threshold_hint">Numerical range 1 - 100</string>
+    <string name="video_duration_hint">Numerical range 15 - 180</string>
+    <string name="video_clip_no_file">No video of the match on camera</string>
+    <string name="video_clip_finish">The video of the game has been edited</string>
+    <string name="video_cliping">In Video Clips</string>
+    <string name="info_threshold_empty">Please enter the confidence level</string>
+    <string name="info_threshold_format_error">Confidence range [0-100], please re-enter</string>
+
+    <string name="info_video_clip_finish">Clip completed</string>
+    <string name="info_video_duration_empty">Please enter duration</string>
+    <string name="info_video_duration_error">Video duration ranges from 15 to 30 seconds. Please re-enter</string>
+    <string name="loading_video_clip_status">Loading Match Video Clip Status</string>
+
+    <string name="search_camera">Bluetooth Finding Camera</string>
+    <string name="search_camera_by_bluetooth">Bluetooth Finding Camera</string>
+    <string name="search_camera_by_remote">Remote camera search</string>
+    <string name="device_disconnect_current">Camera not currently connected</string>
+
+    <string name="game_info_title">Fill in the contest information</string>
+    <string name="game_info_new_game"><font color="#ff6600">*</font>Is it a new competition</string>
+    <string name="game_info_game_name"><font color="#ff6600">*</font>Competition Name</string>
+    <string name="game_info_game_stage"><font color="#ff6600">*</font>Competition Stage</string>
+    <string name="game_info_motion_type"><font color="#ff6600">*</font>Types of sports grounds</string>
+    <string name="live_platform_type_setting"><font color="#ff6600">*</font>Push Stream Platform Settings</string>
+
+    <string name="game_info_select_stage_type">Selection of stage of competition</string>
+    <string name="game_info_select_motion_type">Select type of sport</string>
+    <string name="game_info_home_team_hint">Enter host team name（optional）</string>
+    <string name="game_info_guest_team_hint">Enter host guest name（optional）</string>
+    <string name="game_info_game_name_hint">Enter the name of competition(Within 20 characters)</string>
+    <string name="game_info_city_hint">Please select city</string>
+    <string name="game_info_play_site">Enter the name of the venue(Within 20 characters)</string>
+    <string name="ground_distance">Camera height above ground</string>
+    <string name="ground_distance_hint">Input camera height above ground (metres)</string>
+    <string name="stitch_distance">Optimal distance for splicing</string>
+    <string name="stitch_distance_hint">Optimum distance for input splicing (metres)</string>
+    <string name="home_team_name">Host Team Name</string>
+    <string name="guest_team_name">Guest Team Name</string>
+    <string name="city">City</string>
+    <string name="site_type">Site</string>
+    <string name="venue">Venue</string>
+    <string name="order_phone">Phone Number of Order</string>
+    <string name="need_commentary">Need to narration</string>
+    <string name="order_phone_hint">Enter your mobile phone number (optional)</string>
+    <string name="select_city">Select City</string>
+
+    <string name="china_hot_city">Popular Cities in China</string>
+
+    <string name="live_time">Broadcast Time</string>
+    <string name="live_time_select">Select Date Time</string>
+    <string name="live_platform_rewoo_miniprogram">Rewoo applet</string>
+    <string name="live_platform_mgc">MGC Platform</string>
+    <string name="live_platform_wx_dy">Tiktok, WeChat video number</string>
+    <string name="live_platform_xqm">XQM Platform</string>
+    <string name="live_copy_pull_url">Copy the pull stream link</string>
+
+    <string name="live_platform">Push Flow Platform</string>
+    <string name="douyin">Tiktok</string>
+    <string name="wx_video">Wechat Channel</string>
+    <string name="kuaishou">Kwai</string>
+    <string name="other">Other</string>
+
+
+    <string name="live_get_login_token_of_wechat_video">Get WeChat Video Account Assistant Login Code</string>
+    <string name="live_scan_qcode_of_wechat">Use WeChat to scan the generated login code</string>
+    <string name="live_first_step_get_login_token">Complete the first step to get the login code</string>
+    <string name="first_step">First Step</string>
+    <string name="second_step">Second Step</string>
+    <string name="third_step">Second Step</string>
+    <string name="fourth_step">Fourth Step</string>
+    <string name="finish_scan_get_pull_url_and_push_url">After confirming the QR code login is complete, click the button below to get the streaming address, pulling address, and streaming key</string>
+    <string name="get_pull_url_and_push_url">Get Streaming and Pulling Addresses</string>
+    <string name="push_url">Push Streaming Address</string>
+    <string name="pull_url">Pulling Address</string>
+    <string name="push_key">Push Streaming Key</string>
+    <string name="cover_image_instruction">Default cover\nRecommended Size: 1080*1260</string>
+    <string name="add_cover_image">+&#160;Album</string>
+    <string name="write_push_url">Please enter push streaming address</string>
+    <string name="write_pull_url">Please enter pull address</string>
+    <string name="write_push_key">Please enter push streaming key</string>
+
+    <string name="live_get_login_token_of_dy">Get Live Companion Login Code</string>
+    <string name="live_scan_qcode_of_dy"> Use Douyin to scan the generated login code</string>
+    <string name="info_get_login_token_of_wechat_video">Please obtain the video assistant login code first</string>
+    <string name="info_input_login_token_and_verify">Verification code obtained successfully, please enter the verification code and verify</string>
+    <string name="info_take_login_token_and_scan">Please obtain the login code and scan first</string>
+    <string name="info_take_login_token_fail">Failed to obtain the login code</string>
+    <string name="info_login_token_empty"> Verification code cannot be empty</string>
+    <string name="info_cover_upload_fail">Cover upload failed</string>
+
+    <string name="info_file_not_exist">File does not exist or has been deleted</string>
+    <string name="info_share_success">Share successful</string>
+    <string name="info_share_fail">Failed to Share</string>
+    <string name="info_share_cancel">Share cancelled</string>
+    <string name="info_save_to_local_success">Successfully saved to local</string>
+
+    <string name="info_install_wechat">Please install wechat first</string>
+    <string name="info_no_wechat">No application can handle this video file</string>
+
+    <string name="meter">Meter</string>
+    <string name="centimeter">Centimeter</string>
+
+    <string name="score_control_center">Score Control Center</string>
+    <string name="home_team">Home Team</string>
+    <string name="guest_team">Guest Team</string>
+
+    <string-array name="third_platform">
+        <item>Little Fan Platform</item>
+        <item>WeChat Video Account</item>
+        <item>Douyin Live Companion</item>
+    </string-array>
+
+
+    <string-array name="motion_type_list">
+        <item>Other</item>
+        <item>Football</item>
+        <item>Basketball</item>
+    </string-array>
+
+    <string-array name="stitch_distance_list">
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>50</item>
+    </string-array>
+
+    <!-- play_number_list 与place_type_list 一一对应 -->
+    <string-array name="play_number_list">
+        <item>0</item>
+        <item>5</item>
+        <item>8</item>
+        <item>11</item>
+    </string-array>
+
+    <string-array name="place_type_list">
+        <item>Training</item>
+        <item>5-Person Field</item>
+        <item>8-Person Field </item>
+        <item>11-Person Field</item>
+    </string-array>
+
+    <string-array name="place_type_list_bb">
+        <item>Half Field</item>
+        <item>Full Field</item>
+    </string-array>
+
+    <string-array name="place_type_list_tran">
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="stage_type_list">
+        <item>First Quarter</item>
+        <item>Second Quarter</item>
+        <item>Third Quarter</item>
+        <item>Fourth Quarter</item>
+        <item>Fifth Quarter</item>
+    </string-array>
+
+    <string name="expired">Expired</string>
+    <string name="vip_renew">Renew</string>
+    <string name="update_service">Upgrade service</string>
+    <string name="update_to_pro_service">Upgrade to PRO</string>
+    <string name="vip_expired_time">time:</string>
+<!--    expiration-->
+    <string name="goal_time">Goal Time</string>
+    <string name="top_video">Highlight video</string>
+    <string name="edit">Edit</string>
+
+    <string name="dialog_camera_add_title">No camera currently</string>
+    <string name="dialog_camera_add_hint">Please add a camera</string>
+    <string name="dialog_camera_add_bt">Add Camera</string>
+
+    <string name="dialog_camera_not_found">Camera not found</string>
+    <string name="dialog_camera_reboot">Turn on or restart the camera</string>
+    <string name="dialog_camera_found_ok">Ok</string>
+    <string name="ok">Ok</string>
+
+    <string name="file_service_is_disconnect">File transfer service has been disconnected</string>
+    <string name="please_retry_on_device_info_fail">Failed to get device information, please try again later</string>
+    <string name="please_retry_on_weewa_info_fail">Failed to get camera information, please try again later</string>
+    <string name="please_retry_on_weewa_info_null_fail">The camera information is empty, please try again later</string>
+    <string name="please_check_device_power_on_for_timeout">Failed to get camera information, please confirm if the camera is on</string>
+
+    <string name="permission_deny_title">Permission prompt</string>
+    <string name="permission_deny_content">Location and Bluetooth permissions are required, otherwise peripherals cannot be searched</string>
+    <string name="permission_deny_take_photo">Camera permissions permissions are required, otherwise you cannot take pictures</string>
+    <string name="permission_deny_storage">Storage permission are required，otherwise cannot access local files and media</string>
+    <string name="permission_user_deny">User Authorization failed</string>
+
+
+    <string name="permission_camera_title">Grant camera permissions？</string>
+    <string name="permission_camera_message">Taking photos requires camera permission</string>
+
+    <string name="permission_storage_title">Grant storage permissions？</string>
+    <string name="permission_storage_message">Accessing local files and media requires storage permission</string>
+
+    <string name="permission_mandatory_camera_title">Camera permissions required</string>
+    <string name="permission_mandatory_camera_message">If camera permission is not granted, that part of the functionality will not work </string>
+    <string name="permission_mandatory_storage_title">Storage permissions required</string>
+    <string name="permission_mandatory_storage_message">If storage permission is not granted, that part of the functionality will not work</string>
+
+    <string name="search_title_location_and_device">" Search peripherals"</string>
+    <string name="permission_title_location_and_device">Requires location and device search permissions</string>
+
+    <string name="connect_fail_title">Connection Failed</string>
+    <string name="connect_fail_message">Try restarting the Hot Me AI camera and ensure it is close to you. If you continue to encounter this issue, please contact Hot Me customer service. </string>
+
+    <string name="scanning_nearby_device">Scanning nearby devices</string>
+    <string name="opening_soft_ap">Opening hotspot</string>
+    <string name="lunching_recorder">Launching recording program</string>
+    <string name="is_exit_camera">Do you want to exit camera?</string>
+    <string name="is_exit_live_stream_page">Do you want to exit live broadcast page?</string>
+    <string name="is_exit_live_stream_page_background_run">Do you want to exit live broadcast page and background_run?</string>
+
+    <string name="loading_stop_record_and_save_record_video">Stopping recording\nRecorded video will be saved to camera video</string>
+    <string name="loading_stop_record_and_save_live_video">Stopping recording\nLive video will be saved to camera video</string>
+    <string name="loading_stop_live_and_save_live_video">Stopping live streaming\nLive video will be saved to camera video</string>
+
+
+    <string name="weewa_reboot_success">The camera has rebooted</string>
+    <string name="weewa_reboot_fail">Camera reboot failed</string>
+
+    <string name="game_tag">Game Tag</string>
+    <string name="game_name_mark_tag">Mark Game Name </string>
+    <string name="game_tag_is_null">Tag cannot be empty</string>
+    <string name="game_tag_fail">Tag failed</string>
+    <string name="advance_score"> Advanced Scoring </string>
+    <string name="game_tag_unmark">Unmarked</string>
+    <string name="game_name_is_null">Game name cannot be empty</string>
+    <string name="game_name_fail">Setting game name failed </string>
+    <string name="custom_dot_type">Custom Scoring</string>
+    <string name="custom_dot_type_full_title">Custom limit reached</string>
+    <string name="custom_dot_type_full_message">Please select to delete and then add custom scoring again</string>
+    <string name="state_detail">Scoring Details</string>
+    <string name="view_goal">View Only Goal</string>
+    <string name="all_state">All</string>
+    <string name="host_team_state">Host Team</string>
+    <string name="guest_team_state">Guest Team</string>
+    <string name="state_empty">Current is empty～</string>
+    <string name="empty_goal_record">No goal record</string>
+    <string name="empty_date">No data available</string>
+    <string name="clear_data">Clear data</string>
+    <string name="clear_data_confirm_message">Are you sure you want to clear all operational data? </string>
+    <string name="clear_data_fail">Clear data failed</string>
+    <string name="info_no_complete_info"> No game ID, please exit and try again</string>
+
+    <string-array name="stat_type_list">
+        <item>Goal</item>
+        <item>Shot</item>
+        <item>Save</item>
+        <item>Penalty Kick</item>
+        <item>Free Kick</item>
+        <item>Corner Kick</item>
+        <item>Dribble</item>
+        <item>Foul</item>
+    </string-array>
+
+    <string-array name="game_tag_list">
+        <item>Match Not Started</item>
+        <item>First Half (First Quarter)</item>
+        <item>Halftime</item>
+        <item>Second Half (Second Quarter)</item>
+        <item>Third Quarter</item>
+        <item>Overtime</item>
+        <item>Match Finished</item>
+    </string-array>
+
+    <string name="setting_select_camera_label">Current Camera:</string>
+    <string name="camera_name">Camera Name</string>
+
+    <string name="upgrade">Upgrade</string>
+    <string name="setting_ota_title">Camera Upgrade</string>
+    <string name="setting_ota_upgrade_content">Update Content</string>
+    <string name="setting_ota_upgrade_hint">Please keep the camera powered or ensure the battery is above 70%</string>
+    <string name="setting_ota_upgrade_install_hint_title">Precautions</string>
+
+    <string name="setting_ota_camera_network_exception">Switch to Wi-Fi or wired network, then perform OTA upgrade</string>
+    <string name="setting_ota_camera_network_exception_special">Switch to an available network, then perform OTA upgrade</string>
+
+    <string name="setting_ota_camera_network_sim_tip">The camera is in a mobile network, and the upgrade will consume data.</string>
+    <string name="setting_ota_title_found_new_ota_version">Found a New Version</string>
+    <string name="setting_ota_title_download">Found a New Version</string>
+    <string name="setting_ota_title_download_fail">Download Failed</string>
+    <string name="setting_ota_title_upgrade">Upgrade to New Version</string>
+    <string name="setting_ota_title_upgrading">Upgrading</string>
+    <string name="setting_ota_title_upgrade_complete">Camera Reboot</string>
+    <string name="setting_ota_title_upgrade_fail">Upgrade Failed</string>
+    <string name="setting_ota_title_energy_low">Battery Too Low</string>
+    <string name="setting_ota_btn_upgrade_start">Start Upgrade</string>
+    <string name="setting_ota_btn_camera_reboot">Reboot</string>
+    <string name="setting_ota_btn_download_ota">Firmware Download</string>
+
+    <string name="ota_version_upgrade">Camera Firmware Upgrade</string>
+    <string name="ota_download_img">Download Firmware</string>
+    <string name="ota_title_download_img">Download Firmware</string>
+    <string name="ota_upgrade_hint">Please keep the camera powered or ensure the battery is above 70% </string>
+    <string name="ota_upgrade_next">Next Upgrade >></string>
+    <string name="ota_upgrade_exit">Exit Upgrade >></string>
+    <string name="ota_system_upgrade">System Upgrade</string>
+
+    <string name="ota_download_progress">Downloaded %1$d%%</string>
+    <string name="ota_upgrade_progress">Upgraded %1$d%%</string>
+    <string name="ota_upgrade_to_version">Firmware successfully upgraded to v%1$s</string>
+
+    <string name="loading_ota_upgrade_reboot">Camera is rebooting for upgrade</string>
+
+    <string name="ota_upgrade_low_energy_title">Battery Too Low</string>
+    <string name="ota_upgrade_low_energy_content">Please keep the camera powered or ensure the battery is above 70% </string>
+    <string name="ota_upgrade_low_energy_btn">Confirm</string>
+
+    <string name="ota_download_fail_title">Download fail</string>
+    <string name="ota_download_fail_content"> Keep camera external network connection</string>
+    <string name="ota_download_fail_btn">Download</string>
+
+    <string name="ota_downloading_title">Upgrading firmware downloading </string>
+    <string name="ota_downloading_content"> Keep camera external network connection</string>
+
+    <string name="ota_upgrade_install_right_now">Starting to upgrade camera firmware for you </string>
+    <string name="ota_upgrade_install_begin">Start upgrade</string>
+    <string name="ota_upgrade_installing_title">Camera Firmware Upgrading</string>
+    <string name="ota_upgrade_installing_content">The camera will automatically reboot after the upgrade is complete\n Please reconnect the camera later</string>
+    <string name="ota_upgrade_install_suc_title">Upgrade Complete</string>
+    <string name="ota_upgrade_install_suc_content">Camera firmware has been upgraded to %1$s version </string>
+    <string name="ota_upgrade_install_suc_btn">Confirm</string>
+
+    <string name="ota_upgrade_install_fail_title">Upgrade Failed</string>
+    <string name="ota_upgrade_install_fail_btn">Confirm</string>
+    <string name="ota_upgrade_install_fail">Installation Failed</string>
+
+    <string name="ota_upgrade_install_hint_title">Upgrade Precautions</string>
+    <string name="ota_upgrade_install_hint_btn">Confirm</string>
+    <string name="ota_upgrade_install_hint_content">1. Please keep the camera network connection before upgrading\n2. Please ensure the camera battery is above 70% before upgrading\n3. During the upgrade, to ensure you timely receive the progress of the camera firmware upgrade, please avoid exiting the app\n4. Once the upgrade starts, it cannot be interrupted. The camera cannot be used during the upgrade. Please arrange your upgrade time reasonably </string>
+
+    <string name="error_network_error">Mobile network is disconnected, please check the network and try again </string>
+    <string name="error_camera_softap_network_error">Camera preview failed, please check whether the camera and network are normal</string>
+    <string name="error_camera_network_error">The camera hotspot network error</string>
+
+    <string name="info_switch_avalible_network_for_camera_softap">Currently in camera hotspot, please switch to an available network </string>
+    <string name="info_switch_avalible_network">Current network is down, please switch to an available network</string>
+
+    <string name="without_network">No network</string>
+    <string name="info_camera_without_network">Camera currently has no network</string>
+    <string name="info_camera_version_is_latest">Camera version is up to date</string>
+
+    <string name="loading_open_auto_load">Setting up automatic upload</string>
+    <string name="loading_close_auto_load">Closing automatic upload </string>
+
+    <string name="loading_open_record_audio">Starting audio recording</string>
+    <string name="loading_close_record_audio">Stopping audio recording </string>
+
+    <string name="loading_open_live_audio">Starting live streaming audio</string>
+    <string name="loading_close_live_audio">Stopping live stream audio</string>
+
+    <string name="loading_restart_rkipc">Restarting camera program</string>
+    <string name="loading_start_rkipc">Starting camera program</string>
+    <string name="loading_reboot">Rebooting...</string>
+    <string name="loading_install_suc">Upgrade completed</string>
+
+    <string name="title_download_file">Download to phone</string>
+    <string name="label_download_file_size">File Size：</string>
+    <string name="label_download_speed_rate">Download Speed： </string>
+    <string name="label_download_time">Estimate time remaining:  </string>
+    <string name="label_download_connecting">Connecting:  </string>
+    <string name="select_video_files_number">Select %1$d videos</string> <!-- Select %1$d videos -->
+    <string name="title_delete_select_video">Delete selected videos</string>
+    <string name="loading_deleting">Deleting...</string>
+    <string name="delete_competition_info_title">Do you want to clear the match information?</string>
+    <string name="loading_deleting_video_folder">Deleting match data...</string>
+    <string name="no_transfer_data">No transfer task</string>
+    <string name="download_complete">Download Complete</string>
+    <string name="download_cancel">Cancel Download</string>
+    <string name="no_info">No information available</string>
+
+    <string name="video_clip_title_help">Tip</string>
+    <string name="video_clip_content">There is an uncut video in the camera, which can be viewed after editing</string>
+    <string name="video_clip_btn_clip">Start Clip</string>
+    <string name="check_live_status">Checking Live status</string>
+    <string name="watermark_config">Watermark Config</string>
+    <string name="reset_watermark_config">Clear Watermark Config</string>
+    <string name="reset_watermark">Clear Watermark</string>
+    <string name="info_confirm_reset_watermark">After clearing, the watermark status is restored by default</string>
+    <string name="edit_match_name">Edit Match Name</string>
+    <string name="input_match_name">Input Match Name</string>
+    <string name="add_sponsor">Add Title Sponsor</string>
+    <string name="watermark_size_suggestion">Recommended Size is 110*39px</string>
+    <string name="hide_obs_score">" Hide score bar"</string>
+    <string name="upload_picture">Upload picture</string>
+    <string name="info_record_stopped_on_low_storage">Low Space, stop record for you</string>
+    <string name="campaign_name">Campaign name</string>
+    <string name="game_name">Competition Name</string>
+    <string name="show_score">Show Score</string>
+    <string name="show_team_name">Show Team Name</string>
+    <string name="training_mode">Training mode</string>
+    <string name="stop_auto_upload_during_recording">Pause camera video upload during recording</string>
+    <string name="stop_auto_upload_during_live">Pause camera video upload during live streaming</string>
+    <string name="manage_later">Manager Later</string>
+
+    <string name="network_error_socket_timeout">Network connection exception</string>
+    <string name="audio_settings">Audio Setting</string>
+    <string name="record_audio_off">Mute when recording</string>
+    <string name="record_audio_on">Unmute when recording</string>
+    <string name="live_audio_off">Mute when live streaming </string>
+    <string name="live_audio_on">Unmute when live streaming</string>
+    <string name="setting_audio_volume">Adjusting Volume</string>
+    <string name="hint_bigger_number_higher_volume">Note: Larger numbers yield higher volume</string>
+    <string name="live_password">Live Stream password</string>
+    <string name="set_live_password">Set Live Stream Password</string>
+    <string name="input_live_password">Enter live stream password</string>
+    <string name="info_live_password_is_empty">Live stream password cannot be empty</string>
+    <string name="hint_live_password">*After successful setup, all streams will require a password for viewing</string>
+    <string name="thumbnail">Thumbnail</string>
+    <string name="upload">Upload</string>
+    <string name="download">Download</string>
+    <string name="wait">Waiting</string>
+    <string name="pause">Pause</string>
+    <string name="stop_upload">Stop Upload</string>
+    <string name="stop_download">Stop Download</string>
+    <string name="video_settings">Video Settings</string>
+    <string name="auto_upload">Automatic upload of recorded videos</string>
+    <string name="check_upload_file_status">Synchronizing camera upload file status</string>
+    <string name="enable_avs">Enable panoramic video recording</string>
+    <string name="auto_upload_avs">Automatic upload of panoramic videos</string>
+    <string name="video_analysis">Video Data Analysis Mode</string>
+    <string name="avs_video_mbr">Panoramic video bit rate</string>
+    <string name="avs_video_resolution">Panoramic video resolution</string>
+    <string name="stop_auto_upload_during_access_camera_video">Pause video upload during access to camera video</string>
+    <string name="xqm_hint">Please go to "Little Fan Assistant" to create a match\nAfter successfully created, click "···" in the lower right corner of the match\nCopy the streaming address to the top</string>
+    <string name="third_platform">Third Party Platform</string>
+    <string name="will_disselect_3rd_platform">Selecting built-in platform will cancel "third party platform", do you wish to continue? </string>
+    <string name="update">Update</string>
+    <string name="wx_live_url_expired_need_update">WeChat video account streaming address has expired, it needs to be updated. Do you wish to continue? </string>
+    <string name="dy_live_url_expired_need_update">Douyin live companion streaming address has expired, it needs to be updated. Do you wish to continue?</string>
+    <string name="cover_description_default">Default cover\nRecommended size: 1080*1260</string>
+    <string name="cover_description_custom">WeChat Channel cover‘s ratio is 6:7\nRecommended size is1080px*1260px\nPlease set your cover properly</string>
+
+
+
+    <string name="scan_title">Scan Motherboard QR Code</string>
+    <string name="scan_tip">Scan the QR code of my camera to establish a connection</string>
+    <string name="scan_error_camera_open_error">Failed to open the camera</string>
+    <string name="scan_error_camera_no_permission">No camera permission</string>
+    <string name="brightness">Brightness</string>
+    <string name="isp_settings">Picture Settings</string>
+    <string name="config_scale">Automatic Scaling</string>
+
+    <string name="video_upload">Video upload</string>
+    <string name="video_upload_avs">Panoramic video</string>
+    <string name="video_upload_record">Recording video</string>
+    <string name="video_upload_ai">Scoring Video Editing </string>
+    <string name="video_upload_ing">Video is being uploaded</string>
+    <string name="connect_network">Connecting to network </string>
+    <string name="video_upload_connect_workd_tip"> Uploading video requires connecting to an external network </string>
+    <string name="video_upload_finish">Upload complete!</string>
+    <string name="video_upload_no_data">No match videos in the camera </string>
+    <string name="video_upload_stop_recording"> Cannot upload videos during recording</string>
+    <string name="video_upload_stop_living">Cannot upload videos during live streaming </string>
+    <string name="video_upload_sync_status">Synchronizing camera status, please try again later</string>
+    <string name="video_upload_without_clip_content">No unedited videos in the camera</string>
+    <string name="video_upload_error_title">Part of the video editing failed, would you like to re-edit?</string>
+    <string name="video_upload_error_message">Part of the video editing failed, would you like to re-edit?</string>
+    <string name="video_uploading">Video uploading</string>
+
+    <string name="dot">Scoring</string>
+    <string name="view_dot">View Score Points</string>
+    <string name="add_dot_fail">Failed to add scoring</string>
+    <string name="add_dot_success">Successfully added scoring</string>
+    <string name="remove_dot_fail">Failed to delete</string>
+    <string name="please_setup_game_stage">Please select the current game stage</string>
+    <string name="info_add_completement_mark_fail">Failed to add game mark </string>
+    <string name="info_sync_mark_info_success">Successfully synchronized mark information</string>
+    <string name="info_sync_dot_info_success">Successfully synchronized scoring information</string>
+
+    <string name="update_fail">Failed to update</string>
+
+    <string name="apn_setting">APN Setting</string>
+
+    <string name="apn_setting_imei_label">IMEI Number</string>
+    <string name="apn_setting_apn_label">APN Name</string>
+    <string name="apn_setting_info_apn_name_empty">Please enter APN name</string>
+    <string name="apn_setting_apn_hint_input_sms">Please consult your mobile network service provider for assistance </string>
+    <string name="apn_setting_btn_setting">Set APN</string>
+
+    <string name="copy">Copy</string>
+    <string name="copied">Successfully Copied</string>
+
+    <string name="phone_storage">Phone Storage</string>
+    <string name="cloud_storage">Cloud Storage</string>
+    <string name="camera_storage">Camera Storage</string>
+
+    <string name="video_category_all">All</string>
+    <string name="video_category_top">Highlight Videos</string>
+    <string name="video_category_playback">Full Match Replay </string>
+    <string name="video_empty"> No videos available currently</string>
+    <string name="video_empty_on_category">No videos of this type available</string>
+
+    <string name="no_file_transfer"> No video transfer currently</string>
+
+    <string name="camera_test">Camera Test</string>
+
+    <string name="camera_scale_function">Lens Auto Zoom Function</string>
+    <string name="camera_scale_parameter">Zoom Matrix Parameter Settings</string>
+    <string name="camera_scale_recovery_default">Restore to Default Values </string>
+
+    <string name="pay_in_app">In-App payment</string>
+    <string name="product_name">Product Name</string>
+    <string name="pay_amount">Payment Amount</string>
+    <string name="select_pay_method">Select Payment Method</string>
+    <string name="alipay">Alipay</string>
+    <string name="wechat_pay">Wechat Pay</string>
+    <string name="pay_ok">Confirm Activation</string>
+    <string name="pay_server">For package-related queries, please contact Hot Me customer service: 18601042108</string>
+    <string name="no_meal">No Package Purchased</string>
+
+    <string name="submit">Submit</string>
+    <string name="scan_open_torch">Turn on flashlight</string>
+    <string name="scan_close_torch">Turn off flashlight</string>
+    <string name="wechat_account">Wechat ID</string>
+    <string name="contact_phone_number">Contact Phone Number</string>
+    <string name="office_address">Office Address</string>
+
+    <string name="competition_time_label">Match Time：</string>
+    <string name="competition_name_label">Match Name：</string>
+    <string name="motion_type_label">Motion Type：</string>
+    <string name="venue_label">Venue Name：</string>
+    <string name="site_type_label">Site Type：</string>
+    <string name="host_name_label">Host Team Name：</string>
+    <string name="guest_name_label">Guest Team Name：</string>
+    <string name="session">sessions</string>
+    <string name="times">time</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="purchase">Purchase</string>
+
+    <string name="find_new_version">Found New Version</string>
+    <string name="right_now_update">Upgrade Now</string>
+
+    <string name="competition_record">Match Recording</string>
+    <string name="competition_live">Live Streaming</string>
+    <string name="big_data">Big Data</string>
+    <string name="rewoo_big_data">Rewoo Big Data</string>
+    <string name="service_unlimit_yimdc">Unlimited Match Recording + YiMdc Video Tool Hot Me Version</string>
+    <string name="service_unlimit_yimdc_btn">Unlimited,YiMdc</string>
+    <string name="force_live">Reluctantly Live</string>
+    <string name="right_now_purchase">Buy Now</string>
+    <string name="purchase_time_label">Purchase Time：</string>
+    <string name="purchase_type_label">Payment Method：</string>
+    <string name="expired_time_label">Membership Expiration Time：</string>
+    <string name="date">Date</string>
+
+    <string name="record_remain_number_label"> Remaining Match Recording：</string>
+    <string name="cloud_storage_remain_number_label">Remaining Cloud Storage：</string>
+    <string name="live_remain_number_label">Remaining Event Live Streaming：</string>
+    <string name="expired_annual_vip">Annual Package Expired</string>
+    <string name="info_purchase_meal">Please purchase a package</string>
+    <string name="info_uses_exhausted_package">Package usage limit has been exhausted</string>
+    <string name="unlimited_time">Unlimited Sessions</string>
+    <string name="unlimited_duration">Unlimited Duration</string>
+
+    <string name="motion_site_type_select">Select Exercise Venue Type</string>
+
+    <string name="disable"> Function Unavailable</string>
+    <string name="server_disable_content">Your current services are exhausted and cannot be used temporarily. Please proceed to upgrade or purchase a next pack for use.</string>
+
+    <string name="share">Share</string>
+    <string name="share_to_wechat">Share to Wechat</string>
+    <string name="wechat">Wechat</string>
+    <string name="wechat_moment">Wechat moment</string>
+    <string name="copy_url">Copy Link</string>
+    <string name="share_qcode">Generate QR Code </string>
+
+    <string name="info_select_wechat_file">Please select the file to share</string>
+    <string name="info_only_support_single_file">Multiple file sharing is not supported </string>
+
+    <string name="no_record">No usage records available</string>
+    <string name="rewoo_gift">Hot Me Gift Package</string>
+    <string name="pro_service">PRO Service</string>
+    <string name="base_service">Basic Service</string>
+    <string name="counts_gift_package">Ticket Pack</string>
+    <string name="record_package">Recording Gift Package</string>
+    <string name="info_start_pay">Starting payment...</string>
+    <string name="pro_version">PRO Version</string>
+    <string name="base_version">Mobile Basic Version</string>
+    <string name="fix_version">Fixed Commercial Version</string>
+    <string name="upgrade_pro_version">Upgrade PRO</string>
+    <string name="live_duration_hours">Hours of live streaming</string>
+    <string name="live_counts_gift_package">Live Ticket Pack</string>
+    <string name="rewoo_camera_package">Rewoo Camera Package</string>
+    <string name="video_storage_free_30days">30 days free storage for live replay</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="price_per_year">CNY/Year</string>
+    <string name="hour">Hour </string>
+    <string name="cloud_storage_insufficient">Cloud Storage Space Insufficient</string>
+    <string name="device_invalid">Current device is invalid</string>
+    <string name="upload_Choose_device_cloud_storage_insufficient">Upload Choose Device Cloud Storage Space Insufficient</string>
+    <string name="cloud_storage_insufficient_desc">Unable to upload your videos to cloud storage. Upgrade cloud storage space to continue backing up your videos.</string>
+    <string name="close_auto_upload">Turn off auto upload</string>
+    <string name="cloud_storage_insufficient_autoupload">Auto upload is enabled but cloud storage space is insufficient to upload your videos.\nPlease upgrade cloud storage to continue backing up your videos.</string>
+
+    <string name="live_count_exhausted">Live Streaming Times Exhausted</string>
+    <string name="live_count_exhausted_desc">Purchase Live Streaming Time</string>
+    <string name="live_count_exhausted_desc_price">Live Streaming ¥30/Hour</string>
+
+
+    <string name="device_name">Device Name</string>
+    <string name="search_device_hint">Enter device name to search</string>
+    <string name="info_input_content_is_empty">Input content cannot be empty</string>
+    <string name="info_local_update_success">Local update successful</string>
+    <string name="info_server_config_null">Camera configuration data error</string>
+    <string name="info_use_default_value_because_of_server_config_null">Default configuration will be used due to failed synchronization of bitrate configuration</string>
+    <string name="avs_mbr">AVS Bitrate</string>
+    <string name="fec_mbr">FEC Bitrate</string>
+    <string name="live_mbr">Streaming Bitrate</string>
+
+    <string name="info_please_connect_device">Please select a camera</string>
+    <string name="info_please_bind_device">Please add a camera</string>
+    <string name="info_rkipc_not_lunched">RKIPC not launched</string>
+    <string name="info_live_url_empty">Please enter RTMP address</string>
+
+    <string name="info_download_path_null">Download path is empty</string>
+    <string name="info_audio_record_starting">Audio recording started</string>
+    <string name="info_audio_record_end">Audio recording ended </string>
+    <string name="info_excute_exception">Camera request execution failed </string>
+    <string name="info_record_audio_file">Please record the audio file first</string>
+
+    <string name="info_insert_cable_line_retry_it">Please insert the network cable and retry</string>
+    <string name="info_insert_card_reboot_device">Please insert the 4G data card, reboot the camera after inserting the card, or power off insert card and power on</string>
+    <string name="info_input_loop_times">Please enter the number of loops</string>
+    <string name="info_input_run_duration">Please enter the single run duration in seconds, e.g., 1800 for 30 minutes</string>
+
+    <string name="dialog_camera_network_title">Camera not configured for network</string>
+    <string name="dialog_camera_network_message">Please reconfigure the network </string>
+    <string name="dialog_turn_off_video_analysis_message">Disabling this feature will also sync disable the\nVideo Data Analysis Mode</string>
+
+    <string name="dialog_pause_download_message">Downloaded videos can be viewed locally, incomplete downloads will stop </string>
+    <string name="dialog_device_connect_interrupt">Device connection interrupted</string>
+    <string name="dialog_device_connect_interrupt_message">Please reconnect the device to continue transferring video</string>
+    <string name="reconnect">Reconnect</string>
+    <string name="mbr_setting">Bitrate Settings</string>
+
+
+    <string name="dialog_connect_network_to_sync_dot_info"> Connect to external network to synchronize dot data</string>
+    <string name="dialog_sync_point_info_to_server">Synchronize dot data to the server</string>
+
+    <string name="dialog_cancel_upload_title">Cancel upload</string>
+    <string name="dialog_cancel_upload_message">Cancelling will restart the upload next time </string>
+
+    <string name="dialog_cancel_download_title">Cancel download</string>
+    <string name="dialog_cancel_download_message">Cancelling will restart the download next time </string>
+
+    <string name="framework_is_latest">The firmware is already the latest version! </string>
+    <string name="get_obs_server_info_fail">Failed to get upload server information </string>
+
+
+    <string name="info_dot_stopped_on_low_storage">Insufficient memory, recording has been stopped, exiting current scoring page</string>
+
+    <string name="upload_file_to_server">Upload to Server</string>
+    <string name="uploaded_file_to_server">Uploaded to Server</string>
+    <string name="reupload_to_server"> Continue Uploading</string>
+    <string name="video_already_upload_please_select_other_videos">The videos you selected have already been uploaded,\nPlease select other videos to upload</string>
+    <string name="video_already_upload_continue_upload_other_videos">Retrieved videos you uploaded already exist on the server, will continue to upload other videos</string>
+    <string name="video_download_unfinished_please_download_again">The video download is not complete，Please download again</string>
+
+    <string name="ai_analyse">AI Analysis</string>
+    <string name="ai_analyse_again">Re-Analyze with AI</string>
+    <string name="ai_analyse_status_un_start">Not analyzed</string>
+    <string name="ai_analyse_status_queue">Waiting for analysis</string>
+    <string name="ai_analyse_status_processing">AI Analysis in Progress</string>
+    <string name="ai_analyse_status_processe_ok">AI Analysis Successful</string>
+    <string name="ai_analyse_status_processe_fail">AI Analysis Failed</string>
+    <string name="ai_analyse_status_processe_fail_reason">Conditions not met for AI analysis</string>
+
+    <string name="local_model">Local Mode</string>
+    <string name="remote_model">Remote Mode</string>
+
+    <string name="phone_no_network_title">Phone currently has no network</string>
+    <string name="phone_no_network_message">Please connect to an external network and try again</string>
+    <string name="phone_no_network_message_connnect_weewa">Phone is still connected to camera hotspot, please switch to external network and try again</string>
+
+    <string name="remote_model_add_device_fail">Please switch to Local Mode to add device </string>
+    <string name="remote_model_no_network_title">No Network Available</string>
+    <string name="remote_model_no_network_message">Please connect to an external network and try again</string>
+    <string name="remote_model_forbid">This function is disabled in Remote Mode</string>
+    <string name="remote_model_offline_title">Camera is Off</string>
+    <string name="remote_model_offline_message">Please contact the staff to turn on the camera</string>
+    <string name="remote_model_switch_model">Mode Switch</string>
+    <string name="remote_model_switch_model_message_local">Click to switch to local mode</string>
+    <string name="remote_model_switch_model_message_remote">Click to switch to remote mode</string>
+    <string name="remote_model_switch">Switch</string>
+    <string name="remote_model_switch_local">Switch to local mode</string>
+    <string name="remote_model_switch_remote">Switch to remote mode</string>
+    <string name="info_network_disconnect">Mobile network has been disconnected, please reconnect and try again</string>
+    <string name="info_ready_to_record"> Preparing to record......</string>
+
+    <string name="remote_model_switch_model_video_download_message">Camera videos can only be downloaded in local mode, click to switch to local mode</string>
+
+    <string name="info_camera_send_sms_fail_without_network">After setup a network, retry it</string>
+
+    <string name="dialog_download_exception_title">Download Exception</string>
+    <string name="dialog_download_exception_msg_no_enough_space">Mobile phone storage space is insufficient, can not continue to download, please clean the mobile phone garbage and try again.</string>
+    <string name="dialog_download_exception_msg_without_soft_ap">Please keep hotpot connection</string>
+    <string name="dialog_download_exception_msg_video_downloading">Video is currently being downloaded</string>
+
+    <string name="error_record_info_empty">Please exit and re-enter the score control center</string>
+
+    <string name="purchase_history_list_empty">No record</string>
+
+    <string name="server_error_http_response_null">server response is null</string>
+    <string name="server_error_http_response_body_null">server response body is null</string>
+    <string name="server_error_http_response_json_exception">Json exception</string>
+    <string name="server_error_http_response_other_error">Inner error, please try again later.</string>
+    <string name="server_error_http_connect_reset">Connection reset, please check the network and try again </string>
+
+
+    <!-- Add the following string resources -->
+    <string name="ethernet_setting">Ethernet Settings</string>
+    <string name="ethernet_not_connected">No Ethernet connection detected</string>
+    <string name="network_mode">Network Mode</string>
+    <string name="dhcp_mode">DHCP (Automatic)</string>
+    <string name="static_ip_mode">Static IP (Manual)</string>
+    <string name="ip_address">IP Address</string>
+    <string name="subnet_mask">Subnet Mask</string>
+    <string name="gateway">Gateway</string>
+    <string name="dns">DNS Server</string>
+    <string name="please_input_all_fields">Please fill in all fields</string>
+    <string name="invalid_ip_format">Invalid IP address format</string>
+    <string name="setting_dhcp_mode">Setting DHCP mode...</string>
+    <string name="setting_static_ip_mode">Setting static IP...</string>
+    <string name="ethernet_setting_save">Save</string>
+    <string name="dhcp_mode_set_success">DHCP mode set successfully</string>
+    <string name="dhcp_mode_set_fail">Failed to set DHCP mode</string>
+    <string name="static_ip_set_success">Static IP set successfully</string>
+    <string name="static_ip_set_fail">Failed to set static IP</string>
+    <string name="unattended_title">Unattended</string>
+    <string name="unattended_record_hint">The app starts recording at the start time, checks every 30 seconds, retries after a failure or interruption, and stops at the end time. Keep the app running and the camera connected.</string>
+    <string name="local_record_start_time">Start time</string>
+    <string name="local_record_end_time">End time</string>
+    <string name="local_record_start_default">Optional, defaults to now when tapped</string>
+    <string name="local_record_end_default">Optional, defaults to start + 2 hours</string>
+    <string name="local_record_clear_time">Clear</string>
+    <string name="local_record_invalid_window">End time must be after start time</string>
+    <string name="local_record_window_expired">End time has passed. Select a new time.</string>
+    <string name="local_record_scheduled">Unattended task saved. Recording will run within the selected times.</string>
+    <string name="unattended_waiting_countdown">Waiting to record · %1$s</string>
+    <string name="unattended_waiting_button">Waiting to record</string>
+    <string name="unattended_remote_record_hint">The platform manages recording during the match and retries after an interruption once the camera is back online. Keep the camera online.</string>
+    <string name="unattended_live_hint">The platform starts streaming at the scheduled match time, retries after an interruption once the camera is back online, and requests a stop 30 seconds before the match ends. Keep the camera online.</string>
+    <string name="unattended_saved">Task saved. The platform will start and stop the live stream automatically.</string>
+</resources>

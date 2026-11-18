@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- When you invoke BaseDownloadTask#setWifiRequired(true), you need declare ACCESS_NETWORK_STATE permission -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".DemoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:requestLegacyExternalStorage="true"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HybridTestActivity"
+            android:label="@string/hybrid_test_title"
+            android:exported="true"/>
+        <activity
+            android:name=".SingleTaskTestActivity"
+            android:label="@string/single_task_test_title"
+            android:exported="true"/>
+        <activity
+            android:name=".SingleUploadTaskTestActivity"
+            android:label="@string/single_upload_task_test"
+            android:exported="true"/>
+        <activity
+            android:name=".MultiUploadTestActivity"
+            android:label="@string/multiple_upload_tasks_test"
+            android:exported="true"/>
+        <activity
+            android:name=".MultitaskTestActivity"
+            android:label="@string/multitask_test_title"
+            android:exported="true"/>
+        <activity
+            android:name=".performance.PerformanceTestActivity"
+            android:label="@string/performance_test_title"
+            android:exported="true"/>
+        <activity
+            android:name=".TasksManagerDemoActivity"
+            android:label="@string/tasks_manager_demo_title"
+            android:exported="true"/>
+        <activity
+            android:name=".TasksManagerUploadDemoActivity"
+            android:label="@string/upload_task_manager_demo"
+            android:exported="true"/>
+        <activity
+            android:name=".NotificationSampleActivity"
+            android:label="@string/notification_sample_title"
+            android:exported="true"/>
+    </application>
+
+</manifest>

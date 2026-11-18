@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/common_include_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/network_mode"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_network_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_dhcp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dhcp_mode"
+                    android:padding="8dp"
+                     android:buttonTint="#F16C2F" />
+
+                <RadioButton
+                    android:id="@+id/rb_static"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/static_ip_mode"
+                    android:padding="8dp"
+                     android:buttonTint="#F16C2F" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/layout_manual_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ip_address"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/et_ip_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="192.168.1.100"
+                    android:inputType="number|phone"
+                    android:digits="0123456789."
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subnet_mask"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/et_subnet_mask"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="255.255.255.0"
+                    android:inputType="number|phone"
+                    android:digits="0123456789."
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gateway"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/et_gateway"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="192.168.1.1"
+                    android:inputType="number|phone"
+                    android:digits="0123456789."
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dns"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/et_dns"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="8.8.8.8"
+                    android:inputType="number|phone"
+                    android:digits="0123456789."
+                    android:layout_marginBottom="8dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_f16c2f_raduis30"
+                android:textColor="@color/white"
+                android:text="@string/save"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

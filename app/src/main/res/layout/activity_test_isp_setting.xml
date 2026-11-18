@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/common_include_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_record"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_line">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=== ISP参数配置(start) ==="
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="isp参数修改后会立刻生效,可以打开预览推流地址看到实时效果"
+                android:textSize="12sp"
+                android:textColor="@color/red"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="帧率："
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_frequency"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minWidth="64dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+
+                <Button
+                    android:id="@+id/btn_isp_frequency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="修改"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_exposure_gain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="曝光增益: "
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/slider_exposure_gain"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:trackColor="#ededed"
+                    app:thumbColor="@color/qccde_text_red"
+                    android:visibility="visible"
+                    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+                    android:value="50.0"
+                    android:valueFrom="0.0"
+                    android:valueTo="255.0"/>
+
+                <EditText
+                    android:id="@+id/et_exposure_gain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="64dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="曝光时长(分子/分母): "
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_exposure_time_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="64dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="/"
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_exposure_time_den"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="64dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_set_exposure_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCECE"
+                    android:text="写入时长"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_brightness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="亮度: "
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/slider_brightness"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:trackColor="#ededed"
+                    app:thumbColor="@color/qccde_text_red"
+                    android:visibility="visible"
+                    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+                    android:value="50.0"
+                    android:valueFrom="0.0"
+                    android:valueTo="100.0"/>
+
+                <EditText
+                    android:id="@+id/et_brightness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="64dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_contrast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="对比度: "
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/slider_contrast"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:trackColor="#ededed"
+                    app:thumbColor="@color/qccde_text_red"
+                    android:visibility="visible"
+                    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+                    android:value="50.0"
+                    android:valueFrom="0.0"
+                    android:valueTo="100.0"/>
+
+                <EditText
+                    android:id="@+id/et_contrast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="64dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_saturation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="饱和度: "
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/slider_saturation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:trackColor="#ededed"
+                    app:thumbColor="@color/qccde_text_red"
+                    android:visibility="visible"
+                    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+                    android:value="50.0"
+                    android:valueFrom="0.0"
+                    android:valueTo="100.0"/>
+
+                <EditText
+                    android:id="@+id/et_saturation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="64dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_hue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="色度: "
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/slider_hue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:trackColor="#ededed"
+                    app:thumbColor="@color/qccde_text_red"
+                    android:visibility="visible"
+                    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+                    android:value="50.0"
+                    android:valueFrom="0.0"
+                    android:valueTo="100.0"/>
+
+                <EditText
+                    android:id="@+id/et_hue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="64dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="锐度: "
+                    android:textColor="@color/text_black_3D"
+                    android:textFontWeight="400"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/slider_sharpness"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:trackColor="#ededed"
+                    app:thumbColor="@color/qccde_text_red"
+                    android:visibility="visible"
+                    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+                    android:value="50.0"
+                    android:valueFrom="0.0"
+                    android:valueTo="100.0"/>
+
+                <EditText
+                    android:id="@+id/et_sharpness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="64dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_f3f3f3_radius10_border"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="#3D3D3D"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=== ISP参数配置(end) ==="
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

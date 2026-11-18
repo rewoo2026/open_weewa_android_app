@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".test.BlueTestActivity">
+
+    <include layout="@layout/common_include_header" />
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".test.BlueTestActivity">
+
+        <com.zhy.view.flowlayout.FlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="接口类型："
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/interface_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    tools:text="蓝牙" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <com.xh.hotme.widget.SwitchButtonO
+                    android:id="@+id/api_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+
+        </com.zhy.view.flowlayout.FlowLayout>
+
+
+        <com.zhy.view.flowlayout.FlowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btn_rkipc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/test_button_enable_selector"
+                android:text="启动RKIPC"
+                android:textColor="@drawable/test_button_text_selector"
+                android:textSize="12sp" />
+
+        </com.zhy.view.flowlayout.FlowLayout>
+
+
+        <com.zhy.view.flowlayout.FlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/et_fec_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CCCECE"
+                android:gravity="center_vertical"
+                android:hint="配置fec推流Url"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+        </com.zhy.view.flowlayout.FlowLayout>
+
+        <com.zhy.view.flowlayout.FlowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btn_add_fec_live_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CCCECE"
+                android:text="添加推流url"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_remove_fec_live_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CCCECE"
+                android:text="删除推流url"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_save_fec_live_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CCCECE"
+                android:text="保存推流url"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+        </com.zhy.view.flowlayout.FlowLayout>
+
+        <com.zhy.view.flowlayout.FlowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/text_gray_76" />
+
+            <LinearLayout
+                android:id="@+id/fourG_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:paddingLeft="24dp"
+                android:paddingTop="17dp"
+                android:paddingRight="14dp"
+                android:paddingBottom="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="4G网络"
+                    android:textColor="@color/text_black_3D"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+
+                <com.xh.hotme.widget.SwitchButtonO
+                    android:id="@+id/sb_fourG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+
+        </com.zhy.view.flowlayout.FlowLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/feedback_edit_bg"
+        android:maxLines="10"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bluetooth_dialog_open_bg"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black_3D"
+            android:textFontWeight="700"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="@string/bluetooth_no_open"/>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/dialog_close" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_hot_city_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/china_hot_city"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_calendar_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_hot_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:nestedScrollingEnabled="false"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hot_city_title" />
+
+    <com.aigestudio.wheelpicker.widgets.WheelCityPicker
+        android:id="@+id/wheelPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:wheel_atmospheric="true"
+        app:wheel_curved="true"
+        app:wheel_cyclic="true"
+        app:wheel_selected_item_position="3"
+        app:wheel_item_text_color="#999999"
+        app:wheel_selected_item_text_color="#333333"
+        android:background="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bluetooth_dialog_open_btn"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="400"
+        android:textSize="20sp" />
+
+</LinearLayout>
